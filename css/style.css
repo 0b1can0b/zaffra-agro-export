@@ -1503,7 +1503,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
   /* Contact page */
   .form-grid { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+  .contact-info {
+    order: -1 !important;
+  }
 
   /* Variety / related cards */
   .variety-grid { grid-template-columns: repeat(2, 1fr); }
