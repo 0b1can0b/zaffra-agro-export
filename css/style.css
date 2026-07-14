@@ -1589,6 +1589,22 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     margin-bottom: 4px !important;
     font-size: 8.5px !important;
   }
+  
+  /* Space out product card content inside the 2-column cells */
+  .product-card-body {
+    padding: 16px !important;
+  }
+  .product-card h3 {
+    font-size: 1rem !important;
+    margin-bottom: 2px !important;
+  }
+  .product-card p {
+    display: none !important; /* Hide description to prevent crowded/cramped text in square cards */
+  }
+  .product-card .num {
+    font-size: 0.85rem !important;
+    margin-bottom: 2px !important;
+  }
 
   /* Gallery — swipeable horizontal card list */
   .gallery-mosaic {
