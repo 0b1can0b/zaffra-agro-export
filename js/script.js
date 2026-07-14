@@ -184,11 +184,9 @@
 
   /* ── Multi-column tables scroll wrapper ──────────────────────────────────── */
   document.querySelectorAll('table.specs-table').forEach(function (table) {
-    if (table.querySelector('thead')) {
-      var wrapper = document.createElement('div');
-      wrapper.className = 'table-scroll-wrapper';
-      table.parentNode.insertBefore(wrapper, table);
-      wrapper.appendChild(table);
-    }
+    var wrapper = document.createElement('div');
+    wrapper.className = 'table-scroll-wrapper';
+    table.parentNode.insertBefore(wrapper, table);
+    wrapper.appendChild(table);
   });
 }());
