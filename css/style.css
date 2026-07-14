@@ -318,18 +318,43 @@ p  { margin: 0; }
   padding: 8px;
 }
 .mobile-panel-close svg { width: 24px; height: 24px; }
-.mobile-panel nav ul { display: flex; flex-direction: column; gap: 4px; }
+.mobile-panel nav ul { display: flex; flex-direction: column; gap: 0; }
 .mobile-panel nav a {
   display: block;
   font-family: var(--serif);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: var(--cream);
-  padding: 8px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.07);
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
   transition: color 0.2s;
 }
 .mobile-panel nav a:hover { color: var(--saffron); }
 .mobile-panel .btn-primary { display: none !important; }
+
+/* Indented sub-items for product inner pages */
+.mobile-panel nav a[href="fresh-fruits.html"],
+.mobile-panel nav a[href="fresh-vegetables.html"],
+.mobile-panel nav a[href="seafood.html"],
+.mobile-panel nav a[href="agricultural.html"],
+.mobile-panel nav a[href="spices.html"] {
+  padding-left: 16px !important;
+  font-size: 1.05rem !important;
+  font-family: var(--sans) !important;
+  color: rgba(253, 250, 244, 0.72) !important;
+  border-bottom: none !important;
+  border-left: 2px solid var(--saffron) !important;
+  margin-left: 8px;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+.mobile-panel nav a[href="fresh-fruits.html"] {
+  margin-top: 6px;
+}
+.mobile-panel nav a[href="spices.html"] {
+  border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+  padding-bottom: 12px !important;
+  margin-bottom: 6px;
+}
 
 /* === BUTTONS === */
 .btn-primary {
