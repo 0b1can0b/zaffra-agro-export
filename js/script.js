@@ -68,6 +68,20 @@
     }
   }
 
+  // Inject "Products" parent item in mobile menu if not present
+  if (mobilePanel) {
+    const aboutLink = mobilePanel.querySelector('a[href="about.html"]');
+    const productsLink = mobilePanel.querySelector('a[href="products.html"]');
+    if (aboutLink && !productsLink) {
+      const aboutLi = aboutLink.closest('li');
+      if (aboutLi) {
+        const productsLi = document.createElement('li');
+        productsLi.innerHTML = '<a href="products.html">Products</a>';
+        aboutLi.after(productsLi);
+      }
+    }
+  }
+
   /* ── Reveal on scroll (Intersection Observer) ────────────────────────────── */
   const revealEls = document.querySelectorAll('.reveal');
   if (revealEls.length && 'IntersectionObserver' in window) {
