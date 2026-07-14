@@ -1446,6 +1446,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .split-layout {
     grid-template-columns: 1fr;
     padding: 0 var(--gutter-x) !important;
+    margin-bottom: 40px !important; /* space out split blocks on mobile */
   }
   .split-layout.flip { direction: ltr; }
   .split-text {
@@ -1458,6 +1459,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     box-shadow: 0 8px 24px rgba(0,0,0,0.25) !important;
     margin-top: 0 !important;
     overflow: hidden !important;
+  }
+
+  /* Specific tweaks for unified category card blocks (products/quality pages) */
+  .split-layout:has(.section-cream) .split-image,
+  .split-layout:has(.section-stone) .split-image {
+    border-radius: 8px 8px 0 0 !important;
+    box-shadow: none !important;
+  }
+  .split-layout:has(.section-cream) .split-text,
+  .split-layout:has(.section-stone) .split-text {
+    padding: 32px 24px !important; /* Spacious text inside card borders */
+    border-radius: 0 0 8px 8px !important;
+    box-shadow: 0 8px 24px rgba(15,35,24,0.06) !important;
   }
 
   /* Generic grids */
