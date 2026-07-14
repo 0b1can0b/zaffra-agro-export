@@ -1443,14 +1443,20 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .hero-badge { font-size: 0.72rem; padding: 6px 12px; }
 
   /* Split layouts */
-  .split-layout { grid-template-columns: 1fr; }
+  .split-layout {
+    grid-template-columns: 1fr;
+    padding: 0 var(--gutter-x) !important;
+  }
   .split-layout.flip { direction: ltr; }
+  .split-text {
+    padding: 0 0 24px 0 !important;
+  }
   .split-image {
     min-height: auto !important;
     aspect-ratio: 16/10 !important;
     border-radius: 8px !important;
     box-shadow: 0 8px 24px rgba(0,0,0,0.25) !important;
-    margin-top: 24px !important;
+    margin-top: 0 !important;
     overflow: hidden !important;
   }
 
