@@ -1624,6 +1624,49 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .highlight-band p { font-size: 1rem; }
   .cta-actions { flex-direction: column; align-items: center; gap: 12px; width: 100%; }
   .btn-dark, .btn-outline-dark { width: 100%; justify-content: center; margin-left: 0; }
+
+  /* Centered Mobile Footer with 2-Column Links */
+  .footer-inner {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 36px 24px !important;
+    text-align: center !important;
+  }
+  .footer-brand-col {
+    grid-column: 1 / -1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .footer-brand-col .brand {
+    justify-content: center !important;
+    margin-bottom: 8px;
+  }
+  .footer-brand-col .footer-desc {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .footer-nav-col {
+    grid-column: span 1 !important;
+    text-align: center !important;
+  }
+  .footer-nav-col ul {
+    align-items: center !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .footer-contact-col {
+    grid-column: 1 / -1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .footer-contact-col address {
+    align-items: center !important;
+    text-align: center !important;
+  }
 }
 
 /* ── 480px: small phones ── */
@@ -1643,7 +1686,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .hero-actions .btn-primary, .hero-actions .btn-secondary { width: 100%; justify-content: center; }
 
   /* Footer */
-  .footer-inner { grid-template-columns: 1fr; gap: 36px; }
+  .footer-inner { gap: 36px 20px !important; }
   .footer-bottom { flex-direction: column; text-align: center; gap: 8px; }
 
   /* Stats bar */
