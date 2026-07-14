@@ -1446,6 +1446,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .split-layout {
     grid-template-columns: 1fr;
     padding: 0 var(--gutter-x) !important;
+    margin-top: 32px !important; /* space out split blocks on mobile from preceding sections */
     margin-bottom: 40px !important; /* space out split blocks on mobile */
   }
   .split-layout.flip { direction: ltr; }
@@ -1762,6 +1763,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
   /* Buttons */
   .btn-primary, .btn-secondary, .btn-dark { padding: 14px 24px; font-size: 12px; }
+
+  /* Product page stats row stacking */
+  .stats-row {
+    grid-template-columns: 1fr !important;
+  }
+  .stats-row .stat-item {
+    border-right: none !important;
+  }
 }
 
 /* ── Map-specific extras ─────────────────────────── */
