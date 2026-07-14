@@ -1949,15 +1949,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 @media (max-width: 860px) {
   #vector-map {
     pointer-events: none; /* Prevents map scroll-trapping / scroll-hijacking on mobile */
-    height: 360px !important;
+    height: 250px !important;
   }
   .map-wrap {
-    height: 360px !important;
+    height: 250px !important;
   }
   /* Target parent height container wrapper inside index.html */
   #markets div[style*="height: 600px"],
   .map-section div[style*="height: 600px"] {
-    height: 360px !important;
+    height: 250px !important;
   }
 }
 
