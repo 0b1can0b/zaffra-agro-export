@@ -47,6 +47,27 @@
     if (e.key === 'Escape') closeMenu();
   });
 
+  // Inject Zaffra logo at the top of the mobile menu
+  if (mobilePanel && !mobilePanel.querySelector('.mobile-menu-logo')) {
+    const logoContainer = document.createElement('div');
+    logoContainer.className = 'mobile-menu-logo';
+    logoContainer.style.marginBottom = '2.5rem';
+    logoContainer.style.display = 'flex';
+    logoContainer.style.alignItems = 'center';
+    logoContainer.innerHTML = `
+      <a href="index.html" class="brand" style="border-left:none; padding-left:0; margin-left:0;">
+        <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width:40px; height:40px;"><defs><linearGradient id="goldGradM" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGradM)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="brand-word" style="border-left: 1px solid rgba(255,255,255,0.15); padding-left: 16px; margin-left: 4px;">ZAFFRA<small>AGRO EXPORT LLP</small></span>
+      </a>
+    `;
+    const closeBtnEl = mobilePanel.querySelector('.mobile-panel-close');
+    if (closeBtnEl) {
+      closeBtnEl.after(logoContainer);
+    } else {
+      mobilePanel.prepend(logoContainer);
+    }
+  }
+
   /* ── Reveal on scroll (Intersection Observer) ────────────────────────────── */
   const revealEls = document.querySelectorAll('.reveal');
   if (revealEls.length && 'IntersectionObserver' in window) {

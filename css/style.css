@@ -329,6 +329,7 @@ p  { margin: 0; }
   transition: color 0.2s;
 }
 .mobile-panel nav a:hover { color: var(--saffron); }
+.mobile-panel .btn-primary { display: none !important; }
 
 /* === BUTTONS === */
 .btn-primary {
