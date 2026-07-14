@@ -305,7 +305,7 @@ p  { margin: 0; }
   background: var(--forest);
   display: flex;
   flex-direction: column;
-  padding: 90px 40px 48px;
+  padding: 80px 32px 32px;
   transform: translateX(100%);
   transition: transform 0.4s var(--ease);
   overflow-y: auto;
@@ -322,9 +322,9 @@ p  { margin: 0; }
 .mobile-panel nav a {
   display: block;
   font-family: var(--serif);
-  font-size: 2rem;
+  font-size: 1.25rem;
   color: var(--cream);
-  padding: 10px 0;
+  padding: 8px 0;
   border-bottom: 1px solid rgba(255,255,255,0.07);
   transition: color 0.2s;
 }
@@ -1431,8 +1431,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .product-intro { padding: clamp(28px, 5vw, 48px); }
 
   /* Gallery */
-  .gallery-mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: 200px 200px 200px; }
-  .gallery-mosaic .cell-tall { grid-row: span 1; }
+  .gallery-mosaic {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(3, 220px) !important;
+    gap: 12px !important;
+    padding: 0 4vw !important;
+    background: transparent !important;
+  }
+  .gallery-mosaic .cell-tall {
+    grid-row: span 2 !important;
+  }
 
   /* Quality page */
   .cert-grid { grid-template-columns: 1fr; }
@@ -1516,9 +1524,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .product-grid { grid-template-columns: 1fr; }
   .product-card:nth-child(n+4) { display: flex; }
 
-  /* Gallery → stack */
-  .gallery-mosaic { grid-template-columns: 1fr; grid-template-rows: auto; }
-  .gallery-mosaic .cell { height: 220px; }
+  /* Gallery — compact 2x3 mosaic */
+  .gallery-mosaic {
+    grid-template-rows: repeat(3, 160px) !important;
+    gap: 8px !important;
+    padding: 0 5vw !important;
+  }
 
   /* Section decorators */
   .section-heading { font-size: clamp(1.8rem, 7vw, 2.6rem); }
@@ -1560,7 +1571,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .step:first-child { border-top: none; }
 
   /* Mobile panel nav font */
-  .mobile-panel nav a { font-size: 1.6rem; }
+  .mobile-panel nav a { font-size: 1.1rem; }
 
   /* Section padding tightening */
   .section-inner { max-width: 100%; }
@@ -1853,6 +1864,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 @media (max-width: 860px) {
   #vector-map {
     pointer-events: none; /* Prevents map scroll-trapping / scroll-hijacking on mobile */
+    height: 360px !important;
+  }
+  .map-wrap {
+    height: 360px !important;
+  }
+  /* Target parent height container wrapper inside index.html */
+  #markets div[style*="height: 600px"],
+  .map-section div[style*="height: 600px"] {
+    height: 360px !important;
   }
 }
 
