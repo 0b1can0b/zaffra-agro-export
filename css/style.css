@@ -1551,12 +1551,57 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .product-grid { grid-template-columns: 1fr; }
   .product-card:nth-child(n+4) { display: flex; }
 
-  /* Gallery — compact 2x3 mosaic */
+  /* Gallery — swipeable horizontal card list */
   .gallery-mosaic {
-    grid-template-rows: repeat(3, 160px) !important;
-    gap: 8px !important;
-    padding: 0 5vw !important;
+    display: flex !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    gap: 16px !important;
+    padding: 16px 24px 32px !important;
+    -webkit-overflow-scrolling: touch !important;
+    scroll-padding: 24px !important;
+    background: var(--stone) !important;
   }
+  .gallery-mosaic::-webkit-scrollbar {
+    display: none !important;
+  }
+  .gallery-mosaic .cell {
+    flex: 0 0 270px !important;
+    height: 380px !important;
+    scroll-snap-align: start !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 28px rgba(15,35,24,0.15) !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+  .gallery-mosaic .cell-tall {
+    grid-row: auto !important;
+  }
+  .gallery-mosaic .cell::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15,35,24,0.85) 0%, rgba(15,35,24,0.2) 60%, transparent 100%) !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+  }
+  .gallery-mosaic .cell::before {
+    position: absolute !important;
+    bottom: 20px !important;
+    left: 20px !important;
+    z-index: 2 !important;
+    font-family: var(--serif) !important;
+    font-weight: 700 !important;
+    font-size: 1.35rem !important;
+    color: var(--cream) !important;
+    letter-spacing: -0.01em !important;
+  }
+  .gallery-mosaic .cell:nth-child(1)::before { content: 'Fresh Fruits' !important; }
+  .gallery-mosaic .cell:nth-child(2)::before { content: 'Vegetables' !important; }
+  .gallery-mosaic .cell:nth-child(3)::before { content: 'Pure Spices' !important; }
+  .gallery-mosaic .cell:nth-child(4)::before { content: 'Kesar Mangoes' !important; }
+  .gallery-mosaic .cell:nth-child(5)::before { content: 'Fresh Seafood' !important; }
 
   /* Section decorators */
   .section-heading { font-size: clamp(1.8rem, 7vw, 2.6rem); }
