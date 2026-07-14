@@ -3,660 +3,1046 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agricultural Products Export — Rice, Wheat, Sesame | Zaffra Agro Export LLP</title>
-  <meta name="description" content="Zaffra Agro Export LLP supplies premium basmati rice, wheat, sesame seeds, peanuts and agricultural commodities from Gujarat, India. ISO certified, APEDA registered exporter.">
+  <title>Agricultural Products Export — Rice, Wheat, Sesame &amp; Oilseeds | Zaffra Agro Export LLP</title>
+  <meta name="description" content="Zaffra Agro Export LLP supplies premium basmati rice, non-basmati rice, wheat, sesame seeds, peanuts and cottonseed oil from Gujarat, India. ISO 9001, APEDA registered exporter to 38+ countries.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    :root {
-      --forest:#0F2318;
-      --forest-mid:#193D20;
-      --saffron:#C89020;
-      --saffron-light:#E8B040;
-      --terra:#A84E28;
-      --cream:#FDFAF4;
-      --stone:#EDE6D8;
-      --ink:#141210;
-      --mid:#7A7268;
-      --hairline:#D8CFBD;
+    /* ── Section base ── */
+    .section { padding: clamp(4rem, 8vw, 8rem) 5vw; }
+    .section-inner { max-width: 1240px; margin: 0 auto; }
+    .section-cream { background: #FDFAF4; }
+    .section-stone { background: #EDE6D8; }
+    .section-forest { background: #0F2318; }
+
+    /* ── Labels / eyebrows ── */
+    .label {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #C89020;
+      margin-bottom: 1rem;
+    }
+    .label--light { color: rgba(200,144,32,0.9); }
+
+    /* ── Section headings ── */
+    .section-heading {
+      font-family: 'Lora', serif;
+      font-size: clamp(2rem, 4.5vw, 3.5rem);
+      font-weight: 700;
+      color: #0F2318;
+      line-height: 1.15;
+      margin: 0 0 1.25rem;
+      letter-spacing: -0.02em;
+    }
+    .section-heading--light { color: #FDFAF4; }
+    .section-sub {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      color: #7A7268;
+      max-width: 640px;
+      line-height: 1.75;
+      margin: 0 0 3rem;
+    }
+    .section-sub--light { color: rgba(253,250,244,0.7); }
+    .section-header--center { text-align: center; }
+    .section-header--center .section-sub { margin-left: auto; margin-right: auto; }
+
+    /* ── Intro split ── */
+    .intro-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    @media (max-width: 800px) { .intro-split { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .intro-text p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #7A7268;
+      margin: 0 0 1.25rem;
+    }
+    .intro-text p:first-of-type {
+      font-size: 1.18rem;
+      color: #141210;
+      font-weight: 500;
+    }
+    .intro-img-wrap { position: relative; }
+    .intro-img-wrap img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border-radius: 2px;
+      display: block;
+    }
+    .intro-img-badge {
+      position: absolute;
+      bottom: -1.5rem;
+      left: -1.5rem;
+      background: #C89020;
+      color: #0F2318;
+      font-family: 'Lora', serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 1.25rem 1.5rem;
+      letter-spacing: 0.04em;
+      max-width: 180px;
+      line-height: 1.4;
+    }
+    .cert-row { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 2rem; }
+    .cert-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(200,144,32,0.07);
+      border: 1px solid rgba(200,144,32,0.25);
+      padding: 0.5rem 1rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #7A5A1E;
+      letter-spacing: 0.04em;
+    }
+    .cert-badge::before { content: '✓'; color: #C89020; }
+    .stats-strip {
+      display: flex;
+      gap: 0;
+      border-top: 1px solid #D8CFBD;
+      margin-top: 2.5rem;
+    }
+    .stat-box {
+      flex: 1;
+      padding: 1.5rem 0;
+      border-right: 1px solid #D8CFBD;
+    }
+    .stat-box:last-child { border-right: none; }
+    .stat-box strong {
+      display: block;
+      font-family: 'Lora', serif;
+      font-size: 2rem;
+      font-weight: 900;
+      color: #C89020;
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+    .stat-box span {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #7A7268;
     }
 
+    /* ── Full-bleed image band ── */
+    .img-band {
+      position: relative;
+      height: clamp(320px, 50vw, 580px);
+      overflow: hidden;
+    }
+    .img-band img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .img-band-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(15,35,24,0.92) 0%, rgba(15,35,24,0.35) 55%, transparent 100%);
+      display: flex;
+      align-items: center;
+      padding: 0 5vw;
+    }
+    .img-band-text { max-width: 520px; }
+    .img-band-text h2 {
+      font-family: 'Lora', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      color: #FDFAF4;
+      margin: 0 0 1rem;
+      line-height: 1.2;
+    }
+    .img-band-text p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      color: rgba(253,250,244,0.78);
+      line-height: 1.75;
+      margin: 0;
+    }
 
+    /* ── Variety Grid ── */
+    .variety-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 1000px) { .variety-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 580px)  { .variety-grid { grid-template-columns: 1fr; } }
+    .variety-card {
+      background: #fff;
+      border: 1px solid #D8CFBD;
+      overflow: hidden;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .variety-card:hover {
+      box-shadow: 0 12px 40px rgba(15,35,24,0.12);
+      transform: translateY(-4px);
+    }
+    .variety-img { margin: 0; overflow: hidden; }
+    .variety-img img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .variety-card:hover .variety-img img { transform: scale(1.06); }
+    .variety-info { padding: 1.5rem; }
+    .variety-info h3 {
+      font-family: 'Lora', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0F2318;
+      margin: 0 0 0.6rem;
+    }
+    .variety-info p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      color: #7A7268;
+      line-height: 1.7;
+      margin: 0 0 1rem;
+    }
+    .variety-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .tag {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.65rem;
+      border: 1px solid #D8CFBD;
+      color: #7A7268;
+      border-radius: 2px;
+    }
+    .tag--gold  { border-color: #C89020; color: #C89020; }
+    .tag--forest { background: #0F2318; color: #FDFAF4; border-color: #0F2318; }
+
+    /* ── Seasonal Calendar (table approach) ── */
+    .cal-wrap { overflow-x: auto; margin-top: 2.5rem; }
+    .cal-table { width: 100%; min-width: 700px; border-collapse: collapse; }
+    .cal-table th, .cal-table td {
+      padding: 0.75rem 0.6rem;
+      text-align: center;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      border-bottom: 1px solid #D8CFBD;
+    }
+    .cal-table th {
+      font-weight: 600;
+      color: #0F2318;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: #D8CFBD;
+    }
+    .cal-table td:first-child {
+      text-align: left;
+      font-weight: 600;
+      color: #141210;
+      font-size: 0.88rem;
+      min-width: 160px;
+    }
+    .cal-peak {
+      background: #C89020;
+      border-radius: 12px;
+      display: inline-block;
+      width: 100%;
+      height: 10px;
+    }
+    .cal-avail {
+      background: rgba(200,144,32,0.3);
+      border-radius: 12px;
+      display: inline-block;
+      width: 100%;
+      height: 10px;
+    }
+    .cal-empty { color: #D8CFBD; }
+
+    /* ── Specs Table ── */
+    .specs-table { width: 100%; border-collapse: collapse; margin-top: 2.5rem; }
+    .specs-table tr { border-bottom: 1px solid #D8CFBD; }
+    .specs-table tr:last-child { border-bottom: none; }
+    .specs-table th {
+      width: 220px;
+      text-align: left;
+      padding: 1rem 1.5rem 1rem 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #7A7268;
+      vertical-align: top;
+    }
+    .specs-table td {
+      padding: 1rem 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      color: #141210;
+      line-height: 1.65;
+    }
+
+    /* ── Process Steps ── */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 3rem;
+    }
+    @media (max-width: 800px) { .process-steps { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .process-steps { grid-template-columns: 1fr; } }
+    .process-step {
+      padding: 2.5rem 2rem;
+      border-right: 1px solid rgba(216,207,189,0.25);
+    }
+    .process-step:last-child { border-right: none; }
+    .step-num {
+      font-family: 'Lora', serif;
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: rgba(200,144,32,0.2);
+      line-height: 1;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .process-step h4 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #C89020;
+      margin: 0 0 0.6rem;
+    }
+    .process-step p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      color: rgba(253,250,244,0.65);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ── Pack cards ── */
+    .pack-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 800px) { .pack-grid { grid-template-columns: 1fr; } }
+    .pack-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 2.25rem 2rem;
+      border-radius: 4px;
+    }
+    .pack-card-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(200,144,32,0.12);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      color: #C89020;
+    }
+    .pack-card h4 {
+      font-family: 'Lora', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #FDFAF4;
+      margin: 0 0 0.6rem;
+    }
+    .pack-card p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      color: rgba(253,250,244,0.6);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ── Related Products ── */
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) { .related-grid { grid-template-columns: 1fr; } }
+    .related-card {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      text-decoration: none;
+    }
+    .related-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+    .related-card:hover img { transform: scale(1.07); }
+    .related-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15,35,24,0.88) 0%, rgba(15,35,24,0.2) 60%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem;
+    }
+    .related-card-overlay span {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #C89020;
+      margin-bottom: 0.3rem;
+    }
+    .related-card-overlay h3 {
+      font-family: 'Lora', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #FDFAF4;
+      margin: 0;
+    }
+
+    /* ── CTA Band ── */
+    .highlight-band {
+      background: #C89020;
+      padding: clamp(3rem, 6vw, 5rem) 5vw;
+      text-align: center;
+    }
+    .highlight-band h2 {
+      font-family: 'Lora', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      color: #0F2318;
+      margin: 0 0 0.75rem;
+    }
+    .highlight-band p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      color: rgba(15,35,24,0.75);
+      margin: 0 auto 2rem;
+      max-width: 52ch;
+      text-align: center;
+    }
+    .btn-dark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #0F2318;
+      color: #FDFAF4;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 1rem 2.25rem;
+      text-decoration: none;
+      transition: background 0.25s, transform 0.2s;
+    }
+    .btn-dark:hover { background: #193D20; transform: translateY(-2px); }
+    .btn-outline-dark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: transparent;
+      color: #0F2318;
+      border: 2px solid #0F2318;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.95rem 2.25rem;
+      text-decoration: none;
+      transition: background 0.25s, color 0.25s, transform 0.2s;
+      margin-left: 1rem;
+    }
+    .btn-outline-dark:hover { background: #0F2318; color: #FDFAF4; transform: translateY(-2px); }
+
+    /* ── Reveal animation ── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
   </style>
 </head>
 <body class="page-interior">
 
-<!-- ══════════ HEADER ══════════ -->
-<header class="site-header" id="site-header">
-  <div class="nav-container">
-    <a href="index.html" class="brand">
-      <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span class="brand-word">ZAFFRA<small>AGRO EXPORT LLP</small></span>
-    </a>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="has-dropdown">
-          <a href="products.html" class="current">Products</a>
-          <div class="dropdown">
-            <a href="fresh-fruits.html">Fresh Fruits</a>
-            <a href="fresh-vegetables.html">Fresh Vegetables</a>
-            <a href="seafood.html">Seafood</a>
-            <a href="agricultural.html">Agricultural Products</a>
-            <a href="spices.html">Spices</a>
-          </div>
-        </li>
-        <li><a href="quality.html">Quality</a></li>
-        <li><a href="packaging.html">Packaging</a></li>
-        <li><a href="countries.html">Markets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="nav-actions">
-      <a href="contact.html" class="btn-nav-enquire">Enquire</a>
-      <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<div class="mobile-panel" id="mobile-panel" aria-hidden="true">
-  <button class="mobile-panel-close" aria-label="Close menu">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
-  </button>
-  <nav><ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="fresh-fruits.html">Fresh Fruits</a></li>
-    <li><a href="fresh-vegetables.html">Fresh Vegetables</a></li>
-    <li><a href="seafood.html">Seafood</a></li>
-    <li><a href="agricultural.html">Agricultural Products</a></li>
-    <li><a href="spices.html">Spices</a></li>
-    <li><a href="quality.html">Quality</a></li>
-    <li><a href="packaging.html">Packaging</a></li>
-    <li><a href="countries.html">Markets</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul></nav>
-  <a href="contact.html" class="btn-primary" style="margin-top:auto;display:inline-flex">Send Enquiry</a>
-</div>
-
-<!-- ══════════ MAIN ══════════ -->
-<main>
-
-  <!-- ── HERO ── -->
-  <section class="product-hero" id="product-hero" style="background-image:url('images/agricultural_products.png')">
-    <div class="hero-inner">
-      <div class="hero-category">Agricultural Products</div>
-      <h1>Agricultural<br>Products</h1>
-      <p class="hero-subtitle">Gujarat's golden harvests — raw commodities of uncompromising purity, delivered globally.</p>
-      <div class="hero-badges">
-        <span class="hero-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          ISO 9001:2015 Certified
-        </span>
-        <span class="hero-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          APEDA Registered
-        </span>
-        <span class="hero-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          EU &amp; US Compliant
-        </span>
-        <span class="hero-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 21h18M9 8h1m-1 4h1m4-4h1m-1 4h1M9 21v-4a2 2 0 012-2h2a2 2 0 012 2v4"/></svg>
-          Direct Farm Sourcing
-        </span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── INTRO SPLIT ── -->
-  <section class="section-cream">
-    <div class="section-inner">
-      <div class="intro-split">
-        <div class="split-text">
-          <span class="label reveal">Gujarat's Agricultural Heartland</span>
-          <h2 class="reveal reveal-delay-1">Commodities Born From<br><em>India's Richest Soils</em></h2>
-          <p class="reveal reveal-delay-2">Gujarat's agricultural belt — stretching across the Saurashtra plains and the Banas river basin — is one of India's most productive farming regions. The combination of rich alluvial soils, abundant sunshine, and optimal irrigation creates ideal conditions for premium grains, oilseeds, and cash crops that meet the most rigorous international quality benchmarks.</p>
-          <p class="reveal reveal-delay-2">Zaffra Agro Export LLP works directly with a curated network of over 300 farmer-partners across Gujarat, Rajasthan, and Madhya Pradesh, ensuring traceability from field to shipment. Every consignment undergoes multi-stage cleaning, grading, and quality testing before packing — a process that has earned us consistent repeat orders from buyers in the Middle East, Africa, Southeast Asia, and Europe.</p>
-          <p class="reveal reveal-delay-3">We supply rice, wheat, sesame seeds, groundnuts, and edible oils in bulk and consumer-pack formats, customised to destination-market regulations and buyer specifications.</p>
-          <div class="cert-strip reveal reveal-delay-3">
-            <span class="cert-pill">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-              ISO 9001:2015
-            </span>
-            <span class="cert-pill">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-              APEDA Registered
-            </span>
-            <span class="cert-pill">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-              FSSAI Licensed
-            </span>
-          </div>
-          <div class="stat-row reveal reveal-delay-4">
-            <div class="stat-item">
-              <div class="stat-num">12,000+</div>
-              <div class="stat-label">MT Annual Volume</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-num">300+</div>
-              <div class="stat-label">Farm Partners</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-num">38</div>
-              <div class="stat-label">Export Markets</div>
-            </div>
-          </div>
-        </div>
-        <div class="split-image reveal reveal-delay-2">
-          <img src="images/farmland_dawn.png" alt="Indian grain harvest in Gujarat" loading="lazy" decoding="async">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── WIDE IMAGE ── -->
-  <div class="img-wide-wrap">
-    <img class="img-wide" src="images/field_sunrise.png" alt="Golden wheat fields of India at harvest time" loading="lazy" decoding="async">
-    <div class="img-wide-caption">
-      Golden grain fields stretching across Gujarat's fertile agricultural plains — the source of Zaffra's premium commodities
-    </div>
-  </div>
-
-  <!-- ── VARIETY GRID ── -->
-  <section class="section-stone">
-    <div class="section-inner">
-      <div class="section-header section-header--center">
-        <span class="label reveal">Our Range</span>
-        <h2 class="section-heading reveal reveal-delay-1">Premium Agricultural Commodities</h2>
-        <p class="section-sub reveal reveal-delay-2">Six carefully sourced and quality-graded commodities, each traceable to verified farm origins across India's prime agricultural belts.</p>
-      </div>
-
-      <div class="variety-grid grid-3">
-
-        <!-- 1: Basmati Rice -->
-        <div class="variety-card reveal">
-          <figure class="variety-img">
-            <img src="images/fresh_fruits.png" alt="Premium Basmati Rice" loading="lazy" decoding="async">
-          </figure>
-          <div class="variety-info">
-            <div class="variety-tag">Grain</div>
-            <h3>Basmati Rice</h3>
-            <p>Long-grain aromatic rice prized for its distinctive fragrance, elongated grains, and fluffy texture. Sourced from the Indo-Gangetic plains and Haryana, meeting all GI tag specifications for authentic Basmati.</p>
-            <ul class="variety-specs">
-              <li><span>Grain Length (cooked)</span><strong>&ge; 15 mm</strong></li>
-              <li><span>Moisture Content</span><strong>&le; 12.5%</strong></li>
-              <li><span>Broken Grains</span><strong>&le; 2%</strong></li>
-              <li><span>Available Grades</span><strong>1121, 1509, Pusa</strong></li>
-              <li><span>Pack Options</span><strong>5 kg, 25 kg, 50 kg</strong></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 2: Non-Basmati Rice -->
-        <div class="variety-card reveal reveal-delay-1">
-          <figure class="variety-img">
-            <img src="images/fresh_vegetables.png" alt="Sona Masoori Non-Basmati Rice" loading="lazy" decoding="async">
-          </figure>
-          <div class="variety-info">
-            <div class="variety-tag">Grain</div>
-            <h3>Non-Basmati Rice <span style="font-size:0.85em;font-weight:400">(Sona Masoori)</span></h3>
-            <p>Medium-grain, lightweight, low-starch rice from Andhra Pradesh and Telangana. Highly sought in South Asian diaspora markets and Southeast Asia for everyday cooking. Clean, uniform grading with minimal foreign matter.</p>
-            <ul class="variety-specs">
-              <li><span>Avg. Grain Length</span><strong>5.0–5.5 mm</strong></li>
-              <li><span>Moisture Content</span><strong>&le; 13%</strong></li>
-              <li><span>Purity Grade</span><strong>98% min.</strong></li>
-              <li><span>Broken Grains</span><strong>&le; 5%</strong></li>
-              <li><span>Pack Options</span><strong>25 kg, 50 kg PP bags</strong></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 3: Wheat -->
-        <div class="variety-card reveal reveal-delay-2">
-          <figure class="variety-img">
-            <img src="images/agricultural_products.png" alt="HD-2967 Wheat Export Grade" loading="lazy" decoding="async">
-          </figure>
-          <div class="variety-info">
-            <div class="variety-tag">Grain</div>
-            <h3>Wheat <span style="font-size:0.85em;font-weight:400">(HD-2967)</span></h3>
-            <p>HD-2967 is India's highest-yielding wheat variety, renowned for its high gluten content, excellent protein profile, and suitability for bread and roti. Sourced from Punjab and Haryana's premier wheat corridors during the Rabi harvest.</p>
-            <ul class="variety-specs">
-              <li><span>Protein Content</span><strong>11.5% min.</strong></li>
-              <li><span>Moisture Content</span><strong>&le; 12%</strong></li>
-              <li><span>Test Weight</span><strong>76–79 kg/hl</strong></li>
-              <li><span>Admixture</span><strong>&le; 1%</strong></li>
-              <li><span>Pack Options</span><strong>50 kg PP / HDPE bags</strong></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 4: Sesame Seeds -->
-        <div class="variety-card reveal reveal-delay-3">
-          <figure class="variety-img">
-            <img src="images/mangoes_golden.png" alt="White Sesame Seeds Export Grade" loading="lazy" decoding="async">
-          </figure>
-          <div class="variety-info">
-            <div class="variety-tag">Oilseed</div>
-            <h3>Sesame Seeds <span style="font-size:0.85em;font-weight:400">(White &amp; Black)</span></h3>
-            <p>Gujarat leads India's sesame production. Our natural, hulled, and roasted sesame seeds serve confectionery, bakery, and tahini processors worldwide. Machine-cleaned and Sortex-graded for size uniformity and colour consistency.</p>
-            <ul class="variety-specs">
-              <li><span>Oil Content</span><strong>48–52%</strong></li>
-              <li><span>Moisture Content</span><strong>&le; 6%</strong></li>
-              <li><span>Purity</span><strong>99.5% min.</strong></li>
-              <li><span>FFA</span><strong>&le; 2%</strong></li>
-              <li><span>Pack Options</span><strong>25 kg / 50 kg HDPE</strong></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 5: Peanuts -->
-        <div class="variety-card reveal reveal-delay-4">
-          <figure class="variety-img">
-            <img src="images/markets_hero.png" alt="Bold Peanuts Export Grade" loading="lazy" decoding="async">
-          </figure>
-          <div class="variety-info">
-            <div class="variety-tag">Oilseed</div>
-            <h3>Peanuts <span style="font-size:0.85em;font-weight:400">(Bold &amp; Java)</span></h3>
-            <p>Gujarat's Saurashtra region is world-renowned for groundnuts of exceptional quality. Zaffra supplies both Bold (large kernel) and Java (small kernel) varieties for confectionery, peanut butter, and oil extraction industries globally.</p>
-            <ul class="variety-specs">
-              <li><span>Aflatoxin Level</span><strong>&le; 4 ppb (EU grade)</strong></li>
-              <li><span>Moisture Content</span><strong>&le; 8%</strong></li>
-              <li><span>Oil Content</span><strong>48–50%</strong></li>
-              <li><span>Admixture</span><strong>&le; 0.5%</strong></li>
-              <li><span>Pack Options</span><strong>25 kg / 50 kg jute or PP</strong></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 6: Cotton Seed Oil -->
-        <div class="variety-card reveal reveal-delay-5">
-          <figure class="variety-img">
-            <img src="images/origin_story.png" alt="Refined Cotton Seed Oil" loading="lazy" decoding="async">
-          </figure>
-          <div class="variety-info">
-            <div class="variety-tag">Edible Oil</div>
-            <h3>Cotton Seed Oil</h3>
-            <p>Refined and filtered cottonseed oil from Gujarat's large-scale cotton processing industry. A light, neutral-flavour oil with a high smoke point, ideal for frying, salad dressings, and industrial food manufacturing. Available refined or crude.</p>
-            <ul class="variety-specs">
-              <li><span>FFA (as oleic acid)</span><strong>&le; 0.1%</strong></li>
-              <li><span>Iodine Value</span><strong>99–113</strong></li>
-              <li><span>Moisture &amp; Impurities</span><strong>&le; 0.2%</strong></li>
-              <li><span>Colour (Lovibond)</span><strong>&le; 1.5R / 15Y</strong></li>
-              <li><span>Pack Options</span><strong>200 L drums, Flexi-tanks</strong></li>
-            </ul>
-          </div>
-        </div>
-
-      </div><!-- .variety-grid -->
-    </div>
-  </section>
-
-  <!-- ── SPECIFICATIONS TABLE ── -->
-  <section class="section-cream">
-    <div class="section-inner">
-      <div class="section-header section-header--center">
-        <span class="label reveal">Technical Standards</span>
-        <h2 class="section-heading reveal reveal-delay-1">Export Quality Specifications</h2>
-        <p class="section-sub reveal reveal-delay-2">All commodities are tested at our in-house quality laboratory and verified by accredited third-party agencies before shipment. Custom parameters available on request.</p>
-      </div>
-      <div class="specs-table-wrap reveal reveal-delay-2">
-        <table class="specs-table">
-          <thead>
-            <tr>
-              <th>Commodity</th>
-              <th>Moisture (Max)</th>
-              <th>Purity Grade</th>
-              <th>Admixture (Max)</th>
-              <th>Packaging</th>
-              <th>Standard</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Basmati Rice (1121)</td>
-              <td>12.5%</td>
-              <td>Super / Grade A</td>
-              <td>0.5%</td>
-              <td>5 kg, 25 kg, 50 kg</td>
-              <td><span class="tag tag--saffron">APEDA Basmati</span></td>
-            </tr>
-            <tr>
-              <td>Non-Basmati Rice (Sona Masoori)</td>
-              <td>13%</td>
-              <td>98% min.</td>
-              <td>1%</td>
-              <td>25 kg PP bags</td>
-              <td><span class="tag tag--saffron">FSSAI Grade A</span></td>
-            </tr>
-            <tr>
-              <td>Wheat (HD-2967)</td>
-              <td>12%</td>
-              <td>FAQ / Superior</td>
-              <td>1%</td>
-              <td>50 kg PP / HDPE</td>
-              <td><span class="tag tag--saffron">AGMARK Grade I</span></td>
-            </tr>
-            <tr>
-              <td>Sesame Seeds (White)</td>
-              <td>6%</td>
-              <td>99.5% min.</td>
-              <td>0.2%</td>
-              <td>25 kg / 50 kg HDPE</td>
-              <td><span class="tag tag--saffron">EU MRL Compliant</span></td>
-            </tr>
-            <tr>
-              <td>Peanuts (Bold)</td>
-              <td>8%</td>
-              <td>98% min.</td>
-              <td>0.5%</td>
-              <td>25 kg / 50 kg jute/PP</td>
-              <td><span class="tag tag--saffron">USDA / EU Grade</span></td>
-            </tr>
-            <tr>
-              <td>Cotton Seed Oil (Refined)</td>
-              <td>0.2%</td>
-              <td>FFA &le; 0.1%</td>
-              <td>—</td>
-              <td>200 L drums, Flexi-tank</td>
-              <td><span class="tag tag--saffron">FSSAI / Codex</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── SEASONAL CALENDAR ── -->
-  <section class="section-forest">
-    <div class="section-inner">
-      <div class="section-header section-header--center">
-        <span class="label reveal" style="color:var(--saffron)">Harvest Schedule</span>
-        <h2 class="section-heading reveal reveal-delay-1" style="color:#fff;">Seasonal Availability Calendar</h2>
-        <p class="section-sub reveal reveal-delay-2" style="color:rgba(255,255,255,0.65)">Plan your procurement cycles around India's agricultural calendar. Shaded months indicate peak harvest and export availability.</p>
-      </div>
-      <div class="calendar-grid reveal reveal-delay-2">
-        <!-- Header -->
-        <div class="calendar-row cal-header">
-          <div class="cal-label" style="color:var(--cream);font-weight:600">Commodity</div>
-          <div class="cal-month" style="color:rgba(255,255,255,0.75);font-weight:600;border-right-color:rgba(255,255,255,0.1)">Jan</div>
-          <div class="cal-month" style="color:rgba(255,255,255,0.75);font-weight:600;border-right-color:rgba(255,255,255,0.1)">Feb</div>
-          <div class="cal-month" style="color:rgba(255,255,255,0.75);font-weight:600;border-right-color:rgba(255,255,255,0.1)">Mar</div>
-          <div class="cal-month" style="color:rgba(255,255,255,0.75);font-weight:600;border-right-color:rgba(255,255,255,0.1)">Apr</div>
-          <div class="cal-month" style="color:rgba(255,255,255,0.75);font-weight:600;border-right-color:rgba(255,255,255,0.1)">May</div>
-          <div class="cal-month" style="color:rgba(255,255,255,0.75);font-weight:600;border-right-color:rgba(255,255,255,0.1)">Jun</div>
-          <div class="cal-month" style="color:rgba(255,255,255,0.75);font-weight:600;border-right-color:rgba(255,255,255,0.1)">Jul</div>
-          <div class="cal-month" style="color:rgba(255,255,255,0.75);font-weight:600;border-right-color:rgba(255,255,255,0.1)">Aug</div>
-          <div class="cal-month" style="color:rgba(255,255,255,0.75);font-weight:600;border-right-color:rgba(255,255,255,0.1)">Sep</div>
-          <div class="cal-month" style="color:rgba(255,255,255,0.75);font-weight:600;border-right-color:rgba(255,255,255,0.1)">Oct</div>
-          <div class="cal-month" style="color:rgba(255,255,255,0.75);font-weight:600;border-right-color:rgba(255,255,255,0.1)">Nov</div>
-          <div class="cal-month" style="color:rgba(255,255,255,0.75);font-weight:600;border-right-color:none">Dec</div>
-        </div>
-        <!-- Basmati Rice -->
-        <div class="calendar-row">
-          <div class="cal-label">Basmati Rice</div>
-          <div class="cal-month cal-active"></div>
-          <div class="cal-month cal-active"></div>
-          <div class="cal-month cal-active"></div>
-          <div class="cal-month cal-partial"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month cal-partial"></div>
-          <div class="cal-month cal-active"></div>
-          <div class="cal-month cal-active"></div>
-        </div>
-        <!-- Wheat -->
-        <div class="calendar-row">
-          <div class="cal-label">Wheat (HD-2967)</div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month cal-partial"></div>
-          <div class="cal-month cal-active"></div>
-          <div class="cal-month cal-active"></div>
-          <div class="cal-month cal-active"></div>
-          <div class="cal-month cal-active"></div>
-          <div class="cal-month cal-partial"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-        </div>
-        <!-- Sesame Seeds -->
-        <div class="calendar-row">
-          <div class="cal-label">Sesame Seeds</div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month cal-partial"></div>
-          <div class="cal-month cal-active"></div>
-          <div class="cal-month cal-active"></div>
-          <div class="cal-month cal-active"></div>
-          <div class="cal-month cal-active"></div>
-          <div class="cal-month cal-partial"></div>
-        </div>
-        <!-- Peanuts -->
-        <div class="calendar-row">
-          <div class="cal-label">Peanuts</div>
-          <div class="cal-month cal-active"></div>
-          <div class="cal-month cal-active"></div>
-          <div class="cal-month cal-partial"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month"></div>
-          <div class="cal-month cal-partial"></div>
-          <div class="cal-month cal-active"></div>
-          <div class="cal-month cal-active"></div>
-        </div>
-      </div>
-      <p style="margin-top:1rem;font-family:'DM Sans',sans-serif;font-size:0.8rem;color:rgba(255,255,255,0.5);display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
-        <span style="display:inline-flex;align-items:center;gap:0.4rem;">
-          <span style="display:inline-block;width:1.2rem;height:0.9rem;background:var(--saffron);border-radius:2px;"></span> Peak Export Season
-        </span>
-        <span style="display:inline-flex;align-items:center;gap:0.4rem;">
-          <span style="display:inline-block;width:1.2rem;height:0.9rem;background:rgba(200,144,32,0.35);border-radius:2px;"></span> Partial Availability
-        </span>
-      </p>
-    </div>
-  </section>
-
-  <!-- ── PROCESS STEPS ── -->
-  <section class="section-cream">
-    <div class="section-inner">
-      <div class="section-header section-header--center">
-        <span class="label reveal">Our Process</span>
-        <h2 class="section-heading reveal reveal-delay-1">From Field to Freight — The Zaffra Method</h2>
-        <p class="section-sub reveal reveal-delay-2">A rigorous four-stage process that maintains commodity integrity from farm procurement to loading at JNPT, Mundra, or Kandla port.</p>
-      </div>
-      <div class="process-steps">
-        <div class="step reveal">
-          <div class="step-num">01</div>
-          <h4>Procurement</h4>
-          <p>Direct sourcing from 300+ verified farm partners and APMC mandis across Gujarat, Rajasthan, and Madhya Pradesh. Farm-level quality audits and pre-purchase sampling ensure only conforming lots are accepted into our supply chain.</p>
-        </div>
-        <div class="step reveal reveal-delay-1">
-          <div class="step-num">02</div>
-          <h4>Cleaning &amp; Grading</h4>
-          <p>Multi-stage mechanical cleaning via rotary sieves, destoners, and aspirators removes foreign matter, dust, and damaged grain. Sortex colour-sorting machines reject discoloured or shrivelled kernels to achieve high visual purity standards.</p>
-        </div>
-        <div class="step reveal reveal-delay-2">
-          <div class="step-num">03</div>
-          <h4>Quality Testing</h4>
-          <p>Every lot is tested in our ISO-calibrated in-house laboratory for moisture, purity, oil content, protein, aflatoxin, pesticide residues, and heavy metals. Third-party verification by SGS, Bureau Veritas, or NABL-accredited labs available on request.</p>
-        </div>
-        <div class="step reveal reveal-delay-3">
-          <div class="step-num">04</div>
-          <h4>Export Packing</h4>
-          <p>Packing in buyer-specified PP woven, HDPE, jute, or consumer-retail bags at our FSSAI-licensed warehousing facility. Full phytosanitary certification, certificate of origin, and APEDA quality certification provided with each consignment.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── PACKAGING & LOGISTICS ── -->
-  <section class="section-forest">
-    <div class="section-inner">
-      <div class="section-header section-header--center">
-        <span class="label reveal" style="color:var(--saffron)">Packaging &amp; Logistics</span>
-        <h2 class="section-heading reveal reveal-delay-1" style="color:#fff;">Ready for Global Shipping</h2>
-        <p class="section-sub reveal reveal-delay-2" style="color:rgba(255,255,255,0.65)">We manage all logistics from our Gujarat warehouses to your destination port — bulk, break-bulk, and containerised shipments in FCL and LCL formats.</p>
-      </div>
-      <div class="pack-grid">
-        <div class="pack-card reveal">
-          <div class="pack-icon" style="background:rgba(255,255,255,0.08);border-radius:50%;padding:12px;display:flex;align-items:center;justify-content:center;width:56px;height:56px;">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--saffron)" stroke-width="2" width="24" height="24"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2zM2 10h20M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
-          </div>
-          <h4>PP Woven &amp; HDPE Bags</h4>
-          <p>Standard 25 kg and 50 kg PP woven or HDPE bags with UV-treated outer layer for durability in transit. Custom printing with buyer brand, batch number, country of origin, and nutritional information available across all commodities.</p>
-        </div>
-        <div class="pack-card reveal reveal-delay-1">
-          <div class="pack-icon" style="background:rgba(255,255,255,0.08);border-radius:50%;padding:12px;display:flex;align-items:center;justify-content:center;width:56px;height:56px;">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--saffron)" stroke-width="2" width="24" height="24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2M12 12v4M10 14h4"/></svg>
-          </div>
-          <h4>Container &amp; Flexi-Tank</h4>
-          <p>20' and 40' FCL containers for grains and oilseeds. Flexi-tanks (24,000 litres) for edible oil shipments. Containers are fumigated, moisture-protected, and sealed per destination-country phytosanitary requirements before stuffing.</p>
-        </div>
-        <div class="pack-card reveal reveal-delay-2">
-          <div class="pack-icon" style="background:rgba(255,255,255,0.08);border-radius:50%;padding:12px;display:flex;align-items:center;justify-content:center;width:56px;height:56px;">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--saffron)" stroke-width="2" width="24" height="24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-          </div>
-          <h4>Documentation &amp; Compliance</h4>
-          <p>Complete export documentation: Commercial Invoice, Packing List, Bill of Lading, Certificate of Origin, Phytosanitary Certificate, APEDA Certification, and destination-country-specific compliance documents provided with every shipment.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── RELATED PRODUCTS ── -->
-  <section class="section-stone">
-    <div class="section-inner">
-      <div class="section-header section-header--center">
-        <span class="label reveal">Explore More</span>
-        <h2 class="section-heading reveal reveal-delay-1">Related Product Categories</h2>
-        <p class="section-sub reveal reveal-delay-2">Expand your sourcing with our complementary product lines, each maintained to the same rigorous export standards.</p>
-      </div>
-      <div class="related-grid">
-        <a href="fresh-fruits.html" class="related-card reveal">
-          <img src="images/pack_hero.png" alt="Fresh Fruits Export" loading="lazy" decoding="async">
-          <div class="related-card-info">
-            <span class="num">Category 01</span>
-            <h3>Fresh Fruits</h3>
-          </div>
-        </a>
-        <a href="spices.html" class="related-card reveal reveal-delay-1">
-          <img src="images/spices.png" alt="Indian Spices Export" loading="lazy" decoding="async">
-          <div class="related-card-info">
-            <span class="num">Category 05</span>
-            <h3>Indian Spices</h3>
-          </div>
-        </a>
-        <a href="seafood.html" class="related-card reveal reveal-delay-2">
-          <img src="images/products_hero.png" alt="Seafood Export" loading="lazy" decoding="async">
-          <div class="related-card-info">
-            <span class="num">Category 03</span>
-            <h3>Seafood</h3>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CTA BAND ── -->
-  <div class="cta-band">
-    <div style="max-width:700px;margin:0 auto;">
-      <span class="label reveal" style="color:var(--forest-mid);justify-content:center;margin-bottom:1rem;display:inline-flex;">Request a Quote</span>
-      <h2 class="reveal reveal-delay-1">Ready to Source Gujarat's<br>Finest Harvests?</h2>
-      <p class="reveal reveal-delay-2">Whether you need a trial shipment of 1 MT or a recurring contract of 500 MT per month, our experienced trade team will structure the right deal. Share your requirements and receive a competitive CIF/FOB quote within 24 hours.</p>
-      <div class="cta-actions reveal reveal-delay-3">
-        <a href="contact.html" class="btn-dark">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          Send Enquiry
-        </a>
-        <a href="products.html" class="btn-outline-dark">View All Categories</a>
-      </div>
-    </div>
-  </div>
-
-</main>
-
-<!-- ══════════ FOOTER ══════════ -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-brand-col">
-      <a href="index.html" class="brand brand--light">
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
         <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span class="brand-word">ZAFFRA<small>AGRO EXPORT LLP</small></span>
       </a>
-      <p class="footer-tagline">Nature &bull; Purity &bull; Trust</p>
-      <p class="footer-desc">Exporting premium fresh produce, seafood, and agricultural commodities from Gujarat, India since 2005.</p>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="has-dropdown"><a href="products.html" class="current">Products</a>
+            <div class="dropdown">
+              <a href="fresh-fruits.html">Fresh Fruits</a>
+              <a href="fresh-vegetables.html">Fresh Vegetables</a>
+              <a href="seafood.html">Seafood</a>
+              <a href="agricultural.html">Agricultural Products</a>
+              <a href="spices.html">Spices</a>
+            </div>
+          </li>
+          <li><a href="quality.html">Quality</a></li>
+          <li><a href="packaging.html">Packaging</a></li>
+          <li><a href="countries.html">Markets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn-nav-enquire">Enquire</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
     </div>
-    <div class="footer-nav-col"><h4>Products</h4><ul>
+  </header>
+
+  <!-- MOBILE PANEL -->
+  <div class="mobile-panel" id="mobile-panel" aria-hidden="true">
+    <button class="mobile-panel-close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg></button>
+    <nav><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="fresh-fruits.html">Fresh Fruits</a></li>
       <li><a href="fresh-vegetables.html">Fresh Vegetables</a></li>
       <li><a href="seafood.html">Seafood</a></li>
       <li><a href="agricultural.html">Agricultural Products</a></li>
       <li><a href="spices.html">Spices</a></li>
-    </ul></div>
-    <div class="footer-nav-col"><h4>Company</h4><ul>
-      <li><a href="about.html">About Us</a></li>
       <li><a href="quality.html">Quality</a></li>
       <li><a href="packaging.html">Packaging</a></li>
       <li><a href="countries.html">Markets</a></li>
       <li><a href="contact.html">Contact</a></li>
-    </ul></div>
-    <div class="footer-contact-col"><h4>Contact</h4>
-      <address>
-        <p>Zaffra House, Near APMC Yard,<br>Ahmedabad, Gujarat 380001</p>
-        <p><a href="mailto:export@zaffraagro.com">export@zaffraagro.com</a></p>
-        <p><a href="tel:+917940125588">+91 79 4012 5588</a></p>
-      </address>
+    </ul></nav>
+    <a href="contact.html" class="btn-primary" style="margin-top:auto;display:inline-flex">Send Enquiry</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="product-hero" style="background-image:url('images/agricultural_products.png')">
+      <div class="hero-inner">
+        <div class="hero-category">Agricultural Products</div>
+        <h1>Agricultural<br>Products</h1>
+        <p class="hero-subtitle">Gujarat's golden harvests — grains, oilseeds, and edible oils of uncompromising purity, delivered globally.</p>
+        <div class="hero-badges">
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            ISO 9001:2015 Certified
+          </span>
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            APEDA Registered
+          </span>
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            EU &amp; US Compliant
+          </span>
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 21h18M9 8h1m-1 4h1m4-4h1m-1 4h1M9 21v-4a2 2 0 012-2h2a2 2 0 012 2v4"/></svg>
+            300+ Farm Partners
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section section-cream">
+      <div class="section-inner">
+        <div class="intro-split">
+          <div class="intro-text">
+            <span class="label reveal">Product Category — 04</span>
+            <h2 class="section-heading reveal">Commodities Born From<br><em>India's Richest Soils</em></h2>
+            <p class="reveal">Gujarat's agricultural belt — stretching across the Saurashtra plains, the Banas river basin, and the fertile black-soil tracts of Kutch — is one of India's most productive farming regions. The combination of rich alluvial soils, abundant sunshine, and optimal irrigation creates ideal conditions for premium grains, oilseeds, and cash crops that meet the most rigorous international quality benchmarks.</p>
+            <p class="reveal">Zaffra Agro Export LLP works directly with a curated network of over 300 farmer-partners across Gujarat, Rajasthan, and Madhya Pradesh, ensuring traceability from field to shipment. Every consignment undergoes multi-stage cleaning, grading, and quality testing before packing — a process that has earned us consistent repeat orders from buyers in the Middle East, Africa, Southeast Asia, and Europe.</p>
+            <p class="reveal">We supply rice, wheat, sesame seeds, peanuts, and edible oils in bulk and consumer-pack formats, customised to destination-market regulations and buyer specifications.</p>
+            <div class="cert-row reveal">
+              <span class="cert-badge">ISO 9001:2015</span>
+              <span class="cert-badge">APEDA Registered</span>
+              <span class="cert-badge">FSSAI Licensed</span>
+              <span class="cert-badge">AGMARK Certified</span>
+            </div>
+            <div class="stats-strip reveal">
+              <div class="stat-box">
+                <strong>12,000+</strong>
+                <span>MT Annual Volume</span>
+              </div>
+              <div class="stat-box">
+                <strong>300+</strong>
+                <span>Farm Partners</span>
+              </div>
+              <div class="stat-box">
+                <strong>38</strong>
+                <span>Export Markets</span>
+              </div>
+            </div>
+          </div>
+          <div class="intro-img-wrap reveal">
+            <img src="images/farmland_dawn.png" alt="Golden grain fields at harvest time in Gujarat, India" loading="lazy" decoding="async">
+            <div class="intro-img-badge">APEDA Registered<br>Export Programme</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL-BLEED IMAGE BAND -->
+    <div class="img-band">
+      <img src="images/field_sunrise.png" alt="Wide golden wheat fields stretching across Gujarat's agricultural plains at sunrise" loading="lazy" decoding="async">
+      <div class="img-band-overlay">
+        <div class="img-band-text">
+          <span class="label label--light reveal">Source — Gujarat, India</span>
+          <h2 class="reveal">From Alluvial Plains<br>to Global Markets</h2>
+          <p class="reveal">Gujarat's semi-arid climate delivers the ideal curing conditions for onions, sesame, and peanuts — naturally low moisture content that extends shelf life without chemical treatment. Our Saurashtra sourcing belt produces groundnuts of a quality standard recognised as benchmark-grade by processors worldwide.</p>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 Zaffra Agro Export LLP. All rights reserved.</p>
-    <p>APEDA Reg. No. APEDA/REG/000000 &nbsp;&bull;&nbsp; GST: 24AAAAA0000A1Z5</p>
-  </div>
-</footer>
 
-<script src="js/script.js"></script>
-<script>
-  // Reveal on scroll
-  (function() {
-    var reveals = document.querySelectorAll('.reveal');
-    if (!reveals.length) return;
-    var io = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    reveals.forEach(function(el) { io.observe(el); });
-  })();
+    <!-- VARIETY GRID -->
+    <section class="section section-stone">
+      <div class="section-inner">
+        <div class="section-header--center">
+          <span class="label reveal">Our Range</span>
+          <h2 class="section-heading reveal">Six Premium<br>Agricultural Commodities</h2>
+          <p class="section-sub reveal" style="margin-left:auto;margin-right:auto;">Six carefully sourced and quality-graded commodities, each traceable to verified farm origins across India's prime agricultural belts.</p>
+        </div>
 
-  // Hero pan on load
-  (function() {
-    var hero = document.getElementById('product-hero');
-    if (hero) setTimeout(function(){ hero.classList.add('is-loaded'); }, 80);
-  })();
-</script>
+        <div class="variety-grid">
+
+          <div class="variety-card reveal">
+            <figure class="variety-img">
+              <img src="images/basmati_rice.png" alt="Premium Basmati Rice 1121" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Basmati Rice</h3>
+              <p>Long-grain aromatic rice from the Indo-Gangetic plains of Haryana and Punjab. Distinctive fragrance, elongated grains, and fluffy texture — meeting all GI tag specifications for authentic Basmati.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">1121 / 1509 / Pusa</span>
+                <span class="tag">≥15 mm Cooked</span>
+                <span class="tag">≤12.5% Moisture</span>
+                <span class="tag">5 kg / 25 kg / 50 kg</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-1">
+            <figure class="variety-img">
+              <img src="images/sona_masoori.png" alt="Sona Masoori Non-Basmati Rice" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Non-Basmati Rice <span style="font-weight:400;font-size:0.9em">(Sona Masoori)</span></h3>
+              <p>Medium-grain, lightweight, low-starch rice from Andhra Pradesh and Telangana. Highly sought in South Asian diaspora markets and Southeast Asia. Clean, uniform grading with minimal foreign matter.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">5.0–5.5 mm Grain</span>
+                <span class="tag">≤13% Moisture</span>
+                <span class="tag">98% min. Purity</span>
+                <span class="tag">25 kg / 50 kg PP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-2">
+            <figure class="variety-img">
+              <img src="images/wheat_fields.png" alt="HD-2967 Export Grade Wheat" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Wheat <span style="font-weight:400;font-size:0.9em">(HD-2967)</span></h3>
+              <p>India's highest-yielding wheat variety, renowned for high gluten content and excellent protein profile — ideal for bread and roti. Sourced from Punjab and Haryana's premier wheat corridors.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">11.5% min. Protein</span>
+                <span class="tag">76–79 kg/hl Test Wt</span>
+                <span class="tag">AGMARK Grade I</span>
+                <span class="tag">50 kg PP / HDPE</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-3">
+            <figure class="variety-img">
+              <img src="images/spices.png" alt="White and Black Sesame Seeds Export Grade" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Sesame Seeds <span style="font-weight:400;font-size:0.9em">(White &amp; Black)</span></h3>
+              <p>Gujarat leads India's sesame production. Our natural, hulled, and roasted sesame seeds serve confectionery, bakery, and tahini processors worldwide. Machine-cleaned and Sortex-graded for colour consistency.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">48–52% Oil Content</span>
+                <span class="tag">99.5% min. Purity</span>
+                <span class="tag">EU MRL Compliant</span>
+                <span class="tag">25 kg / 50 kg HDPE</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-4">
+            <figure class="variety-img">
+              <img src="images/origin_story.png" alt="Bold Peanuts Groundnuts Export Grade" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Peanuts <span style="font-weight:400;font-size:0.9em">(Bold &amp; Java)</span></h3>
+              <p>Saurashtra is world-renowned for groundnuts of exceptional quality. Bold (large kernel) and Java (small kernel) varieties for confectionery, peanut butter, and oil extraction industries globally.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">≤4 ppb Aflatoxin (EU)</span>
+                <span class="tag">48–50% Oil Content</span>
+                <span class="tag">USDA / EU Grade</span>
+                <span class="tag">25 kg / 50 kg Jute</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-5">
+            <figure class="variety-img">
+              <img src="images/fresh_fruits.png" alt="Refined Cottonseed Edible Oil" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Cotton Seed Oil</h3>
+              <p>Refined and filtered cottonseed oil from Gujarat's large-scale cotton processing industry. A light, neutral-flavour oil with a high smoke point — ideal for frying, salad dressings, and industrial food manufacturing.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">FFA ≤0.1%</span>
+                <span class="tag">Codex Compliant</span>
+                <span class="tag">FSSAI Licensed</span>
+                <span class="tag">200 L Drums / Flexi-tank</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SEASONAL CALENDAR -->
+    <section class="section section-cream">
+      <div class="section-inner">
+        <div class="section-header--center">
+          <span class="label reveal">Harvest Schedule</span>
+          <h2 class="section-heading reveal">Seasonal Availability<br>Calendar</h2>
+          <p class="section-sub reveal" style="margin-left:auto;margin-right:auto;">Plan your procurement cycles around India's agricultural calendar. Use this to time forward contracts and align shipments with peak harvest windows.</p>
+        </div>
+        <div class="cal-wrap reveal">
+          <table class="cal-table">
+            <thead>
+              <tr>
+                <th>Commodity</th>
+                <th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th><th>May</th><th>Jun</th>
+                <th>Jul</th><th>Aug</th><th>Sep</th><th>Oct</th><th>Nov</th><th>Dec</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Basmati Rice</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+              </tr>
+              <tr>
+                <td>Non-Basmati Rice</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+              </tr>
+              <tr>
+                <td>Wheat (HD-2967)</td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+              </tr>
+              <tr>
+                <td>Sesame Seeds</td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+              </tr>
+              <tr>
+                <td>Peanuts (Bold)</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+              </tr>
+              <tr>
+                <td>Cotton Seed Oil</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-family:'DM Sans',sans-serif;font-size:0.78rem;color:#7A7268;margin-top:1rem;" class="reveal">
+          <strong style="color:#C89020">&#9632;</strong> Peak harvest &amp; export season &nbsp;&nbsp;
+          <strong style="color:rgba(200,144,32,0.4)">&#9632;</strong> Partial / transitional availability
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPORT SPECS -->
+    <section class="section section-stone">
+      <div class="section-inner">
+        <div class="section-header--center">
+          <span class="label reveal">Trade Specifications</span>
+          <h2 class="section-heading reveal">Export Specifications &amp; Terms</h2>
+          <p class="section-sub reveal" style="margin-left:auto;margin-right:auto;">All specifications are negotiable to accommodate specific buyer requirements. Contact our export desk for tailored term sheets and documentation.</p>
+        </div>
+        <table class="specs-table reveal">
+          <tbody>
+            <tr>
+              <th>Minimum Order</th>
+              <td>1 × 20ft Container (~18–24 MT net, commodity dependent). LCL shipments available for trial orders above 1 MT for sesame seeds, peanuts, and rice.</td>
+            </tr>
+            <tr>
+              <th>Packaging Formats</th>
+              <td>25 kg and 50 kg PP woven / HDPE / jute bags for grains and oilseeds. 200-litre steel drums and 24,000-litre flexi-tanks for edible oils. Custom private-label printing available on all SKUs.</td>
+            </tr>
+            <tr>
+              <th>Certifications</th>
+              <td>ISO 9001:2015 · APEDA Registration · FSSAI Licence · AGMARK (Wheat &amp; Rice) · EU MRL Compliant (Sesame, Peanuts) · Phytosanitary Certificate per consignment.</td>
+            </tr>
+            <tr>
+              <th>Quality Testing</th>
+              <td>In-house ISO-calibrated laboratory testing for moisture, purity, oil content, protein, aflatoxin, pesticide residues, and heavy metals. Third-party verification by SGS, Bureau Veritas, or NABL-accredited labs on request.</td>
+            </tr>
+            <tr>
+              <th>Incoterms</th>
+              <td>FOB Mundra / JNPT / Kandla · CFR / CIF all major ports · DDP available for UAE and Singapore on confirmed annual programmes.</td>
+            </tr>
+            <tr>
+              <th>Transit Times</th>
+              <td>UAE / Gulf: 5–7 days · East Africa: 12–18 days · Southeast Asia: 10–15 days · UK / EU: 20–26 days · East Coast USA: 22–28 days</td>
+            </tr>
+            <tr>
+              <th>Payment Terms</th>
+              <td>LC at sight (preferred) · 30% advance + balance against BL copy for established buyers · Open account on credit-approved annual programmes.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PROCESS STEPS -->
+    <section class="section section-forest">
+      <div class="section-inner">
+        <div class="section-header--center">
+          <span class="label label--light reveal">Our Process</span>
+          <h2 class="section-heading section-heading--light reveal">From Field to Freight —<br>The Zaffra Method</h2>
+          <p class="section-sub section-sub--light reveal" style="margin-left:auto;margin-right:auto;">A rigorous four-stage chain of custody that maintains commodity integrity from farm procurement to container loading at JNPT, Mundra, or Kandla.</p>
+        </div>
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <span class="step-num">01</span>
+            <h4>Procurement</h4>
+            <p>Direct sourcing from 300+ verified farmer-partners and APMC mandis across Gujarat, Rajasthan, and Madhya Pradesh. Farm-level quality audits and pre-purchase sampling ensure only conforming lots enter our supply chain.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-1">
+            <span class="step-num">02</span>
+            <h4>Cleaning &amp; Grading</h4>
+            <p>Multi-stage mechanical cleaning via rotary sieves, destoners, and aspirators removes foreign matter and damaged grain. Sortex colour-sorting machines reject discoloured kernels to achieve high visual purity standards.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-2">
+            <span class="step-num">03</span>
+            <h4>Quality Testing</h4>
+            <p>Every lot is tested in our ISO-calibrated in-house laboratory for moisture, purity, oil content, protein, aflatoxin, pesticide residues, and heavy metals. Third-party verification by SGS or Bureau Veritas available on request.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-3">
+            <span class="step-num">04</span>
+            <h4>Export Packing</h4>
+            <p>Packing in buyer-specified PP woven, HDPE, jute, or retail bags at our FSSAI-licensed facility. Full phytosanitary certification, certificate of origin, and APEDA quality certification provided with every consignment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGING & LOGISTICS -->
+    <section class="section section-forest" style="padding-top:0;border-top:1px solid rgba(255,255,255,0.06);">
+      <div class="section-inner">
+        <div class="section-header--center">
+          <span class="label label--light reveal">Packaging &amp; Logistics</span>
+          <h2 class="section-heading section-heading--light reveal">Ready for Global Shipping</h2>
+          <p class="section-sub section-sub--light reveal" style="margin-left:auto;margin-right:auto;">We manage all logistics from our Gujarat warehouses to your destination port — bulk, break-bulk, and containerised shipments in FCL and LCL formats.</p>
+        </div>
+        <div class="pack-grid">
+          <div class="pack-card reveal">
+            <div class="pack-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2zM2 10h20M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+            </div>
+            <h4>PP Woven &amp; HDPE Bags</h4>
+            <p>Standard 25 kg and 50 kg PP woven or HDPE bags with UV-treated outer layer for transit durability. Custom printing with buyer brand, batch number, country of origin, and nutritional data available on all commodities.</p>
+          </div>
+          <div class="pack-card reveal reveal-delay-1">
+            <div class="pack-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2M12 12v4M10 14h4"/></svg>
+            </div>
+            <h4>Container &amp; Flexi-Tank</h4>
+            <p>20' and 40' FCL containers for grains and oilseeds. Flexi-tanks (24,000 litres) for edible oil shipments. Containers are fumigated, moisture-protected, and sealed per destination phytosanitary requirements before stuffing.</p>
+          </div>
+          <div class="pack-card reveal reveal-delay-2">
+            <div class="pack-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h4>Documentation &amp; Compliance</h4>
+            <p>Complete export documentation: Commercial Invoice, Packing List, Bill of Lading, Certificate of Origin, Phytosanitary Certificate, APEDA Certification, and all destination-country compliance documents per shipment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED PRODUCTS -->
+    <section class="section section-stone">
+      <div class="section-inner">
+        <div class="section-header--center">
+          <span class="label reveal">Explore More</span>
+          <h2 class="section-heading reveal">Related Product Categories</h2>
+          <p class="section-sub reveal" style="margin-left:auto;margin-right:auto;">Expand your sourcing with our complementary product lines, each maintained to the same rigorous export standards.</p>
+        </div>
+        <div class="related-grid">
+          <a href="spices.html" class="related-card reveal">
+            <img src="images/spices.png" alt="Indian Spices Export" loading="lazy" decoding="async">
+            <div class="related-card-overlay">
+              <span>Category 05</span>
+              <h3>Indian Spices</h3>
+            </div>
+          </a>
+          <a href="fresh-fruits.html" class="related-card reveal reveal-delay-1">
+            <img src="images/fresh_fruits.png" alt="Fresh Fruits Export" loading="lazy" decoding="async">
+            <div class="related-card-overlay">
+              <span>Category 01</span>
+              <h3>Fresh Fruits</h3>
+            </div>
+          </a>
+          <a href="fresh-vegetables.html" class="related-card reveal reveal-delay-2">
+            <img src="images/fresh_vegetables.png" alt="Fresh Vegetables Export" loading="lazy" decoding="async">
+            <div class="related-card-overlay">
+              <span>Category 02</span>
+              <h3>Fresh Vegetables</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <div class="highlight-band">
+      <span class="label reveal" style="color:rgba(15,35,24,0.55)">Request a Quote</span>
+      <h2 class="reveal">Ready to Source Gujarat's<br>Finest Harvests?</h2>
+      <p class="reveal">Whether you need a trial shipment of 1 MT or a recurring contract of 500 MT per month, our experienced trade team will structure the right deal. Share your requirements and receive a competitive CIF/FOB quote within 24 hours.</p>
+      <div class="reveal">
+        <a href="contact.html" class="btn-dark">Send Enquiry</a>
+        <a href="products.html" class="btn-outline-dark">All Categories</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand-col">
+        <a href="index.html" class="brand brand--light">
+          <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="goldGradF" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGradF)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="brand-word">ZAFFRA<small>AGRO EXPORT LLP</small></span>
+        </a>
+        <p class="footer-tagline">Nature &bull; Purity &bull; Trust</p>
+        <p class="footer-desc">Exporting premium fresh produce, seafood, and agricultural commodities from Gujarat, India since 2005.</p>
+      </div>
+      <div class="footer-nav-col"><h4>Products</h4><ul>
+        <li><a href="fresh-fruits.html">Fresh Fruits</a></li>
+        <li><a href="fresh-vegetables.html">Fresh Vegetables</a></li>
+        <li><a href="seafood.html">Seafood</a></li>
+        <li><a href="agricultural.html">Agricultural Products</a></li>
+        <li><a href="spices.html">Spices</a></li>
+      </ul></div>
+      <div class="footer-nav-col"><h4>Company</h4><ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="quality.html">Quality</a></li>
+        <li><a href="packaging.html">Packaging</a></li>
+        <li><a href="countries.html">Markets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-contact-col"><h4>Contact</h4>
+        <address>
+          <p>Zaffra House, Near APMC Yard,<br>Ahmedabad, Gujarat 380001</p>
+          <p><a href="mailto:export@zaffraagro.com">export@zaffraagro.com</a></p>
+          <p><a href="tel:+917940125588">+91 79 4012 5588</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Zaffra Agro Export LLP. All rights reserved.</p>
+      <p>APEDA Reg. No. APEDA/REG/000000 &nbsp;&bull;&nbsp; GST: 24AAAAA0000A1Z5</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Reveal on scroll
+    (function() {
+      var reveals = document.querySelectorAll('.reveal');
+      if (!reveals.length) return;
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      reveals.forEach(function(el) { io.observe(el); });
+    })();
+
+    // Hero pan on load
+    (function() {
+      var hero = document.querySelector('.product-hero');
+      if (hero) setTimeout(function(){ hero.classList.add('is-loaded'); }, 80);
+    })();
+  </script>
 </body>
 </html>
-
-
-
-

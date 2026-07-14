@@ -61,6 +61,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 input, textarea, select { font-family: inherit; }
 address { font-style: normal; }
 
+/* Brand text selection colour */
+::selection { background: var(--saffron); color: var(--forest); }
+::-moz-selection { background: var(--saffron); color: var(--forest); }
+
 /* === TYPOGRAPHY === */
 h1, h2, h3, h4 {
   font-family: var(--serif);
@@ -1248,6 +1252,7 @@ p  { margin: 0; }
   margin: 0 auto 40px; 
   max-width: 50ch; 
   line-height: 1.6;
+  text-align: center;
 }
 
 /* === QUOTE SECTION === */
