@@ -191,5 +191,4 @@
       wrapper.appendChild(table);
     }
   });
-});
 }());
