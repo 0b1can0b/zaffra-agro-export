@@ -1560,22 +1560,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .step { grid-column: 1; border-right: none !important; border-top: 1px solid var(--hairline); }
   .step:first-child { border-top: none; }
 
-  /* Product grid → single column */
-  .product-grid { grid-template-columns: 1fr; }
+  /* Product grid — 2 columns matching desktop mosaic layout */
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
   .product-card:nth-child(n+4) { display: flex; }
   .product-intro {
-    text-align: center !important;
-    align-items: center !important;
+    padding: 20px 16px !important;
+    text-align: left !important;
+    align-items: flex-start !important;
   }
   .product-intro .section-header {
-    text-align: center !important;
+    text-align: left !important;
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
+    align-items: flex-start !important;
+    margin-bottom: 0 !important;
+  }
+  .product-intro h2 {
+    font-size: 1.35rem !important;
+    line-height: 1.2 !important;
   }
   .product-intro p {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    font-size: 13px !important;
+    line-height: 1.45 !important;
+    margin-top: 12px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+  }
+  .product-intro .label {
+    margin-bottom: 8px !important;
+    font-size: 9.5px !important;
   }
 
   /* Gallery — swipeable horizontal card list */
