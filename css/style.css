@@ -1445,7 +1445,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   /* Split layouts */
   .split-layout { grid-template-columns: 1fr; }
   .split-layout.flip { direction: ltr; }
-  .split-image { min-height: 280px; }
+  .split-image {
+    min-height: auto !important;
+    aspect-ratio: 16/10 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25) !important;
+    margin-top: 24px !important;
+    overflow: hidden !important;
+  }
 
   /* Generic grids */
   .grid-2 { grid-template-columns: 1fr; }
