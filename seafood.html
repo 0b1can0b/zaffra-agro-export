@@ -1,0 +1,935 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seafood Export — Shrimp, Fish &amp; Cephalopods | Zaffra Agro Export LLP</title>
+  <meta name="description" content="Zaffra Agro Export LLP supplies MPEDA-registered, HACCP-certified frozen seafood from Veraval, Gujarat — Vannamei shrimp, Pomfret, Seer fish, squid and cuttlefish. Global export.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── Product Hero ── */
+
+
+    /* ── Section base ── */
+    .section { padding: clamp(4rem, 8vw, 8rem) 5vw; }
+    .section-inner { max-width: 1240px; margin: 0 auto; }
+    .section-cream { background: #FDFAF4; }
+    .section-stone { background: #EDE6D8; }
+    .section-forest { background: #0F2318; }
+
+    /* ── Labels / eyebrows ── */
+    .label {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #C89020;
+      margin-bottom: 1rem;
+    }
+    .label--light { color: rgba(200,144,32,0.9); }
+
+    /* ── Section headings ── */
+    .section-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4.5vw, 3.5rem);
+      font-weight: 700;
+      color: #0F2318;
+      line-height: 1.15;
+      margin: 0 0 1.25rem;
+      letter-spacing: -0.02em;
+    }
+    .section-heading--light { color: #FDFAF4; }
+    .section-sub {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      color: #7A7268;
+      max-width: 640px;
+      line-height: 1.75;
+      margin: 0 0 3rem;
+    }
+    .section-sub--light { color: rgba(253,250,244,0.7); }
+
+    /* ── Intro split ── */
+    .intro-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    @media (max-width: 800px) { .intro-split { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .intro-text p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #7A7268;
+      margin: 0 0 1.25rem;
+    }
+    .intro-text p:first-of-type {
+      font-size: 1.18rem;
+      color: #141210;
+      font-weight: 500;
+    }
+    .intro-img-wrap { position: relative; }
+    .intro-img-wrap img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border-radius: 2px;
+      display: block;
+    }
+    .intro-img-badge {
+      position: absolute;
+      bottom: -1.5rem;
+      left: -1.5rem;
+      background: #C89020;
+      color: #0F2318;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 1.25rem 1.5rem;
+      letter-spacing: 0.04em;
+      max-width: 180px;
+      line-height: 1.4;
+    }
+
+    /* ── Variety Grid ── */
+    .variety-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 1000px) { .variety-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 580px) { .variety-grid { grid-template-columns: 1fr; } }
+
+    .variety-card {
+      background: #fff;
+      border: 1px solid #D8CFBD;
+      overflow: hidden;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .variety-card:hover {
+      box-shadow: 0 12px 40px rgba(15,35,24,0.12);
+      transform: translateY(-4px);
+    }
+    .variety-img { margin: 0; overflow: hidden; }
+    .variety-img img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .variety-card:hover .variety-img img { transform: scale(1.06); }
+    .variety-info { padding: 1.5rem; }
+    .variety-info h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #0F2318;
+      margin: 0 0 0.6rem;
+    }
+    .variety-info p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      color: #7A7268;
+      line-height: 1.7;
+      margin: 0 0 1rem;
+    }
+    .variety-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .tag {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.65rem;
+      border: 1px solid #D8CFBD;
+      color: #7A7268;
+      border-radius: 2px;
+    }
+    .tag--gold { border-color: #C89020; color: #C89020; }
+    .tag--forest { background: #0F2318; color: #FDFAF4; border-color: #0F2318; }
+
+    /* ── Full-bleed image band ── */
+    .img-band {
+      position: relative;
+      height: clamp(320px, 55vw, 620px);
+      overflow: hidden;
+    }
+    .img-band img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .img-band-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(15,35,24,0.9) 0%, rgba(15,35,24,0.3) 60%, transparent 100%);
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
+    .img-band-text { max-width: 520px; }
+    .img-band-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      color: #FDFAF4;
+      margin: 0 0 1rem;
+      line-height: 1.2;
+    }
+    .img-band-text p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      color: rgba(253,250,244,0.78);
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    /* ── Seasonal Calendar ── */
+    .cal-wrap { overflow-x: auto; margin-top: 2.5rem; }
+    .cal-table { width: 100%; min-width: 700px; border-collapse: collapse; }
+    .cal-table th, .cal-table td {
+      padding: 0.75rem 0.6rem;
+      text-align: center;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      border-bottom: 1px solid #D8CFBD;
+    }
+    .cal-table th {
+      font-weight: 600;
+      color: #0F2318;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: #D8CFBD;
+    }
+    .cal-table td:first-child {
+      text-align: left;
+      font-weight: 600;
+      color: #141210;
+      font-size: 0.88rem;
+      min-width: 160px;
+    }
+    .cal-peak {
+      background: #C89020;
+      border-radius: 12px;
+      display: inline-block;
+      width: 100%;
+      height: 10px;
+    }
+    .cal-avail {
+      background: rgba(200,144,32,0.3);
+      border-radius: 12px;
+      display: inline-block;
+      width: 100%;
+      height: 10px;
+    }
+    .cal-empty { color: #D8CFBD; }
+
+    /* ── Specs Table ── */
+    .specs-table { width: 100%; border-collapse: collapse; margin-top: 2.5rem; }
+    .specs-table tr { border-bottom: 1px solid #D8CFBD; }
+    .specs-table tr:last-child { border-bottom: none; }
+    .specs-table th {
+      width: 220px;
+      text-align: left;
+      padding: 1rem 1.5rem 1rem 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #7A7268;
+      vertical-align: top;
+    }
+    .specs-table td {
+      padding: 1rem 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      color: #141210;
+      line-height: 1.65;
+    }
+
+    /* ── Process Steps ── */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 3rem;
+    }
+    @media (max-width: 800px) { .process-steps { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .process-steps { grid-template-columns: 1fr; } }
+    .process-step {
+      padding: 2.5rem 2rem;
+      border-right: 1px solid rgba(216,207,189,0.3);
+    }
+    .process-step:last-child { border-right: none; }
+    .step-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: rgba(200,144,32,0.2);
+      line-height: 1;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .process-step h4 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #C89020;
+      margin: 0 0 0.6rem;
+    }
+    .process-step p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      color: rgba(253,250,244,0.65);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ── Stats row ── */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-top: 1px solid rgba(216,207,189,0.2);
+      border-left: 1px solid rgba(216,207,189,0.2);
+      margin-top: 4rem;
+    }
+    @media (max-width: 700px) { .stats-row { grid-template-columns: repeat(2, 1fr); } }
+    .stat-item {
+      padding: 2rem 1.5rem;
+      border-right: 1px solid rgba(216,207,189,0.2);
+      border-bottom: 1px solid rgba(216,207,189,0.2);
+    }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: #C89020;
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    .stat-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      color: rgba(253,250,244,0.6);
+      line-height: 1.5;
+    }
+
+    /* ── Cert badges ── */
+    .cert-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
+    .cert-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(253,250,244,0.06);
+      border: 1px solid rgba(216,207,189,0.2);
+      padding: 0.7rem 1.2rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: rgba(253,250,244,0.8);
+      letter-spacing: 0.06em;
+    }
+    .cert-badge::before { content: '✓'; color: #C89020; font-size: 1rem; }
+
+    /* ── Related Products ── */
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) { .related-grid { grid-template-columns: 1fr; } }
+    .related-card {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      text-decoration: none;
+    }
+    .related-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+    .related-card:hover img { transform: scale(1.07); }
+    .related-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15,35,24,0.88) 0%, rgba(15,35,24,0.2) 60%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem;
+    }
+    .related-card-overlay span {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #C89020;
+      margin-bottom: 0.3rem;
+    }
+    .related-card-overlay h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #FDFAF4;
+      margin: 0;
+    }
+
+    /* ── CTA Band ── */
+    .highlight-band {
+      background: #C89020;
+      padding: clamp(3rem, 6vw, 5rem) 5vw;
+      text-align: center;
+    }
+    .highlight-band h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      color: #0F2318;
+      margin: 0 0 0.75rem;
+    }
+    .highlight-band p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      color: rgba(15,35,24,0.75);
+      margin: 0 0 2rem;
+    }
+    .btn-dark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #0F2318;
+      color: #FDFAF4;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 1rem 2.25rem;
+      text-decoration: none;
+      transition: background 0.25s, transform 0.2s;
+    }
+    .btn-dark:hover { background: #193D20; transform: translateY(-2px); }
+
+    /* ── Reveal animation ── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+  </style>
+</head>
+<body class="page-interior">
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="brand-word">ZAFFRA<small>AGRO EXPORT LLP</small></span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="has-dropdown"><a href="products.html" class="current">Products</a>
+            <div class="dropdown">
+              <a href="fresh-fruits.html">Fresh Fruits</a>
+              <a href="fresh-vegetables.html">Fresh Vegetables</a>
+              <a href="seafood.html">Seafood</a>
+              <a href="agricultural.html">Agricultural Products</a>
+              <a href="spices.html">Spices</a>
+            </div>
+          </li>
+          <li><a href="quality.html">Quality</a></li>
+          <li><a href="packaging.html">Packaging</a></li>
+          <li><a href="countries.html">Markets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn-nav-enquire">Enquire</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE PANEL -->
+  <div class="mobile-panel" id="mobile-panel" aria-hidden="true">
+    <button class="mobile-panel-close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg></button>
+    <nav><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="fresh-fruits.html">Fresh Fruits</a></li>
+      <li><a href="fresh-vegetables.html">Fresh Vegetables</a></li>
+      <li><a href="seafood.html">Seafood</a></li>
+      <li><a href="agricultural.html">Agricultural Products</a></li>
+      <li><a href="spices.html">Spices</a></li>
+      <li><a href="quality.html">Quality</a></li>
+      <li><a href="packaging.html">Packaging</a></li>
+      <li><a href="countries.html">Markets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+    <a href="contact.html" class="btn-primary" style="margin-top:auto;display:inline-flex">Send Enquiry</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="product-hero" style="background-image:url('images/seafood.png')">
+      <div class="hero-inner">
+        <div class="hero-category">Seafood</div>
+        <h1>Seafood</h1>
+        <p class="hero-subtitle">MPEDA-registered, HACCP-certified seafood from the Gulf of Kutch to reefer ships worldwide.</p>
+        <div class="hero-badges">
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            MPEDA Approved
+          </span>
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            ISO 22000 Certified
+          </span>
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            EU Approved
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO SECTION -->
+    <section class="section section-cream">
+      <div class="section-inner">
+        <div class="intro-split">
+          <div class="intro-text">
+            <span class="label reveal">Product Category — 03</span>
+            <h2 class="section-heading reveal">From the Gulf of Kutch<br>to Reefer Ships Worldwide</h2>
+            <p class="reveal">Gujarat's 1,600 km coastline — the longest of any Indian state — and the nutrient-rich waters of the Gulf of Kutch make Veraval and Porbandar among India's most productive seafood hubs. Zaffra Agro operates a dedicated MPEDA-approved processing facility in Veraval, sourcing from certified trawlers and registered aquaculture farms across Saurashtra.</p>
+            <p class="reveal">Our seafood program handles both wild-caught species — Pomfret, Seer, and squid landed daily at Veraval port — and farmed Vannamei shrimp from certified ponds in Bhavnagar and Jamnagar districts. Every batch is IQF or block-frozen within hours of processing, HACCP-documented, and stored at -18°C through to container loading.</p>
+            <p class="reveal">Whether you require retail-ready IQF shrimp for a European supermarket chain, bulk block-frozen fish for Gulf food-service distributors, or private-label packing for an Asian importer, our export desk manages MPEDA documentation, health certification, and cold-chain logistics end to end.</p>
+          </div>
+          <div class="intro-img-wrap reveal">
+            <img src="images/field_sunrise.png" alt="Fresh shrimp on ice at processing facility" loading="lazy" decoding="async">
+            <div class="intro-img-badge">MPEDA Approved<br>Veraval Facility</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VARIETY GRID -->
+    <section class="section section-stone">
+      <div class="section-inner">
+        <div class="section-header section-header--center"><span class="label reveal">Our Species</span>
+        <h2 class="section-heading reveal">Six Export Species,<br>Processed to HACCP Standard</h2>
+        <p class="section-sub reveal">Each species is processed to strict cold-chain and food-safety protocols, with full traceability from catch or pond to container.</p></div>
+
+        <div class="variety-grid">
+
+          <div class="variety-card reveal reveal-delay-1">
+            <figure class="variety-img">
+              <img src="images/seafood.png" alt="Vannamei shrimp on ice" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Vannamei Shrimp</h3>
+              <p>India's leading aquaculture export species. Farmed in certified ponds across Bhavnagar and Jamnagar, our Vannamei is harvested, iced, and delivered to the Veraval plant within 4 hours for IQF processing. Available head-on, headless shell-on (HLSO), and peeled &amp; deveined (P&amp;D), graded by count per kilogram.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">16/20 – 50/70 Count</span>
+                <span class="tag">IQF / Block Frozen</span>
+                <span class="tag">Aug – Dec Peak</span>
+                <span class="tag">1 kg / 2 kg Carton</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-2">
+            <figure class="variety-img">
+              <img src="images/fresh_fruits.png" alt="Black Tiger shrimp" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Black Tiger Shrimp</h3>
+              <p>Prized in Japanese and Southeast Asian markets for its firm texture and bold striping, our Black Tiger shrimp is sourced from traditional low-density ponds along the Kutch coast. Slower-grown and larger-bodied than Vannamei, it commands premium positioning in sashimi-grade and tempura applications.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">8/12 – 21/25 Count</span>
+                <span class="tag">Sashimi Grade</span>
+                <span class="tag">Sep – Jan Peak</span>
+                <span class="tag">IQF Carton</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-3">
+            <figure class="variety-img">
+              <img src="images/fresh_vegetables.png" alt="Whole Pomfret fish on ice" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Pomfret</h3>
+              <p>Wild-caught silver and black Pomfret landed daily at Veraval and Porbandar. Whole-round or dressed, this delicate white-fleshed fish is a staple across Gulf and Southeast Asian food-service menus. Sized and graded by weight, block-frozen in interleaved layers to preserve individual fillet integrity.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">200g – 800g Grade</span>
+                <span class="tag">Whole / Dressed</span>
+                <span class="tag">Oct – May Peak</span>
+                <span class="tag">10 kg Master Carton</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-1">
+            <figure class="variety-img">
+              <img src="images/mangoes_golden.png" alt="Seer fish steaks" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Seer Fish (Surmai)</h3>
+              <p>One of India's most sought-after export fin-fish species, prized for its dense, boneless steaks and rich flavour. Caught by registered trawlers operating out of Veraval, Seer fish is processed into whole, gutted, or steak-cut formats to buyer specification and IQF frozen at source.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">1 kg – 5 kg Whole</span>
+                <span class="tag">Steak Cut Available</span>
+                <span class="tag">Nov – Apr Peak</span>
+                <span class="tag">20 kg Master Carton</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-2">
+            <figure class="variety-img">
+              <img src="images/markets_hero.png" alt="Cleaned squid rings and tubes" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Squid</h3>
+              <p>Whole-cleaned, tubes, and rings processed from fresh Loligo and Doryteuthis squid landed along the Saurashtra coast. Hand-cleaned to remove skin and cartilage, then IQF frozen to retain the firm, translucent texture demanded by European and East Asian buyers.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">Tubes / Rings / Whole</span>
+                <span class="tag">Hand Cleaned</span>
+                <span class="tag">Year-Round</span>
+                <span class="tag">1 kg / 2 kg Block</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-3">
+            <figure class="variety-img">
+              <img src="images/origin_story.png" alt="Cleaned cuttlefish" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Cuttlefish</h3>
+              <p>Whole-cleaned and fillet cuttlefish processed to consistent thickness and colour grade. A strong performer in Mediterranean and East Asian markets, our cuttlefish is block-frozen in glazed layers to protect texture through long-distance sea freight.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">Whole / Fillet</span>
+                <span class="tag">Glazed Block Frozen</span>
+                <span class="tag">Year-Round</span>
+                <span class="tag">10 kg Carton</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL-BLEED IMAGE BAND -->
+    <div class="img-band">
+      <img src="images/pack_hero.png" alt="Fishing trawlers at Veraval port, Gujarat" loading="lazy" decoding="async">
+      <div class="img-band-overlay">
+        <div class="container" style="width: 100%;">
+          <div class="img-band-text">
+          <span class="label label--light reveal">Source — Veraval, Gujarat</span>
+          <h2 class="reveal">From Trawler to Blast Freezer<br>in Under 6 Hours</h2>
+          <p class="reveal">Our Veraval processing facility sits within minutes of the fishing harbour, allowing wild catch to move from trawler to ice-bed to grading line the same morning it lands. Farmed shrimp arrives live-chilled from certified ponds within a controlled cold chain. Every batch is HACCP-documented from raw material intake through to blast freezing and cold storage at -18°C.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEASONAL CALENDAR -->
+    <section class="section section-cream">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label reveal">Availability Planning</span>
+        <h2 class="section-heading reveal">Catch &amp; Processing Calendar</h2>
+        <p class="section-sub reveal">Wild-catch species follow India's monsoon fishing patterns, including the annual trawling-ban window. Farmed shrimp is available on a near year-round staggered harvest cycle. Our team can advise on forward contracts for each season.</p>
+        </div>
+        <div class="cal-wrap reveal">
+          <table class="cal-table">
+            <thead>
+              <tr>
+                <th>Variety</th>
+                <th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th><th>May</th><th>Jun</th>
+                <th>Jul</th><th>Aug</th><th>Sep</th><th>Oct</th><th>Nov</th><th>Dec</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Vannamei Shrimp</td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+              </tr>
+              <tr>
+                <td>Black Tiger Shrimp</td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+              </tr>
+              <tr>
+                <td>Pomfret</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+              </tr>
+              <tr>
+                <td>Seer Fish</td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+              </tr>
+              <tr>
+                <td>Squid</td>
+                <td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td>
+              </tr>
+              <tr>
+                <td>Cuttlefish</td>
+                <td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td><td><span class="cal-peak"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-family:'DM Sans',sans-serif;font-size:0.78rem;color:#7A7268;margin-top:1rem;" class="reveal">
+          <strong style="color:#C89020">&#9632;</strong> Peak season &nbsp;&nbsp;
+          <strong style="color:rgba(200,144,32,0.4)">&#9632;</strong> Available / Off-shore fishing ban (Jun&ndash;Jul)
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPORT SPECS -->
+    <section class="section section-stone">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label reveal">Trade Specifications</span>
+        <h2 class="section-heading reveal">Export Specifications &amp; Terms</h2>
+        <p class="section-sub reveal">All specifications are negotiable to accommodate specific buyer requirements. Contact our export desk for tailored term sheets and phytosanitary documentation.</p>
+        </div>
+        <table class="specs-table reveal">
+          <tbody>
+            <tr>
+              <th>Minimum Order</th>
+              <td>1 × 20ft Reefer Container (~14–16 MT net weight, species dependent). Consolidated LCL available for trial orders above 500 kg.</td>
+            </tr>
+            <tr>
+              <th>Packaging Formats</th>
+              <td>1 kg / 2 kg IQF retail cartons; 10 kg / 20 kg block-frozen master cartons; glazed layer-pack for cephalopods. Custom private-label and retail packing on request.</td>
+            </tr>
+            <tr>
+              <th>Freezing &amp; Cold Storage</th>
+              <td>IQF or plate-frozen to core temperature ≤-18°C within 4 hours of processing. Cold storage and reefer containers maintained at -18°C to -20°C throughout transit.</td>
+            </tr>
+            <tr>
+              <th>Certifications</th>
+              <td>MPEDA Export Licence · HACCP Certified · EIC/EIA Approved Processing Unit · Health Certificate (per consignment) · Certificate of Origin. EU, UK, US, GCC import-compliant.</td>
+            </tr>
+            <tr>
+              <th>Residue &amp; Microbial Testing</th>
+              <td>Pre-shipment antibiotic residue and microbial testing at NABL-accredited laboratories. Full test reports provided with each consignment, compliant with EU Regulation 2017/625 and USFDA requirements.</td>
+            </tr>
+            <tr>
+              <th>Incoterms</th>
+              <td>FOB Mundra / Pipavav · CFR / CIF all major ports · DDP available for UAE and Singapore on confirmed annual programmes.</td>
+            </tr>
+            <tr>
+              <th>Transit Times</th>
+              <td>UAE / Gulf: 5–7 days · UK / EU: 20–24 days · Southeast Asia: 10–14 days · East Africa: 12–16 days</td>
+            </tr>
+            <tr>
+              <th>Payment Terms</th>
+              <td>LC at sight (preferred) · 30% advance + balance against BL copy for established buyers · Open account on credit-approved annual programmes.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PROCESS STEPS -->
+    <section class="section section-forest">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label label--light reveal">Our Process</span>
+        <h2 class="section-heading section-heading--light reveal">From Trawler &amp; Pond to<br>Your Cold Store</h2>
+        <p class="section-sub section-sub--light reveal">A rigorous four-stage chain of custody guarantees that the quality we process in Veraval arrives intact at your destination port.</p>
+        </div>
+        <div class="process-steps">
+          <div class="process-step reveal reveal-delay-1">
+            <span class="step-num">01</span>
+            <h4>Catch &amp; Harvest</h4>
+            <p>Wild species are landed daily by registered trawlers at Veraval and Porbandar; farmed shrimp is harvested from certified ponds and transported live-chilled. All raw material is logged for full batch traceability from source.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-2">
+            <span class="step-num">02</span>
+            <h4>Grading &amp; Processing</h4>
+            <p>Every batch passes through a HACCP-controlled line: washing, sorting by count/size, deheading or filleting as required, and visual defect inspection. Only export-grade material proceeds to freezing.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-3">
+            <span class="step-num">03</span>
+            <h4>IQF &amp; Block Freezing</h4>
+            <p>Graded product is individually quick-frozen or plate-frozen to a core temperature of -18°C within four hours of processing, then glazed, weighed, and packed to buyer specification with full lot coding.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-4">
+            <span class="step-num">04</span>
+            <h4>Cold Chain</h4>
+            <p>Frozen cartons move directly into on-site cold storage and temperature-monitored reefer containers — never broken until the destination cold store. Temperature logs are shared digitally with buyers on arrival.</p>
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-item reveal reveal-delay-1">
+            <span class="stat-num">1,600 km</span>
+            <span class="stat-label">Gujarat coastline within our sourcing network</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <span class="stat-num">-18&deg;C</span>
+            <span class="stat-label">Unbroken cold chain from freezer to port</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <span class="stat-num">6h</span>
+            <span class="stat-label">Maximum catch-to-blast-freezer turnaround</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-4">
+            <span class="stat-num">20+</span>
+            <span class="stat-label">Countries served across 4 continents</span>
+          </div>
+        </div>
+
+        <div class="cert-row reveal">
+          <span class="cert-badge">MPEDA Registered</span>
+          <span class="cert-badge">HACCP Certified</span>
+          <span class="cert-badge">EIC / EIA Approved</span>
+          <span class="cert-badge">FSSAI Licensed</span>
+          <span class="cert-badge">Health Certificate Per Shipment</span>
+          <span class="cert-badge">NABL Lab Tested</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED PRODUCTS -->
+    <section class="section section-cream">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label reveal">Explore More</span>
+        <h2 class="section-heading reveal">Related Product Categories</h2>
+        </div>
+        <div class="related-grid">
+          <a href="fresh-fruits.html" class="related-card reveal reveal-delay-1">
+            <img src="images/fresh_fruits.png" alt="Fresh fruit export" loading="lazy" decoding="async">
+            <div class="related-card-overlay">
+              <span>Category 01</span>
+              <h3>Fresh Fruits</h3>
+            </div>
+          </a>
+          <a href="agricultural.html" class="related-card reveal reveal-delay-2">
+            <img src="images/agricultural_products.png" alt="Agricultural commodities export" loading="lazy" decoding="async">
+            <div class="related-card-overlay">
+              <span>Category 04</span>
+              <h3>Agricultural Products</h3>
+            </div>
+          </a>
+          <a href="spices.html" class="related-card reveal reveal-delay-3">
+            <img src="images/products_hero.png" alt="Indian spices export" loading="lazy" decoding="async">
+            <div class="related-card-overlay">
+              <span>Category 05</span>
+              <h3>Spices</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <div class="highlight-band">
+      <span class="label" style="color:rgba(15,35,24,0.6)">Get In Touch</span>
+      <h2>Ready to Source Gujarat's Finest Seafood?</h2>
+      <p>Share your species and specification requirements and our export team will respond within one business day with pricing, availability, and sample options.</p>
+      <a href="contact.html" class="btn-dark">Request a Quotation &#8594;</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand-col">
+        <a href="index.html" class="brand brand--light">
+          <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="brand-word">ZAFFRA<small>AGRO EXPORT LLP</small></span>
+        </a>
+        <p class="footer-tagline">Nature &bull; Purity &bull; Trust</p>
+        <p class="footer-desc">Exporting premium fresh produce, seafood, and agricultural commodities from Gujarat, India to global markets since 2005.</p>
+      </div>
+      <div class="footer-nav-col"><h4>Products</h4><ul>
+        <li><a href="fresh-fruits.html">Fresh Fruits</a></li>
+        <li><a href="fresh-vegetables.html">Fresh Vegetables</a></li>
+        <li><a href="seafood.html">Seafood</a></li>
+        <li><a href="agricultural.html">Agricultural Products</a></li>
+        <li><a href="spices.html">Spices</a></li>
+      </ul></div>
+      <div class="footer-nav-col"><h4>Company</h4><ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="quality.html">Quality &amp; Certifications</a></li>
+        <li><a href="packaging.html">Packaging &amp; Logistics</a></li>
+        <li><a href="countries.html">Export Markets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-contact-col"><h4>Contact</h4>
+        <address>
+          <p>Zaffra House, Near APMC Yard,<br>Ahmedabad, Gujarat 380001</p>
+          <p><a href="mailto:export@zaffraagro.com">export@zaffraagro.com</a></p>
+          <p><a href="tel:+917940125588">+91 79 4012 5588</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Zaffra Agro Export LLP. All rights reserved.</p>
+      <p>APEDA Reg. No. APEDA/REG/000000 &nbsp;&bull;&nbsp; GST: 24AAAAA0000A1Z5</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zaffra - The Parallel Stagger</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    :root {
+      --gold-light: #F2D270;
+      --gold-mid: #C89020;
+      --gold-dark: #8A5A19;
+    }
+    body { background: #0A140F; color: var(--cream); font-family: var(--sans); }
+    
+    .intro-header {
+      text-align: center; 
+      padding: 100px var(--gutter-x) 60px; 
+      max-width: 800px; 
+      margin: 0 auto;
+    }
+    
+    .lockup-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 30px;
+      padding: 0 var(--gutter-x) 120px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .lockup-card {
+      background: linear-gradient(145deg, rgba(255,255,255,0.02) 0%, rgba(0,0,0,0.3) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 4px;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .lockup-card:hover {
+      border-color: rgba(200, 144, 32, 0.4);
+      background: linear-gradient(145deg, rgba(255,255,255,0.04) 0%, rgba(0,0,0,0.4) 100%);
+    }
+
+    .logo-mark {
+      width: 72px;
+      height: 72px;
+      flex-shrink: 0;
+    }
+    .logo-mark svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .logo-text-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      border-left: 1px solid rgba(255,255,255,0.1);
+      padding-left: 32px;
+    }
+    
+    .brand-name {
+      font-family: var(--serif);
+      font-size: 34px;
+      letter-spacing: 0.1em;
+      color: var(--cream);
+      margin-bottom: 6px;
+      line-height: 1;
+    }
+    .brand-sub {
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 0.35em;
+      color: var(--saffron);
+      text-transform: uppercase;
+    }
+    
+    .concept-title {
+      position: absolute;
+      bottom: 12px; right: 16px;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(253,250,244,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute;">
+    <defs>
+      <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="var(--gold-light)" />
+        <stop offset="50%" stop-color="var(--gold-mid)" />
+        <stop offset="100%" stop-color="var(--gold-dark)" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="link-arrow link-arrow--cream" style="font-size: 14px;">&larr; Back to Homepage</a>
+    </div>
+  </header>
+
+  <div class="intro-header">
+    <span class="label label--light">The Masterpiece</span>
+    <h1 style="color:var(--cream); margin-top:20px; margin-bottom: 24px; font-size: clamp(2.5rem, 4vw, 3.5rem);">The Parallel Stagger</h1>
+    <p class="lead" style="color:rgba(253,250,244,0.6);">Your new sketch is a masterclass in geometry. Every horizontal prong of the 'E' extends precisely the same distance from the diagonal, creating a perfect parallel shear on the right edge.</p>
+  </div>
+  
+  <div class="lockup-grid">
+
+    <!-- Concept 1: The Rounded Favorite -->
+    <div class="lockup-card">
+      <div class="logo-mark">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <!-- Top bar from 10 to 90. Diagonal from 50 to 10. Bottom from 10 to 50. Middle from 30 to 70. -->
+          <path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="logo-text-group">
+        <div class="brand-name">ZAFFRA</div>
+        <div class="brand-sub">Agro Export LLP</div>
+      </div>
+      <div class="concept-title">V1. Parallel Stagger (Round)</div>
+    </div>
+
+    <!-- Concept 2: The Sharp Corporate -->
+    <div class="lockup-card">
+      <div class="logo-mark">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter"/>
+        </svg>
+      </div>
+      <div class="logo-text-group">
+        <div class="brand-name">ZAFFRA</div>
+        <div class="brand-sub">Agro Export LLP</div>
+      </div>
+      <div class="concept-title">V2. Parallel Stagger (Sharp)</div>
+    </div>
+
+    <!-- Concept 3: The Blueprint (with phantom parallel line) -->
+    <div class="lockup-card">
+      <div class="logo-mark">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <!-- The core mark in thin strokes -->
+          <path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter"/>
+          <!-- A phantom line connecting the staggered right edges, proving they are perfectly parallel to the diagonal spine! -->
+          <path d="M90 15 L50 85" fill="none" stroke="rgba(253,250,244,0.15)" stroke-width="1.5" stroke-dasharray="2,3"/>
+        </svg>
+      </div>
+      <div class="logo-text-group">
+        <div class="brand-name">ZAFFRA</div>
+        <div class="brand-sub">Agro Export LLP</div>
+      </div>
+      <div class="concept-title">V3. Blueprint (Phantom Parallel)</div>
+    </div>
+
+    <!-- Concept 4: Variable Serif Weight -->
+    <div class="lockup-card">
+      <div class="logo-mark">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <!-- Thick horizontals -->
+          <path d="M10 15 H90 M10 85 H50" fill="none" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="square"/>
+          <!-- Thin diagonal and middle bar -->
+          <path d="M50 15 L10 85 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="square"/>
+        </svg>
+      </div>
+      <div class="logo-text-group">
+        <div class="brand-name">ZAFFRA</div>
+        <div class="brand-sub">Agro Export LLP</div>
+      </div>
+      <div class="concept-title">V4. Variable Serif Weight</div>
+    </div>
+
+    <!-- Concept 5: The Two-Tone Reveal -->
+    <div class="lockup-card">
+      <div class="logo-mark">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <!-- The core Z in Gold -->
+          <path d="M10 15 H50 L10 85 H50" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter"/>
+          <!-- The E prongs extending in Cream -->
+          <path d="M50 15 H90 M30 50 H70" fill="none" stroke="var(--cream)" stroke-width="8" stroke-linecap="square" opacity="0.9"/>
+        </svg>
+      </div>
+      <div class="logo-text-group">
+        <div class="brand-name">ZAFFRA</div>
+        <div class="brand-sub">Agro Export LLP</div>
+      </div>
+      <div class="concept-title">V5. The Two-Tone Reveal</div>
+    </div>
+
+    <!-- Concept 6: The Heavy Stencil Shear -->
+    <div class="lockup-card">
+      <div class="logo-mark">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 15 H44 M56 15 H90" fill="none" stroke="url(#goldGrad)" stroke-width="10" stroke-linecap="square"/>
+          <path d="M48 18 L34 43 M26 57 L12 82" fill="none" stroke="url(#goldGrad)" stroke-width="10" stroke-linecap="square"/>
+          <path d="M10 85 H50" fill="none" stroke="url(#goldGrad)" stroke-width="10" stroke-linecap="square"/>
+          <path d="M35 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="10" stroke-linecap="square"/>
+        </svg>
+      </div>
+      <div class="logo-text-group">
+        <div class="brand-name">ZAFFRA</div>
+        <div class="brand-sub">Agro Export LLP</div>
+      </div>
+      <div class="concept-title">V6. Heavy Stencil Shear</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Export Markets &amp; Destinations — Zaffra Agro Export LLP</title>
+  <meta name="description" content="Zaffra Agro Export LLP exports to 15+ countries across the Gulf, Europe and South-East Asia. Discover our global export markets.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css" />
+  <style>
+
+    /* ── Destination list ────────────────────────────── */
+    .dest-regions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+    .dest-region {
+      background: var(--white);
+      border: 1px solid var(--hairline);
+      padding: 36px 32px;
+    }
+    .dest-region-flag {
+      font-size: 2rem;
+      margin-bottom: 18px;
+      display: block;
+      line-height: 1;
+    }
+    .dest-region h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+    .dest-region .region-sub {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--saffron);
+      margin-bottom: 18px;
+      display: block;
+    }
+    .dest-countries {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+    .dest-country-badge {
+      font-size: 12px;
+      font-weight: 500;
+      background: var(--stone);
+      color: var(--ink);
+      padding: 4px 12px;
+      border-radius: 2px;
+    }
+    .dest-products {
+      font-size: 0.88rem;
+      color: var(--mid);
+      line-height: 1.6;
+      border-top: 1px solid var(--hairline);
+      padding-top: 14px;
+      margin-top: 6px;
+    }
+    .dest-products strong { color: var(--ink); font-weight: 600; }
+
+    @media (max-width: 900px) {
+      .dest-regions { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 580px) {
+      .dest-regions { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="page-interior">
+
+  <!-- ── NAVIGATION ──────────────────────────────────────────────────────── -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand" aria-label="Zaffra Home">
+        <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="brand-word">ZAFFRA<small>AGRO EXPORT LLP</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="has-dropdown">
+            <a href="products.html">Products</a>
+            <div class="dropdown">
+              <a href="fresh-fruits.html">Fresh Fruits</a>
+              <a href="fresh-vegetables.html">Fresh Vegetables</a>
+              <a href="seafood.html">Seafood</a>
+              <a href="agricultural.html">Agricultural Products</a>
+              <a href="spices.html">Spices</a>
+            </div>
+          </li>
+          <li><a href="quality.html">Quality</a></li>
+          <li><a href="packaging.html">Packaging</a></li>
+          <li><a href="countries.html" class="current">Markets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn-nav-enquire">Enquire</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-panel" id="mobile-panel" aria-hidden="true">
+    <button class="mobile-panel-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/>
+      </svg>
+    </button>
+    <nav aria-label="Mobile navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="fresh-fruits.html">Fresh Fruits</a></li>
+        <li><a href="fresh-vegetables.html">Fresh Vegetables</a></li>
+        <li><a href="seafood.html">Seafood</a></li>
+        <li><a href="agricultural.html">Agricultural Products</a></li>
+        <li><a href="spices.html">Spices</a></li>
+        <li><a href="quality.html">Quality</a></li>
+        <li><a href="packaging.html">Packaging</a></li>
+        <li><a href="countries.html">Markets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn-primary" style="margin-top:auto;display:inline-flex">Send Enquiry</a>
+  </div>
+
+  <main>
+
+    <!-- ── PAGE HERO ───────────────────────────────────────────────────────── -->
+    <section class="page-hero" style="background-image:url('images/seafood.png')" aria-labelledby="markets-hero-h1">
+      <div class="container">
+        <span class="label label--light reveal">Global Reach</span>
+        <h1 id="markets-hero-h1" class="reveal">Our Export<br>Markets</h1>
+        <p class="lead reveal reveal-delay-1">India's finest produce reaching the Gulf, Europe and South-East Asia — 15+ countries, millions of tables.</p>
+      </div>
+    </section>
+
+    <!-- ── INTERACTIVE WORLD MAP ───────────────────────────────────────────── -->
+    <section class="map-section map-wrap" id="world-map" aria-label="Interactive world map of export destinations">
+      <div id="vector-map" style="width: 100%; height: 600px; background: var(--forest); z-index: 1;"></div>
+    </section>
+
+    <!-- ── DESTINATION DETAILS ─────────────────────────────────────────────── -->
+    <section class="section section-cream" id="destination-details" aria-labelledby="dest-heading">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <span class="label">Market Detail</span>
+          <h2 id="dest-heading">Where We Export</h2>
+          <p class="lead reveal reveal-delay-1">Each market has unique preferences, compliance requirements and import cycles. We are well-versed in all of them.</p>
+        </div>
+        <div class="dest-regions">
+
+          <div class="dest-region reveal">
+            <span class="dest-region-flag">🇦🇪</span>
+            <span class="region-sub">Gulf &amp; Middle East — Primary Market</span>
+            <h3>Gulf Cooperation Council</h3>
+            <div class="dest-countries">
+              <span class="dest-country-badge">UAE</span>
+              <span class="dest-country-badge">Saudi Arabia</span>
+              <span class="dest-country-badge">Qatar</span>
+              <span class="dest-country-badge">Kuwait</span>
+              <span class="dest-country-badge">Oman</span>
+              <span class="dest-country-badge">Bahrain</span>
+            </div>
+            <div class="dest-products">
+              <strong>Top exports:</strong> Alphonso &amp; Kesar mangoes, Red onions, Vannamei shrimp, Cumin, Coriander, Basmati rice, Pomegranates, Bananas.<br><br>
+              The Gulf accounts for over 60% of our fresh fruit and vegetable tonnage. With Indian expat populations exceeding 3.5 million in the UAE alone, demand for authentic fresh produce is consistent year-round. We maintain regular reefer container schedules to all major Gulf ports: Jebel Ali, Dammam, Hamad, Shuwaikh and Sohar.
+            </div>
+          </div>
+
+          <div class="dest-region reveal reveal-delay-1">
+            <span class="dest-region-flag">🇬🇧</span>
+            <span class="region-sub">Europe — Premium Market</span>
+            <h3>United Kingdom &amp; Europe</h3>
+            <div class="dest-countries">
+              <span class="dest-country-badge">United Kingdom</span>
+              <span class="dest-country-badge">Netherlands</span>
+              <span class="dest-country-badge">Germany</span>
+              <span class="dest-country-badge">Belgium</span>
+            </div>
+            <div class="dest-products">
+              <strong>Top exports:</strong> Fresh mangoes (UKCA/EU phytosanitary compliant), Frozen seafood (HACCP), Spices (EU MRL compliant), Sesame seeds, Fresh vegetables.<br><br>
+              European buyers demand full traceability, GlobalG.A.P. or equivalent, and strict MRL testing. All our European shipments are backed by NABL-accredited lab reports, phytosanitary certificates and EU-format health certificates. Arrival ports: Felixstowe, Rotterdam (distribution hub), Hamburg.
+            </div>
+          </div>
+
+          <div class="dest-region reveal reveal-delay-2">
+            <span class="dest-region-flag">🇸🇬</span>
+            <span class="region-sub">South &amp; South-East Asia — Growing Market</span>
+            <h3>South &amp; South-East Asia</h3>
+            <div class="dest-countries">
+              <span class="dest-country-badge">Singapore</span>
+              <span class="dest-country-badge">Malaysia</span>
+              <span class="dest-country-badge">Sri Lanka</span>
+              <span class="dest-country-badge">Bangladesh</span>
+            </div>
+            <div class="dest-products">
+              <strong>Top exports:</strong> Basmati &amp; non-basmati rice, Spices (cumin, coriander), Seafood (frozen IQF shrimp), Fresh vegetables, Peanuts, Sesame seeds.<br><br>
+              South-East Asia's growing Indian diaspora and thriving hospitality sector creates steady demand for authentic Indian agro products. Singapore and Malaysia function as regional distribution hubs from which goods reach Indonesia, Thailand and Vietnam. We offer FCL and LCL shipments via Chennai and Mundra ports.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── LOGISTICS SECTION ───────────────────────────────────────────────── -->
+    <section class="section section-stone" id="logistics" aria-labelledby="logistics-heading">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <span class="label">How We Ship</span>
+          <h2 id="logistics-heading">Logistics &amp;<br>Documentation</h2>
+        </div>
+        <div class="grid-2" style="gap:60px;align-items:start">
+          <div class="reveal">
+            <p class="body-lg" style="margin-bottom:24px">
+              Every Zaffra shipment is meticulously documented and tracked from origin to destination. We manage the entire export logistics chain — from farm-gate to port — so your operations receive a seamless, compliant consignment every time.
+            </p>
+            <h4 style="margin-bottom:16px;margin-top:32px">Standard Export Documents</h4>
+            <table class="specs-table">
+              <thead><tr><th>Document</th><th>Purpose</th></tr></thead>
+              <tbody>
+                <tr><td>Commercial Invoice</td><td>Customs valuation</td></tr>
+                <tr><td>Packing List</td><td>Cargo verification</td></tr>
+                <tr><td>Bill of Lading / AWB</td><td>Freight contract</td></tr>
+                <tr><td>Phytosanitary Certificate</td><td>Plant health clearance</td></tr>
+                <tr><td>Certificate of Origin</td><td>Trade preference / tariff</td></tr>
+                <tr><td>APEDA Certificate</td><td>Indian agro export compliance</td></tr>
+                <tr><td>Health Certificate</td><td>For seafood / EU market</td></tr>
+                <tr><td>Lab Test Reports</td><td>Pesticide residues, MRLs</td></tr>
+                <tr><td>Fumigation Certificate</td><td>Grain / pulse shipments</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <h4 style="margin-bottom:16px">Shipping Terms We Support</h4>
+            <table class="specs-table">
+              <thead><tr><th>Incoterm</th><th>Coverage</th></tr></thead>
+              <tbody>
+                <tr><td>EXW (Ex-Works)</td><td>Buyer arranges all freight</td></tr>
+                <tr><td>FOB (Free on Board)</td><td>Seller loads at origin port</td></tr>
+                <tr><td>CIF (Cost + Insurance + Freight)</td><td>Seller delivers to destination port</td></tr>
+                <tr><td>CFR (Cost + Freight)</td><td>Without seller's insurance</td></tr>
+                <tr><td>DAP (Delivered at Place)</td><td>To buyer's named destination</td></tr>
+              </tbody>
+            </table>
+            <h4 style="margin-bottom:16px;margin-top:36px">Shipment Modes</h4>
+            <table class="specs-table">
+              <thead><tr><th>Mode</th><th>Suitable For</th></tr></thead>
+              <tbody>
+                <tr><td>Reefer Container (FCL)</td><td>Fresh fruits, vegetables, seafood</td></tr>
+                <tr><td>Dry Container (FCL)</td><td>Rice, pulses, spices, sesame</td></tr>
+                <tr><td>LCL (Less than Container)</td><td>Small orders, sample shipments</td></tr>
+                <tr><td>Air Freight</td><td>Premium mangoes, urgent orders</td></tr>
+              </tbody>
+            </table>
+            <div style="margin-top:36px">
+              <h4 style="margin-bottom:12px">Key Export Ports (India)</h4>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <span class="tag">Mundra Port (JNPT)</span>
+                <span class="tag">Nhava Sheva</span>
+                <span class="tag">Kandla Port</span>
+                <span class="tag">Chennai Port</span>
+                <span class="tag">SVPI Airport (Ahmedabad)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ─────────────────────────────────────────────────────────────── -->
+    <section class="highlight-band" aria-labelledby="markets-cta-heading">
+      <div class="container">
+        <span class="label" style="color:var(--forest)">New Market?</span>
+        <h2 id="markets-cta-heading">Interested in Importing<br>to Your Market?</h2>
+        <p>Tell us your country, required products, and quantity. We'll share availability, compliance documentation and competitive pricing within 24 hours.</p>
+        <a href="contact.html" class="btn-dark">Start an Enquiry</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand-col">
+        <a href="index.html" class="brand brand--light" aria-label="Zaffra Home">
+          <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="brand-word">ZAFFRA<small>AGRO EXPORT LLP</small></span>
+        </a>
+        <p class="footer-tagline">Nature &bull; Purity &bull; Trust</p>
+        <p class="footer-desc">Exporting premium fresh produce, seafood, and agricultural commodities from Gujarat, India to global markets since 2005.</p>
+      </div>
+      <div class="footer-nav-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="fresh-fruits.html">Fresh Fruits</a></li>
+          <li><a href="fresh-vegetables.html">Fresh Vegetables</a></li>
+          <li><a href="seafood.html">Seafood</a></li>
+          <li><a href="agricultural.html">Agricultural Products</a></li>
+          <li><a href="spices.html">Spices</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="quality.html">Quality &amp; Certifications</a></li>
+          <li><a href="packaging.html">Packaging &amp; Logistics</a></li>
+          <li><a href="countries.html">Export Markets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact-col">
+        <h4>Contact</h4>
+        <address>
+          <p>Zaffra House, Near APMC Yard,<br>Ahmedabad, Gujarat 380001, India</p>
+          <p><a href="mailto:export@zaffraagro.com">export@zaffraagro.com</a></p>
+          <p><a href="tel:+917940125588">+91 79 4012 5588</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Zaffra Agro Export LLP. All rights reserved.</p>
+      <p>APEDA Reg. No. APEDA/REG/000000 &nbsp;&bull;&nbsp; GST: 24AAAAA0000A1Z5</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsvectormap"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Enquiry — Zaffra Agro Export LLP</title>
+  <meta name="description" content="Send an export enquiry to Zaffra Agro Export LLP. We export fresh fruits, vegetables, seafood, spices and agro-commodities from Gujarat, India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-interior">
+
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand" aria-label="Zaffra Home">
+        <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="brand-word">ZAFFRA<small>AGRO EXPORT LLP</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="has-dropdown">
+            <a href="products.html">Products</a>
+            <div class="dropdown">
+              <a href="fresh-fruits.html">Fresh Fruits</a>
+              <a href="fresh-vegetables.html">Fresh Vegetables</a>
+              <a href="seafood.html">Seafood</a>
+              <a href="agricultural.html">Agricultural Products</a>
+              <a href="spices.html">Spices</a>
+            </div>
+          </li>
+          <li><a href="quality.html">Quality</a></li>
+          <li><a href="packaging.html">Packaging</a></li>
+          <li><a href="countries.html">Markets</a></li>
+          <li><a href="contact.html" class="current">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn-nav-enquire">Enquire</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-panel" id="mobile-panel" aria-hidden="true">
+    <button class="mobile-panel-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+    </button>
+    <nav aria-label="Mobile navigation"><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="fresh-fruits.html">Fresh Fruits</a></li>
+      <li><a href="fresh-vegetables.html">Fresh Vegetables</a></li>
+      <li><a href="seafood.html">Seafood</a></li>
+      <li><a href="agricultural.html">Agricultural Products</a></li>
+      <li><a href="spices.html">Spices</a></li>
+      <li><a href="quality.html">Quality</a></li>
+      <li><a href="packaging.html">Packaging</a></li>
+      <li><a href="countries.html">Markets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+    <a href="contact.html" class="btn-primary" style="margin-top:auto;display:inline-flex">Send Enquiry</a>
+  </div>
+
+  <main>
+
+    <section class="page-hero" style="background-image:url('images/quality_hero.png')" aria-labelledby="contact-hero-h1">
+      <div class="container">
+        <span class="label label--light reveal">Get in Touch</span>
+        <h1 id="contact-hero-h1" class="reveal">Start Your<br>Export Journey</h1>
+        <p class="lead reveal reveal-delay-1">Our dedicated export team responds to all enquiries within 24 business hours.</p>
+      </div>
+    </section>
+
+    <section class="section section-cream" id="enquiry" aria-labelledby="enquiry-heading">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Enquiry Form -->
+          <div>
+            <span class="label reveal">Send an Enquiry</span>
+            <h2 id="enquiry-heading" class="reveal" style="margin-bottom:36px">Tell Us What<br>You Need</h2>
+
+            <form id="enquiry-form" novalidate aria-label="Export enquiry form">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="field-name">Full Name *</label>
+                  <input type="text" id="field-name" name="name" required placeholder="Your full name" autocomplete="name">
+                </div>
+                <div class="field">
+                  <label for="field-company">Company / Organisation *</label>
+                  <input type="text" id="field-company" name="company" required placeholder="Company name" autocomplete="organization">
+                </div>
+                <div class="field">
+                  <label for="field-email">Email Address *</label>
+                  <input type="email" id="field-email" name="email" required placeholder="your@email.com" autocomplete="email">
+                </div>
+                <div class="field">
+                  <label for="field-phone">Phone / WhatsApp</label>
+                  <input type="tel" id="field-phone" name="phone" placeholder="+971 50 000 0000" autocomplete="tel">
+                </div>
+                <div class="field">
+                  <label for="field-country">Destination Country *</label>
+                  <select id="field-country" name="country" required>
+                    <option value="" disabled selected>Select country…</option>
+                    <optgroup label="Gulf &amp; Middle East">
+                      <option>United Arab Emirates</option>
+                      <option>Saudi Arabia</option>
+                      <option>Qatar</option>
+                      <option>Kuwait</option>
+                      <option>Oman</option>
+                      <option>Bahrain</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                      <option>United Kingdom</option>
+                      <option>Netherlands</option>
+                      <option>Germany</option>
+                      <option>France</option>
+                      <option>Belgium</option>
+                    </optgroup>
+                    <optgroup label="South &amp; South-East Asia">
+                      <option>Singapore</option>
+                      <option>Malaysia</option>
+                      <option>Sri Lanka</option>
+                      <option>Bangladesh</option>
+                      <option>Indonesia</option>
+                    </optgroup>
+                    <option value="other">Other (please specify in message)</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="field-product">Product Category *</label>
+                  <select id="field-product" name="product" required>
+                    <option value="" disabled selected>Select category…</option>
+                    <option>Fresh Fruits</option>
+                    <option>Fresh Vegetables</option>
+                    <option>Seafood</option>
+                    <option>Agricultural Products (Rice, Wheat, etc.)</option>
+                    <option>Spices</option>
+                    <option>Multiple Categories</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <label for="field-message">Enquiry Details *</label>
+                  <textarea id="field-message" name="message" required placeholder="Please describe the specific product(s), required quantity, preferred packaging, destination port and any other relevant details…"></textarea>
+                </div>
+                <div class="field full">
+                  <label for="field-volume">Estimated Monthly Volume</label>
+                  <select id="field-volume" name="volume">
+                    <option value="" disabled selected>Select volume range…</option>
+                    <option>Under 1 tonne (samples / trial)</option>
+                    <option>1–5 tonnes</option>
+                    <option>5–20 tonnes</option>
+                    <option>20–50 tonnes</option>
+                    <option>50–100 tonnes</option>
+                    <option>100+ tonnes</option>
+                  </select>
+                </div>
+              </div>
+              <div style="margin-top:28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+                <button type="submit" class="btn-primary" id="submit-btn" style="min-width:180px">Send Enquiry →</button>
+                <p style="font-size:0.82rem;color:var(--mid)">We reply within 24 business hours. Your information is never shared.</p>
+              </div>
+              <div class="form-success" id="form-success" role="alert">
+                <strong style="font-size:1.1rem;display:block;margin-bottom:8px">✓ Enquiry Received</strong>
+                Thank you for reaching out. A member of our export team will contact you within 24 business hours with product availability and pricing details.
+              </div>
+            </form>
+          </div>
+
+          <!-- Contact Info Sidebar -->
+          <div class="contact-info reveal reveal-delay-1">
+            <div style="background:var(--forest);color:var(--cream);padding:40px 36px;margin-bottom:2px">
+              <span class="label label--light" style="margin-bottom:20px;display:block">Zaffra Agro Export LLP</span>
+              <div class="contact-info-row" style="margin-bottom:28px">
+                <h4 style="color:var(--saffron);font-size:10px;letter-spacing:.14em;margin-bottom:8px">OFFICE ADDRESS</h4>
+                <p style="color:rgba(253,250,244,0.8);line-height:1.7">Zaffra House,<br>Near APMC Yard, Opp. Sabarmati,<br>Ahmedabad, Gujarat 380 001<br>India</p>
+              </div>
+              <div class="contact-info-row" style="margin-bottom:28px">
+                <h4 style="color:var(--saffron);font-size:10px;letter-spacing:.14em;margin-bottom:8px">EXPORT TEAM</h4>
+                <p><a href="mailto:export@zaffraagro.com" style="color:rgba(253,250,244,0.8)">export@zaffraagro.com</a></p>
+                <p style="margin-top:6px"><a href="tel:+917940125588" style="color:rgba(253,250,244,0.8)">+91 79 4012 5588</a></p>
+              </div>
+              <div class="contact-info-row" style="margin-bottom:28px">
+                <h4 style="color:var(--saffron);font-size:10px;letter-spacing:.14em;margin-bottom:8px">WHATSAPP (QUICK ENQUIRY)</h4>
+                <p><a href="tel:+917940125589" style="color:rgba(253,250,244,0.8)">+91 79 4012 5589</a></p>
+              </div>
+              <div class="contact-info-row">
+                <h4 style="color:var(--saffron);font-size:10px;letter-spacing:.14em;margin-bottom:8px">OFFICE HOURS</h4>
+                <p style="color:rgba(253,250,244,0.7);font-size:0.88rem;line-height:1.7">
+                  Monday – Saturday<br>
+                  9:00 AM – 6:30 PM IST (UTC+5:30)
+                </p>
+              </div>
+            </div>
+            <div style="background:var(--stone);padding:32px 36px">
+              <h4 style="margin-bottom:16px">Our Certifications</h4>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <span class="tag tag--saffron">APEDA Registered</span>
+                <span class="tag tag--saffron">ISO 22000</span>
+                <span class="tag tag--saffron">HACCP</span>
+                <span class="tag tag--saffron">FSSAI Licensed</span>
+                <span class="tag tag--saffron">MPEDA Approved</span>
+                <span class="tag tag--saffron">EU MRL Compliant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ-style assurance section -->
+    <section class="section section-forest" aria-labelledby="assurance-heading">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <span class="label label--light">Common Questions</span>
+          <h2 id="assurance-heading" class="text-cream">What Buyers Often Ask</h2>
+        </div>
+        <div class="grid-2" style="gap:2px;margin-top:40px">
+          <div style="background:var(--forest-mid);padding:36px 32px" class="reveal">
+            <h3 style="color:var(--saffron);font-size:1rem;margin-bottom:12px">What is the minimum order quantity?</h3>
+            <p style="color:rgba(253,250,244,0.65);font-size:0.92rem;line-height:1.7">For fresh fruits and vegetables, our standard MOQ is one full reefer container (typically 14–20 MT depending on the product). For spices and dry commodities, one FCL (20-foot container, approx. 18–22 MT). Sample shipments of 50–200 kg can be arranged via air courier for new buyers.</p>
+          </div>
+          <div style="background:var(--forest-mid);padding:36px 32px" class="reveal reveal-delay-1">
+            <h3 style="color:var(--saffron);font-size:1rem;margin-bottom:12px">How long does shipment take?</h3>
+            <p style="color:rgba(253,250,244,0.65);font-size:0.92rem;line-height:1.7">Transit time depends on the destination. Gulf ports (Jebel Ali, Dammam): 7–12 days. European ports (Rotterdam, Felixstowe): 18–24 days. Singapore / Malaysia: 10–15 days. We maintain forward booking with major reefer carriers to minimise vessel delays.</p>
+          </div>
+          <div style="background:var(--forest-mid);padding:36px 32px" class="reveal">
+            <h3 style="color:var(--saffron);font-size:1rem;margin-bottom:12px">What documentation do you provide?</h3>
+            <p style="color:rgba(253,250,244,0.65);font-size:0.92rem;line-height:1.7">Complete export documentation including: Commercial Invoice, Packing List, Bill of Lading, Phytosanitary Certificate, Certificate of Origin (APEDA / Chamber of Commerce), NABL-accredited lab test reports, and market-specific health certificates (EU, USFDA, etc.).</p>
+          </div>
+          <div style="background:var(--forest-mid);padding:36px 32px" class="reveal reveal-delay-1">
+            <h3 style="color:var(--saffron);font-size:1rem;margin-bottom:12px">Can we get pre-shipment samples?</h3>
+            <p style="color:rgba(253,250,244,0.65);font-size:0.92rem;line-height:1.7">Yes — for new buyers placing orders above 5 MT, we offer pre-shipment samples of approximately 2–5 kg (fresh produce) or 500g–1 kg (spices / dry goods) at no charge, with the buyer covering courier costs. Samples match the grade and variety of the final consignment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand-col">
+        <a href="index.html" class="brand brand--light" aria-label="Zaffra Home">
+          <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="brand-word">ZAFFRA<small>AGRO EXPORT LLP</small></span>
+        </a>
+        <p class="footer-tagline">Nature &bull; Purity &bull; Trust</p>
+        <p class="footer-desc">Exporting premium fresh produce, seafood, and agricultural commodities from Gujarat, India to global markets since 2005.</p>
+      </div>
+      <div class="footer-nav-col"><h4>Products</h4><ul>
+        <li><a href="fresh-fruits.html">Fresh Fruits</a></li>
+        <li><a href="fresh-vegetables.html">Fresh Vegetables</a></li>
+        <li><a href="seafood.html">Seafood</a></li>
+        <li><a href="agricultural.html">Agricultural Products</a></li>
+        <li><a href="spices.html">Spices</a></li>
+      </ul></div>
+      <div class="footer-nav-col"><h4>Company</h4><ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="quality.html">Quality &amp; Certifications</a></li>
+        <li><a href="packaging.html">Packaging &amp; Logistics</a></li>
+        <li><a href="countries.html">Export Markets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-contact-col"><h4>Contact</h4>
+        <address>
+          <p>Zaffra House, Near APMC Yard,<br>Ahmedabad, Gujarat 380001, India</p>
+          <p><a href="mailto:export@zaffraagro.com">export@zaffraagro.com</a></p>
+          <p><a href="tel:+917940125588">+91 79 4012 5588</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Zaffra Agro Export LLP. All rights reserved.</p>
+      <p>APEDA Reg. No. APEDA/REG/000000 &nbsp;&bull;&nbsp; GST: 24AAAAA0000A1Z5</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    /* Enhanced form submit */
+    (function() {
+      var form = document.getElementById('enquiry-form');
+      var success = document.getElementById('form-success');
+      var btn = document.getElementById('submit-btn');
+      if (!form) return;
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        btn.textContent = 'Sending…';
+        btn.disabled = true;
+        setTimeout(function() {
+          success.classList.add('show');
+          form.querySelectorAll('input,select,textarea').forEach(function(f){f.value='';});
+          btn.textContent = 'Send Enquiry →';
+          btn.disabled = false;
+          success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 1200);
+      });
+    }());
+  </script>
+</body>
+</html>
+
+
+

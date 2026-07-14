@@ -1,0 +1,929 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Spices Export — Cumin, Turmeric, Coriander &amp; More | Zaffra Agro Export LLP</title>
+  <meta name="description" content="Zaffra Agro Export LLP supplies Spice Board-registered, sortex-cleaned Indian spices sourced from Unjha, Gujarat — cumin, coriander, turmeric, red chilli and fenugreek. Global export.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── Product Hero ── */
+
+
+    /* ── Section base ── */
+    .section { padding: clamp(4rem, 8vw, 8rem) 5vw; }
+    .section-inner { max-width: 1240px; margin: 0 auto; }
+    .section-cream { background: #FDFAF4; }
+    .section-stone { background: #EDE6D8; }
+    .section-forest { background: #0F2318; }
+
+    /* ── Labels / eyebrows ── */
+    .label {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #C89020;
+      margin-bottom: 1rem;
+    }
+    .label--light { color: rgba(200,144,32,0.9); }
+
+    /* ── Section headings ── */
+    .section-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4.5vw, 3.5rem);
+      font-weight: 700;
+      color: #0F2318;
+      line-height: 1.15;
+      margin: 0 0 1.25rem;
+      letter-spacing: -0.02em;
+    }
+    .section-heading--light { color: #FDFAF4; }
+    .section-sub {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      color: #7A7268;
+      max-width: 640px;
+      line-height: 1.75;
+      margin: 0 0 3rem;
+    }
+    .section-sub--light { color: rgba(253,250,244,0.7); }
+
+    /* ── Intro split ── */
+    .intro-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    @media (max-width: 800px) { .intro-split { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .intro-text p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #7A7268;
+      margin: 0 0 1.25rem;
+    }
+    .intro-text p:first-of-type {
+      font-size: 1.18rem;
+      color: #141210;
+      font-weight: 500;
+    }
+    .intro-img-wrap { position: relative; }
+    .intro-img-wrap img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border-radius: 2px;
+      display: block;
+    }
+    .intro-img-badge {
+      position: absolute;
+      bottom: -1.5rem;
+      left: -1.5rem;
+      background: #C89020;
+      color: #0F2318;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 1.25rem 1.5rem;
+      letter-spacing: 0.04em;
+      max-width: 180px;
+      line-height: 1.4;
+    }
+
+    /* ── Variety Grid ── */
+    .variety-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 1000px) { .variety-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 580px) { .variety-grid { grid-template-columns: 1fr; } }
+
+    .variety-card {
+      background: #fff;
+      border: 1px solid #D8CFBD;
+      overflow: hidden;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .variety-card:hover {
+      box-shadow: 0 12px 40px rgba(15,35,24,0.12);
+      transform: translateY(-4px);
+    }
+    .variety-img { margin: 0; overflow: hidden; }
+    .variety-img img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .variety-card:hover .variety-img img { transform: scale(1.06); }
+    .variety-info { padding: 1.5rem; }
+    .variety-info h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #0F2318;
+      margin: 0 0 0.6rem;
+    }
+    .variety-info p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      color: #7A7268;
+      line-height: 1.7;
+      margin: 0 0 1rem;
+    }
+    .variety-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .tag {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.65rem;
+      border: 1px solid #D8CFBD;
+      color: #7A7268;
+      border-radius: 2px;
+    }
+    .tag--gold { border-color: #C89020; color: #C89020; }
+    .tag--forest { background: #0F2318; color: #FDFAF4; border-color: #0F2318; }
+
+    /* ── Full-bleed image band ── */
+    .img-band {
+      position: relative;
+      height: clamp(320px, 55vw, 620px);
+      overflow: hidden;
+    }
+    .img-band img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .img-band-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(15,35,24,0.9) 0%, rgba(15,35,24,0.3) 60%, transparent 100%);
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
+    .img-band-text { max-width: 520px; }
+    .img-band-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      color: #FDFAF4;
+      margin: 0 0 1rem;
+      line-height: 1.2;
+    }
+    .img-band-text p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      color: rgba(253,250,244,0.78);
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    /* ── Seasonal Calendar ── */
+    .cal-wrap { overflow-x: auto; margin-top: 2.5rem; }
+    .cal-table { width: 100%; min-width: 700px; border-collapse: collapse; }
+    .cal-table th, .cal-table td {
+      padding: 0.75rem 0.6rem;
+      text-align: center;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      border-bottom: 1px solid #D8CFBD;
+    }
+    .cal-table th {
+      font-weight: 600;
+      color: #0F2318;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: #D8CFBD;
+    }
+    .cal-table td:first-child {
+      text-align: left;
+      font-weight: 600;
+      color: #141210;
+      font-size: 0.88rem;
+      min-width: 160px;
+    }
+    .cal-peak {
+      background: #C89020;
+      border-radius: 12px;
+      display: inline-block;
+      width: 100%;
+      height: 10px;
+    }
+    .cal-avail {
+      background: rgba(200,144,32,0.3);
+      border-radius: 12px;
+      display: inline-block;
+      width: 100%;
+      height: 10px;
+    }
+    .cal-empty { color: #D8CFBD; }
+
+    /* ── Specs Table ── */
+    .specs-table { width: 100%; border-collapse: collapse; margin-top: 2.5rem; }
+    .specs-table tr { border-bottom: 1px solid #D8CFBD; }
+    .specs-table tr:last-child { border-bottom: none; }
+    .specs-table th {
+      width: 220px;
+      text-align: left;
+      padding: 1rem 1.5rem 1rem 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #7A7268;
+      vertical-align: top;
+    }
+    .specs-table td {
+      padding: 1rem 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      color: #141210;
+      line-height: 1.65;
+    }
+
+    /* ── Process Steps ── */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 3rem;
+    }
+    @media (max-width: 800px) { .process-steps { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .process-steps { grid-template-columns: 1fr; } }
+    .process-step {
+      padding: 2.5rem 2rem;
+      border-right: 1px solid rgba(216,207,189,0.3);
+    }
+    .process-step:last-child { border-right: none; }
+    .step-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: rgba(200,144,32,0.2);
+      line-height: 1;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .process-step h4 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #C89020;
+      margin: 0 0 0.6rem;
+    }
+    .process-step p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      color: rgba(253,250,244,0.65);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ── Stats row ── */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-top: 1px solid rgba(216,207,189,0.2);
+      border-left: 1px solid rgba(216,207,189,0.2);
+      margin-top: 4rem;
+    }
+    @media (max-width: 700px) { .stats-row { grid-template-columns: repeat(2, 1fr); } }
+    .stat-item {
+      padding: 2rem 1.5rem;
+      border-right: 1px solid rgba(216,207,189,0.2);
+      border-bottom: 1px solid rgba(216,207,189,0.2);
+    }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: #C89020;
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    .stat-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      color: rgba(253,250,244,0.6);
+      line-height: 1.5;
+    }
+
+    /* ── Cert badges ── */
+    .cert-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
+    .cert-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(253,250,244,0.06);
+      border: 1px solid rgba(216,207,189,0.2);
+      padding: 0.7rem 1.2rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: rgba(253,250,244,0.8);
+      letter-spacing: 0.06em;
+    }
+    .cert-badge::before { content: '✓'; color: #C89020; font-size: 1rem; }
+
+    /* ── Related Products ── */
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) { .related-grid { grid-template-columns: 1fr; } }
+    .related-card {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      text-decoration: none;
+    }
+    .related-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+    .related-card:hover img { transform: scale(1.07); }
+    .related-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15,35,24,0.88) 0%, rgba(15,35,24,0.2) 60%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem;
+    }
+    .related-card-overlay span {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #C89020;
+      margin-bottom: 0.3rem;
+    }
+    .related-card-overlay h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #FDFAF4;
+      margin: 0;
+    }
+
+    /* ── CTA Band ── */
+    .highlight-band {
+      background: #C89020;
+      padding: clamp(3rem, 6vw, 5rem) 5vw;
+      text-align: center;
+    }
+    .highlight-band h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      color: #0F2318;
+      margin: 0 0 0.75rem;
+    }
+    .highlight-band p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      color: rgba(15,35,24,0.75);
+      margin: 0 0 2rem;
+    }
+    .btn-dark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #0F2318;
+      color: #FDFAF4;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 1rem 2.25rem;
+      text-decoration: none;
+      transition: background 0.25s, transform 0.2s;
+    }
+    .btn-dark:hover { background: #193D20; transform: translateY(-2px); }
+
+    /* ── Reveal animation ── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+  </style>
+</head>
+<body class="page-interior">
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="brand-word">ZAFFRA<small>AGRO EXPORT LLP</small></span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="has-dropdown"><a href="products.html" class="current">Products</a>
+            <div class="dropdown">
+              <a href="fresh-fruits.html">Fresh Fruits</a>
+              <a href="fresh-vegetables.html">Fresh Vegetables</a>
+              <a href="seafood.html">Seafood</a>
+              <a href="agricultural.html">Agricultural Products</a>
+              <a href="spices.html">Spices</a>
+            </div>
+          </li>
+          <li><a href="quality.html">Quality</a></li>
+          <li><a href="packaging.html">Packaging</a></li>
+          <li><a href="countries.html">Markets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn-nav-enquire">Enquire</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE PANEL -->
+  <div class="mobile-panel" id="mobile-panel" aria-hidden="true">
+    <button class="mobile-panel-close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg></button>
+    <nav><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="fresh-fruits.html">Fresh Fruits</a></li>
+      <li><a href="fresh-vegetables.html">Fresh Vegetables</a></li>
+      <li><a href="seafood.html">Seafood</a></li>
+      <li><a href="agricultural.html">Agricultural Products</a></li>
+      <li><a href="spices.html">Spices</a></li>
+      <li><a href="quality.html">Quality</a></li>
+      <li><a href="packaging.html">Packaging</a></li>
+      <li><a href="countries.html">Markets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+    <a href="contact.html" class="btn-primary" style="margin-top:auto;display:inline-flex">Send Enquiry</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="product-hero" style="background-image:url('images/spices.png')">
+      <div class="hero-inner">
+        <div class="hero-category">Indian Spices</div>
+        <h1>Indian Spices</h1>
+        <p class="hero-subtitle">Sortex-cleaned, lab-tested spices from Unjha - India's largest spice trading centre.</p>
+        <div class="hero-badges">
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Spice Board of India
+          </span>
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            FSSAI Licensed
+          </span>
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            99.5% Purity Guarantee
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO SECTION -->
+    <section class="section section-cream">
+      <div class="section-inner">
+        <div class="intro-split">
+          <div class="intro-text">
+            <span class="label reveal">Product Category — 05</span>
+            <h2 class="section-heading reveal">Sourced at Unjha,<br>Graded to World Standard</h2>
+            <p class="reveal">Gujarat is home to Unjha — Asia's largest spice trading and processing hub, and the epicentre of India's cumin and fennel trade. Zaffra Agro procures directly from Unjha's wholesale market and surrounding growing belts of Banaskantha and Mehsana, working with registered commission agents and farmer-producer organisations we have partnered with for over a decade.</p>
+            <p class="reveal">Every lot is cleaned through multi-stage sortex colour-sorting, sieved to size specification, and tested for pesticide residue, aflatoxin, and microbial load at NABL-accredited laboratories before packing. Our facility handles whole seed spices, ground powders, and steam-sterilised formats for buyers requiring reduced microbial counts.</p>
+            <p class="reveal">Whether you need container-load whole cumin for a Middle Eastern distributor, ground turmeric for a European spice blender, or steam-sterilised chilli for a North American retailer, our export desk manages Spice Board documentation, lab certification, and shipping end to end.</p>
+          </div>
+          <div class="intro-img-wrap reveal">
+            <img src="images/spices.png" alt="Assorted whole Indian spices" loading="lazy" decoding="async">
+            <div class="intro-img-badge">Unjha, Gujarat<br>Asia's largest spice market</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VARIETY GRID -->
+    <section class="section section-stone">
+      <div class="section-inner">
+        <div class="section-header section-header--center"><span class="label reveal">Our Spices</span>
+        <h2 class="section-heading reveal">Six Signature Spices,<br>Sortex-Cleaned &amp; Lab-Tested</h2>
+        <p class="section-sub reveal">Each spice is cleaned, graded, and tested to the pesticide residue and microbial limits of the importing country before it ever reaches a container.</p></div>
+
+        <div class="variety-grid">
+
+          <div class="variety-card reveal reveal-delay-1">
+            <figure class="variety-img">
+              <img src="images/quality_hero.png" alt="Whole cumin seeds" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Cumin Seeds</h3>
+              <p>Gujarat produces over 70% of India's cumin, and Unjha is its trading capital. Our Europe and Singapore-quality cumin is machine-cleaned to 99.5% purity, sortex colour-sorted, and available in whole seed or ground format. Distinctive high oil content delivers the aromatic intensity global spice blenders demand.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">99.5% Purity</span>
+                <span class="tag">Europe / Singapore Grade</span>
+                <span class="tag">Feb – Apr Peak</span>
+                <span class="tag">25 kg PP Bag</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-2">
+            <figure class="variety-img">
+              <img src="images/seafood.png" alt="Coriander seeds" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Coriander Seeds</h3>
+              <p>Sourced from the black-cotton-soil belts of Gujarat and Rajasthan, our coriander is offered in Eagle and Scooter trade grades, split or whole. Naturally high in volatile oil, it is sortex-cleaned and screened to uniform size for both whole-spice and oleoresin-extraction buyers.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">Eagle / Scooter Grade</span>
+                <span class="tag">Whole / Split</span>
+                <span class="tag">Feb – Mar Peak</span>
+                <span class="tag">25 kg PP Bag</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-3">
+            <figure class="variety-img">
+              <img src="images/sona_masoori.png" alt="Turmeric fingers and powder" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Turmeric</h3>
+              <p>Finger and powder turmeric with curcumin content verified by lab assay, sourced from Gujarat and neighbouring Maharashtra growing belts. Polished finger turmeric and steam-sterilised powder are both available, with curcumin levels declared per lot for buyers with specification requirements.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">Curcumin 2–5%</span>
+                <span class="tag">Finger / Powder</span>
+                <span class="tag">Jan – Mar Peak</span>
+                <span class="tag">25 kg Bag</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-1">
+            <figure class="variety-img">
+              <img src="images/spices.png" alt="Dried red chillies" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Red Chilli</h3>
+              <p>Whole and powdered red chilli sourced from Gujarat's Saurashtra belt and neighbouring Andhra Pradesh growing regions, offered across a range of Scoville heat grades and colour values (ASTA). Steam sterilisation available on request to reduce microbial load for retail-ready packing.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">ASTA 90–120</span>
+                <span class="tag">Whole / Powder</span>
+                <span class="tag">Dec – Feb Peak</span>
+                <span class="tag">25 kg Bag</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-2">
+            <figure class="variety-img">
+              <img src="images/wheat_fields.png" alt="Green cardamom pods" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Green Cardamom</h3>
+              <p>Bold green cardamom sourced from the Idukki and Kodagu hill estates via our trading partnerships, hand-graded for pod size and colour retention. A premium line for Gulf and export markets where large, deep-green pods command a significant price premium.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">Bold Green Grade</span>
+                <span class="tag">Hand Graded</span>
+                <span class="tag">Oct – Feb Peak</span>
+                <span class="tag">5 kg / 10 kg Box</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-3">
+            <figure class="variety-img">
+              <img src="images/agricultural_products.png" alt="Fenugreek seeds" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Fenugreek Seeds</h3>
+              <p>Bitter-aromatic fenugreek seed, a Gujarat staple crop grown alongside cumin in the same Banaskantha belt, is machine-cleaned and screened for uniform amber colour. Popular in spice blends, seasonings, and the growing functional-food and nutraceutical segment.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">Amber Grade</span>
+                <span class="tag">Machine Cleaned</span>
+                <span class="tag">Feb – Mar Peak</span>
+                <span class="tag">25 kg / 50 kg Bag</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL-BLEED IMAGE BAND -->
+    <div class="img-band">
+      <img src="images/basmati_rice.png" alt="Spice market stalls at Unjha, Gujarat" loading="lazy" decoding="async">
+      <div class="img-band-overlay">
+        <div class="container" style="width: 100%;">
+          <div class="img-band-text">
+          <span class="label label--light reveal">Source — Unjha, Gujarat</span>
+          <h2 class="reveal">Sortex-Clean to<br>Container in Days</h2>
+          <p class="reveal">Our Unjha processing unit runs multi-pass sortex colour-sorting, sieving, and destoning lines that bring raw agricultural spice up to export-grade purity within days of procurement. Each lot is sampled and lab-tested before packing, with full traceability back to the originating mandi and growing block.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEASONAL CALENDAR -->
+    <section class="section section-cream">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label reveal">Availability Planning</span>
+        <h2 class="section-heading reveal">Seasonal Harvest Calendar</h2>
+        <p class="section-sub reveal">Most spices are harvested once annually and stored under controlled conditions, giving year-round shipping availability. Use this calendar to plan forward contracts around fresh-crop pricing.</p>
+        </div>
+        <div class="cal-wrap reveal">
+          <table class="cal-table">
+            <thead>
+              <tr>
+                <th>Variety</th>
+                <th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th><th>May</th><th>Jun</th>
+                <th>Jul</th><th>Aug</th><th>Sep</th><th>Oct</th><th>Nov</th><th>Dec</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cumin Seeds</td>
+                <td class="cal-empty">·</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+              </tr>
+              <tr>
+                <td>Coriander Seeds</td>
+                <td class="cal-empty">·</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+              </tr>
+              <tr>
+                <td>Turmeric</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+              </tr>
+              <tr>
+                <td>Red Chilli</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+              </tr>
+              <tr>
+                <td>Green Cardamom</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+              </tr>
+              <tr>
+                <td>Fenugreek Seeds</td>
+                <td class="cal-empty">·</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-family:'DM Sans',sans-serif;font-size:0.78rem;color:#7A7268;margin-top:1rem;" class="reveal">
+          <strong style="color:#C89020">&#9632;</strong> Fresh-crop harvest &nbsp;&nbsp;
+          <strong style="color:rgba(200,144,32,0.4)">&#9632;</strong> Late harvest / Transitional. All spices ship year-round from controlled storage.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPORT SPECS -->
+    <section class="section section-stone">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label reveal">Trade Specifications</span>
+        <h2 class="section-heading reveal">Export Specifications &amp; Terms</h2>
+        <p class="section-sub reveal">All specifications are negotiable to accommodate specific buyer requirements. Contact our export desk for tailored term sheets and phytosanitary documentation.</p>
+        </div>
+        <table class="specs-table reveal">
+          <tbody>
+            <tr>
+              <th>Minimum Order</th>
+              <td>1 × 20ft Container (~14–18 MT net weight, product dependent). Consolidated LCL available for trial orders above 500 kg.</td>
+            </tr>
+            <tr>
+              <th>Packaging Formats</th>
+              <td>25 kg / 50 kg PP or jute bags; 5 kg / 10 kg retail cartons (cardamom); food-grade laminated pouches for ground spice. Custom private-label and retail packing on request.</td>
+            </tr>
+            <tr>
+              <th>Processing</th>
+              <td>Multi-pass sortex colour sorting, sieving, and destoning. Steam sterilisation (ASTA/ESO) available on request to reduce microbial load for retail-ready buyers.</td>
+            </tr>
+            <tr>
+              <th>Certifications</th>
+              <td>Spice Board of India Registration · FSSAI Licensed · Phytosanitary Certificate (NPPO India) · Certificate of Origin. EU, UK, US, GCC import-compliant.</td>
+            </tr>
+            <tr>
+              <th>Residue &amp; Purity Testing</th>
+              <td>Pre-shipment pesticide residue, aflatoxin, and microbial testing at NABL-accredited laboratories. Full test reports and Certificate of Analysis (CoA) provided with each consignment.</td>
+            </tr>
+            <tr>
+              <th>Incoterms</th>
+              <td>FOB Mundra / Pipavav · CFR / CIF all major ports · DDP available for UAE and Singapore on confirmed annual programmes.</td>
+            </tr>
+            <tr>
+              <th>Transit Times</th>
+              <td>UAE / Gulf: 5–7 days · UK / EU: 20–24 days · Southeast Asia: 10–14 days · East Africa: 12–16 days</td>
+            </tr>
+            <tr>
+              <th>Payment Terms</th>
+              <td>LC at sight (preferred) · 30% advance + balance against BL copy for established buyers · Open account on credit-approved annual programmes.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PROCESS STEPS -->
+    <section class="section section-forest">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label label--light reveal">Our Process</span>
+        <h2 class="section-heading section-heading--light reveal">From Mandi Floor to<br>Sealed Container</h2>
+        <p class="section-sub section-sub--light reveal">A rigorous four-stage chain of custody guarantees that the purity we procure at Unjha arrives intact at your destination port.</p>
+        </div>
+        <div class="process-steps">
+          <div class="process-step reveal reveal-delay-1">
+            <span class="step-num">01</span>
+            <h4>Procurement</h4>
+            <p>Spices are procured lot-by-lot from Unjha's wholesale market and registered farmer-producer organisations, with each lot assessed for moisture, foreign matter, and visual quality before purchase.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-2">
+            <span class="step-num">02</span>
+            <h4>Sortex &amp; Sieving</h4>
+            <p>Raw material passes through multi-pass sortex colour-sorting, sieving, and destoning lines to remove foreign matter and off-colour material, lifting purity to export-grade specification.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-3">
+            <span class="step-num">03</span>
+            <h4>Testing &amp; Grading</h4>
+            <p>Every processed lot is sampled and lab-tested for pesticide residue, aflatoxin, and microbial load, then graded to buyer specification — whole, split, or ground — with a Certificate of Analysis issued per batch.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-4">
+            <span class="step-num">04</span>
+            <h4>Pack &amp; Ship</h4>
+            <p>Graded spice is packed into PP bags, jute bags, or laminated pouches per buyer specification, sealed, and containerised with full Spice Board and phytosanitary documentation for destination clearance.</p>
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-item reveal reveal-delay-1">
+            <span class="stat-num">#1</span>
+            <span class="stat-label">Unjha ranks as Asia's largest spice trading centre</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <span class="stat-num">99.5%</span>
+            <span class="stat-label">Typical sortex-cleaned purity across our spice lines</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <span class="stat-num">6</span>
+            <span class="stat-label">Signature spice lines processed at export grade</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-4">
+            <span class="stat-num">25+</span>
+            <span class="stat-label">Countries served across 4 continents</span>
+          </div>
+        </div>
+
+        <div class="cert-row reveal">
+          <span class="cert-badge">Spice Board Registered</span>
+          <span class="cert-badge">FSSAI Licensed</span>
+          <span class="cert-badge">Sortex Cleaned</span>
+          <span class="cert-badge">Steam Sterilisation Available</span>
+          <span class="cert-badge">Phytosanitary Certified</span>
+          <span class="cert-badge">NABL Lab Tested</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED PRODUCTS -->
+    <section class="section section-cream">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label reveal">Explore More</span>
+        <h2 class="section-heading reveal">Related Product Categories</h2>
+        </div>
+        <div class="related-grid">
+          <a href="fresh-fruits.html" class="related-card reveal reveal-delay-1">
+            <img src="images/fresh_fruits.png" alt="Fresh fruit export" loading="lazy" decoding="async">
+            <div class="related-card-overlay">
+              <span>Category 01</span>
+              <h3>Fresh Fruits</h3>
+            </div>
+          </a>
+          <a href="seafood.html" class="related-card reveal reveal-delay-2">
+            <img src="images/seafood.png" alt="Seafood export" loading="lazy" decoding="async">
+            <div class="related-card-overlay">
+              <span>Category 03</span>
+              <h3>Seafood</h3>
+            </div>
+          </a>
+          <a href="agricultural.html" class="related-card reveal reveal-delay-3">
+            <img src="images/agricultural_products.png" alt="Agricultural commodities export" loading="lazy" decoding="async">
+            <div class="related-card-overlay">
+              <span>Category 04</span>
+              <h3>Agricultural Products</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <div class="highlight-band">
+      <span class="label" style="color:rgba(15,35,24,0.6)">Get In Touch</span>
+      <h2>Ready to Source India's Finest Spices?</h2>
+      <p>Share your requirements and our export team will respond within one business day with pricing, availability, and sample options.</p>
+      <a href="contact.html" class="btn-dark">Request a Quotation &#8594;</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand-col">
+        <a href="index.html" class="brand brand--light">
+          <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="brand-word">ZAFFRA<small>AGRO EXPORT LLP</small></span>
+        </a>
+        <p class="footer-tagline">Nature &bull; Purity &bull; Trust</p>
+        <p class="footer-desc">Exporting premium fresh produce, seafood, and agricultural commodities from Gujarat, India to global markets since 2005.</p>
+      </div>
+      <div class="footer-nav-col"><h4>Products</h4><ul>
+        <li><a href="fresh-fruits.html">Fresh Fruits</a></li>
+        <li><a href="fresh-vegetables.html">Fresh Vegetables</a></li>
+        <li><a href="seafood.html">Seafood</a></li>
+        <li><a href="agricultural.html">Agricultural Products</a></li>
+        <li><a href="spices.html">Spices</a></li>
+      </ul></div>
+      <div class="footer-nav-col"><h4>Company</h4><ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="quality.html">Quality &amp; Certifications</a></li>
+        <li><a href="packaging.html">Packaging &amp; Logistics</a></li>
+        <li><a href="countries.html">Export Markets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-contact-col"><h4>Contact</h4>
+        <address>
+          <p>Zaffra House, Near APMC Yard,<br>Ahmedabad, Gujarat 380001</p>
+          <p><a href="mailto:export@zaffraagro.com">export@zaffraagro.com</a></p>
+          <p><a href="tel:+917940125588">+91 79 4012 5588</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Zaffra Agro Export LLP. All rights reserved.</p>
+      <p>APEDA Reg. No. APEDA/REG/000000 &nbsp;&bull;&nbsp; GST: 24AAAAA0000A1Z5</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+

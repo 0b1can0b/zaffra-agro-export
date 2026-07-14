@@ -1,0 +1,1011 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Vegetables Export — Onions, Okra, Bitter Gourd | Zaffra Agro Export LLP</title>
+  <meta name="description" content="Zaffra Agro Export LLP exports premium fresh vegetables from Gujarat — Red Onion, White Onion, Okra, Bitter Gourd, Green Chilli, Drumstick. APEDA certified. Global B2B supply.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── Product Hero ── */
+
+
+    /* ── Section base ── */
+    .section { padding: clamp(4rem, 8vw, 8rem) 5vw; }
+    .section-inner { max-width: 1240px; margin: 0 auto; }
+    .section-cream { background: #FDFAF4; }
+    .section-stone { background: #EDE6D8; }
+    .section-forest { background: #0F2318; }
+
+    /* ── Labels / eyebrows ── */
+    .label {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #C89020;
+      margin-bottom: 1rem;
+    }
+    .label--light { color: rgba(200,144,32,0.9); }
+
+    /* ── Section headings ── */
+    .section-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4.5vw, 3.5rem);
+      font-weight: 700;
+      color: #0F2318;
+      line-height: 1.15;
+      margin: 0 0 1.25rem;
+      letter-spacing: -0.02em;
+    }
+    .section-heading--light { color: #FDFAF4; }
+    .section-sub {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      color: #7A7268;
+      max-width: 640px;
+      line-height: 1.75;
+      margin: 0 0 3rem;
+    }
+    .section-sub--light { color: rgba(253,250,244,0.7); }
+
+    /* ── Intro split ── */
+    .intro-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    @media (max-width: 800px) { .intro-split { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .intro-text p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #7A7268;
+      margin: 0 0 1.25rem;
+    }
+    .intro-text p:first-of-type {
+      font-size: 1.18rem;
+      color: #141210;
+      font-weight: 500;
+    }
+    .intro-img-wrap { position: relative; }
+    .intro-img-wrap img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border-radius: 2px;
+      display: block;
+    }
+    .intro-img-badge {
+      position: absolute;
+      bottom: -1.5rem;
+      left: -1.5rem;
+      background: #C89020;
+      color: #0F2318;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 1.25rem 1.5rem;
+      letter-spacing: 0.04em;
+      max-width: 180px;
+      line-height: 1.4;
+    }
+
+    /* ── Variety Grid ── */
+    .variety-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 1000px) { .variety-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 580px) { .variety-grid { grid-template-columns: 1fr; } }
+
+    .variety-card {
+      background: #fff;
+      border: 1px solid #D8CFBD;
+      overflow: hidden;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .variety-card:hover {
+      box-shadow: 0 12px 40px rgba(15,35,24,0.12);
+      transform: translateY(-4px);
+    }
+    .variety-img { margin: 0; overflow: hidden; }
+    .variety-img img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .variety-card:hover .variety-img img { transform: scale(1.06); }
+    .variety-info { padding: 1.5rem; }
+    .variety-info h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #0F2318;
+      margin: 0 0 0.6rem;
+    }
+    .variety-info p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      color: #7A7268;
+      line-height: 1.7;
+      margin: 0 0 1rem;
+    }
+    .variety-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .tag {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.65rem;
+      border: 1px solid #D8CFBD;
+      color: #7A7268;
+      border-radius: 2px;
+    }
+    .tag--gold { border-color: #C89020; color: #C89020; }
+    .tag--forest { background: #0F2318; color: #FDFAF4; border-color: #0F2318; }
+
+    /* ── Full-bleed image band ── */
+    .img-band {
+      position: relative;
+      height: clamp(320px, 55vw, 620px);
+      overflow: hidden;
+    }
+    .img-band img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .img-band-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(15,35,24,0.9) 0%, rgba(15,35,24,0.3) 60%, transparent 100%);
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
+    .img-band-text { max-width: 520px; }
+    .img-band-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      color: #FDFAF4;
+      margin: 0 0 1rem;
+      line-height: 1.2;
+    }
+    .img-band-text p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      color: rgba(253,250,244,0.78);
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    /* ── Seasonal Calendar ── */
+    .cal-wrap { overflow-x: auto; margin-top: 2.5rem; }
+    .cal-table { width: 100%; min-width: 700px; border-collapse: collapse; }
+    .cal-table th, .cal-table td {
+      padding: 0.75rem 0.6rem;
+      text-align: center;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      border-bottom: 1px solid #D8CFBD;
+    }
+    .cal-table th {
+      font-weight: 600;
+      color: #0F2318;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: #D8CFBD;
+    }
+    .cal-table td:first-child {
+      text-align: left;
+      font-weight: 600;
+      color: #141210;
+      font-size: 0.88rem;
+      min-width: 160px;
+    }
+    .cal-peak {
+      background: #C89020;
+      border-radius: 12px;
+      display: inline-block;
+      width: 100%;
+      height: 10px;
+    }
+    .cal-avail {
+      background: rgba(200,144,32,0.3);
+      border-radius: 12px;
+      display: inline-block;
+      width: 100%;
+      height: 10px;
+    }
+    .cal-empty { color: #D8CFBD; }
+
+    /* ── Specs Table ── */
+    .specs-table { width: 100%; border-collapse: collapse; margin-top: 2.5rem; }
+    .specs-table tr { border-bottom: 1px solid #D8CFBD; }
+    .specs-table tr:last-child { border-bottom: none; }
+    .specs-table th {
+      width: 220px;
+      text-align: left;
+      padding: 1rem 1.5rem 1rem 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #7A7268;
+      vertical-align: top;
+    }
+    .specs-table td {
+      padding: 1rem 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      color: #141210;
+      line-height: 1.65;
+    }
+
+    /* ── Process Steps ── */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 3rem;
+    }
+    @media (max-width: 800px) { .process-steps { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .process-steps { grid-template-columns: 1fr; } }
+    .process-step {
+      padding: 2.5rem 2rem;
+      border-right: 1px solid rgba(216,207,189,0.3);
+    }
+    .process-step:last-child { border-right: none; }
+    .step-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: rgba(200,144,32,0.2);
+      line-height: 1;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .process-step h4 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #C89020;
+      margin: 0 0 0.6rem;
+    }
+    .process-step p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      color: rgba(253,250,244,0.65);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ── Stats row ── */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-top: 1px solid rgba(216,207,189,0.2);
+      border-left: 1px solid rgba(216,207,189,0.2);
+      margin-top: 4rem;
+    }
+    @media (max-width: 700px) { .stats-row { grid-template-columns: repeat(2, 1fr); } }
+    .stat-item {
+      padding: 2rem 1.5rem;
+      border-right: 1px solid rgba(216,207,189,0.2);
+      border-bottom: 1px solid rgba(216,207,189,0.2);
+    }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: #C89020;
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    .stat-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      color: rgba(253,250,244,0.6);
+      line-height: 1.5;
+    }
+
+    /* ── Cert badges ── */
+    .cert-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
+    .cert-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(253,250,244,0.06);
+      border: 1px solid rgba(216,207,189,0.2);
+      padding: 0.7rem 1.2rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: rgba(253,250,244,0.8);
+      letter-spacing: 0.06em;
+    }
+    .cert-badge::before { content: '✓'; color: #C89020; font-size: 1rem; }
+
+    /* ── Related Products ── */
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) { .related-grid { grid-template-columns: 1fr; } }
+    .related-card {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      text-decoration: none;
+    }
+    .related-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+    .related-card:hover img { transform: scale(1.07); }
+    .related-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15,35,24,0.88) 0%, rgba(15,35,24,0.2) 60%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem;
+    }
+    .related-card-overlay span {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #C89020;
+      margin-bottom: 0.3rem;
+    }
+    .related-card-overlay h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #FDFAF4;
+      margin: 0;
+    }
+
+    /* ── CTA Band ── */
+    .highlight-band {
+      background: #C89020;
+      padding: clamp(3rem, 6vw, 5rem) 5vw;
+      text-align: center;
+    }
+    .highlight-band h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      color: #0F2318;
+      margin: 0 0 0.75rem;
+    }
+    .highlight-band p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      color: rgba(15,35,24,0.75);
+      margin: 0 0 2rem;
+    }
+    .btn-dark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #0F2318;
+      color: #FDFAF4;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 1rem 2.25rem;
+      text-decoration: none;
+      transition: background 0.25s, transform 0.2s;
+    }
+    .btn-dark:hover { background: #193D20; transform: translateY(-2px); }
+
+    /* ── Soil feature strip ── */
+    .soil-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      margin-top: 4rem;
+      padding-top: 3.5rem;
+      border-top: 1px solid var(--hairline);
+    }
+    @media (max-width: 800px) { .soil-strip { grid-template-columns: 1fr; gap: 2rem; } }
+    .soil-num {
+      display: block;
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-style: italic;
+      color: var(--saffron);
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(200, 144, 32, 0.2);
+    }
+    .soil-item h4 {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--forest);
+      margin: 0 0 0.75rem;
+    }
+    .soil-item p {
+      display: block;
+    }
+
+    /* ── Reveal animation ── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+  </style>
+</head>
+<body class="page-interior">
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="brand-word">ZAFFRA<small>AGRO EXPORT LLP</small></span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="has-dropdown"><a href="products.html" class="current">Products</a>
+            <div class="dropdown">
+              <a href="fresh-fruits.html">Fresh Fruits</a>
+              <a href="fresh-vegetables.html">Fresh Vegetables</a>
+              <a href="seafood.html">Seafood</a>
+              <a href="agricultural.html">Agricultural Products</a>
+              <a href="spices.html">Spices</a>
+            </div>
+          </li>
+          <li><a href="quality.html">Quality</a></li>
+          <li><a href="packaging.html">Packaging</a></li>
+          <li><a href="countries.html">Markets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn-nav-enquire">Enquire</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE PANEL -->
+  <div class="mobile-panel" id="mobile-panel" aria-hidden="true">
+    <button class="mobile-panel-close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg></button>
+    <nav><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="fresh-fruits.html">Fresh Fruits</a></li>
+      <li><a href="fresh-vegetables.html">Fresh Vegetables</a></li>
+      <li><a href="seafood.html">Seafood</a></li>
+      <li><a href="agricultural.html">Agricultural Products</a></li>
+      <li><a href="spices.html">Spices</a></li>
+      <li><a href="quality.html">Quality</a></li>
+      <li><a href="packaging.html">Packaging</a></li>
+      <li><a href="countries.html">Markets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+    <a href="contact.html" class="btn-primary" style="margin-top:auto;display:inline-flex">Send Enquiry</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="product-hero" style="background-image:url('images/fresh_vegetables.png')">
+      <div class="hero-inner">
+        <div class="hero-category">Fresh Vegetables</div>
+        <h1>Fresh Vegetables</h1>
+        <p class="hero-subtitle">From Gujarat's fertile soils - crisp, vibrant, export-ready.</p>
+        <div class="hero-badges">
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            APEDA Registered
+          </span>
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            FSSAI Licensed
+          </span>
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Export Quality
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO SECTION -->
+    <section class="section section-cream">
+      <div class="section-inner">
+        <div class="intro-split">
+          <div class="intro-text">
+            <span class="label reveal">Product Category — 02</span>
+            <h2 class="section-heading reveal">Gujarat's Fertile Soils,<br>Powering Global Kitchens</h2>
+            <p class="reveal">Gujarat is one of India's foremost vegetable-growing states — home to the largest red-onion exporting clusters in the country, vast stretches of okra and bitter gourd under protective cultivation, and increasingly, high-value crops such as drumstick (moringa) destined for functional food and nutraceutical markets. Zaffra Agro's fresh vegetable programme is built on two decades of direct field relationships and a logistical infrastructure designed for exactitude.</p>
+            <p class="reveal">Our contracted vegetable farms are located within 150 km of our Ahmedabad pack-house, enabling same-day field-to-pack-house turnaround across all categories. Every shipment departs with a full phytosanitary dossier: NPPO-issued Phytosanitary Certificate, Certificate of Origin, MRL test reports from NABL-accredited labs, and pre-shipment quality inspection reports.</p>
+            <p class="reveal">With year-round supply of key lines such as onions and a tightly managed seasonal programme for okra, bitter gourd, and chilli, Zaffra Agro is the reliable partner for importers, wholesalers, and ethnic retailers who demand consistency of quality and schedule.</p>
+          </div>
+          <div class="intro-img-wrap reveal">
+            <img src="images/fresh_fruits.png" alt="Fresh red onions from Gujarat — export quality" loading="lazy" decoding="async">
+            <div class="intro-img-badge">150 km<br>max farm-to-pack distance</div>
+          </div>
+        </div>
+
+        <div class="soil-strip">
+          <div class="soil-item reveal reveal-delay-1">
+            <span class="soil-num">01</span>
+            <h4>Alluvial Riverine Soils</h4>
+            <p>Nourished by the Sabarmati and Mahi river basins, our growing regions boast deep, highly fertile alluvial soils. This nutrient-dense terroir is the foundation of our vegetable program — yielding exceptional dry matter content, robust pungency, and the structural integrity required to endure long sea-freight transit without compromising quality.</p>
+          </div>
+          <div class="soil-item reveal reveal-delay-2">
+            <span class="soil-num">02</span>
+            <h4>Semi-Arid Climate Advantage</h4>
+            <p>Gujarat’s unique semi-arid microclimate provides the ultimate natural curing environment. Brilliant, sun-drenched winters reduce innate moisture levels in our onions and chillies — naturally extending shelf life, inhibiting decay, and eliminating the need for synthetic post-harvest treatments.</p>
+          </div>
+          <div class="soil-item reveal reveal-delay-3">
+            <span class="soil-num">03</span>
+            <h4>Integrated Farm Management</h4>
+            <p>Quality cannot be inspected into a crop; it must be grown into it. Our in-house agronomists partner directly with contracted growers, governing every variable from seed selection to input optimization. This relentless oversight guarantees that every harvest perfectly aligns with stringent international residue tolerances long before it reaches our pack-houses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VARIETY GRID -->
+    <section class="section section-stone">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label reveal">Our Varieties</span>
+        <h2 class="section-heading reveal">Six Key Vegetables,<br>Sourced &amp; Shipped with Precision</h2>
+        <p class="section-sub reveal">From high-volume commodity lines to specialist ethnic-market vegetables, our programme is built around the SKUs that matter most to global importers.</p>
+        </div>
+
+        <div class="variety-grid">
+
+          <div class="variety-card reveal reveal-delay-1">
+            <figure class="variety-img">
+              <img src="images/fresh_vegetables.png" alt="Export-grade red onions from Gujarat" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Red Onion</h3>
+              <p>Gujarat's red onions are among India's most-exported agricultural commodities, renowned for their sharp pungency, deep crimson skins, and impressive dry matter content — typically 13–15% — that supports long sea-freight journeys of 20–28 days. Our Nasik-type and Bhima Kali varieties are graded to 45–55 mm and 55–65 mm, packed in 20 kg or 25 kg open-mesh jute or polypropylene net sacks, and shipped year-round from Mundra port.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">DM 13–15%</span>
+                <span class="tag">Year-Round</span>
+                <span class="tag">20 / 25 kg Nets</span>
+                <span class="tag">45–65 mm Grade</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-2">
+            <figure class="variety-img">
+              <img src="images/mangoes_golden.png" alt="White onions in market display" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>White Onion</h3>
+              <p>White onions are preferred by Mexican, American, and Middle Eastern food-service buyers for their milder, sweeter flavour and crisp texture when raw. Gujarat's Talaja and Mahuva belts produce white onions with thin papery skins, bright snow-white flesh, and excellent table presentation. We export in 20 kg net bags with double-layer kraft lining for moisture management, primarily to the UAE, Saudi Arabia, and East Africa.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">Mild &amp; Sweet</span>
+                <span class="tag">UAE / Gulf Market</span>
+                <span class="tag">Oct – Mar</span>
+                <span class="tag">20 kg Net Bag</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-3">
+            <figure class="variety-img">
+              <img src="images/markets_hero.png" alt="Fresh green okra ladies finger" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Okra — Lady's Finger</h3>
+              <p>Okra is one of India's most significant vegetable export earners, with the UK, UAE, and Canada representing key destination markets driven by South Asian and African diaspora demand. Our okra is harvested at 6–8 cm pod length for tenderness, field-graded for freedom from yellow tips and blemishes, pre-cooled to 7–10°C, and dispatched air-freight or sea-cooled within 24 hours of harvest. Shelf life is 10–14 days under 7–10°C storage.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">6–8 cm Length</span>
+                <span class="tag">Air &amp; Sea Freight</span>
+                <span class="tag">Mar – Nov</span>
+                <span class="tag">3 / 5 kg Carton</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-1">
+            <figure class="variety-img">
+              <img src="images/origin_story.png" alt="Fresh bitter gourd karela for export" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Bitter Gourd — Karela</h3>
+              <p>Bitter gourd is a staple in South Asian and Southeast Asian cooking, and a rising star in functional food markets given its clinically-studied benefits for blood sugar management. We export two types: the small, intensely-ridged Indian karela (preferred in UK, Canada, Fiji) and the larger, lighter-coloured Chinese-type bitter melon (preferred in Southeast Asia and East Asia). Packed in ventilated cartons at 3 or 5 kg, despatched within 18 hours of harvest.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">Indian &amp; Chinese Type</span>
+                <span class="tag">Air Freight</span>
+                <span class="tag">Year-Round</span>
+                <span class="tag">3 / 5 kg Carton</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-2">
+            <figure class="variety-img">
+              <img src="images/pack_hero.png" alt="Fresh green chillies for export" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Fresh Green Chilli</h3>
+              <p>India is the world's largest producer of chillies, and Gujarat grows several commercially important fresh-market varieties. We export primarily the long, slender Jwala and the milder Bullet types to UK, UAE, Singapore, and Canada. MRL compliance for the EU and UK markets is our foremost priority — all consignments are pre-shipment tested at NABL labs. Packed in 5 kg perforated polybags or 5 kg ventilated cartons, despatched by air-freight or sea within strict cold-chain protocols.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">Jwala &amp; Bullet</span>
+                <span class="tag">EU MRL Tested</span>
+                <span class="tag">Year-Round</span>
+                <span class="tag">5 kg Carton</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-3">
+            <figure class="variety-img">
+              <img src="images/products_hero.png" alt="Drumstick moringa pods for export" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Drumstick — Moringa</h3>
+              <p>Moringa oleifera — the drumstick tree — is rapidly becoming one of the world's most significant functional food ingredients. Fresh drumstick pods from Gujarat are exported to the UK, Canada, Australia, and across the Gulf, supplying South Indian restaurant trade and health-conscious consumers. Pods are harvested at 30–45 cm, when flesh is firm and seeds are small. Packed in perforated 5 kg cartons and dispatched air-freight within 12 hours of harvest to preserve maximum nutrient density.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">30–45 cm Pod</span>
+                <span class="tag">Superfood</span>
+                <span class="tag">Oct – Mar</span>
+                <span class="tag">Air Freight</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL-BLEED FIELD IMAGE -->
+    <div class="img-band">
+      <img src="images/quality_hero.png" alt="Vegetable fields and farmland in Gujarat, India" loading="lazy" decoding="async">
+      <div class="img-band-overlay">
+        <div class="container" style="width: 100%;">
+          <div class="img-band-text">
+          <span class="label label--light reveal">Field to Ship</span>
+          <h2 class="reveal">Same-Day Harvest<br>to Pack-House</h2>
+          <p class="reveal">Our Ahmedabad pack-house is positioned within 150 km of every contracted vegetable-growing district. Dedicated refrigerated collection vehicles operate two runs daily during peak season, ensuring produce arrives at the pack-house with maximum freshness. Onions and other curing crops are handled in covered curing yards before grading and bagging — maintaining natural dormancy and minimising field-level losses.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEASONAL CALENDAR -->
+    <section class="section section-cream">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label reveal">Availability Planning</span>
+        <h2 class="section-heading reveal">Seasonal Availability Calendar</h2>
+        <p class="section-sub reveal">Gujarat's favourable climate allows year-round onion supply and extended-season okra and chilli production. Use this calendar for forward planning.</p>
+        </div>
+        <div class="cal-wrap reveal">
+          <table class="cal-table">
+            <thead>
+              <tr>
+                <th>Vegetable</th>
+                <th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th><th>May</th><th>Jun</th>
+                <th>Jul</th><th>Aug</th><th>Sep</th><th>Oct</th><th>Nov</th><th>Dec</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Red Onion</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+              </tr>
+              <tr>
+                <td>White Onion</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+              </tr>
+              <tr>
+                <td>Okra (Lady's Finger)</td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td>
+              </tr>
+              <tr>
+                <td>Bitter Gourd</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+              </tr>
+              <tr>
+                <td>Fresh Green Chilli</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+              </tr>
+              <tr>
+                <td>Drumstick (Moringa)</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-family:'DM Sans',sans-serif;font-size:0.78rem;color:#7A7268;margin-top:1rem;" class="reveal">
+          <strong style="color:#C89020">&#9632;</strong> Peak season &nbsp;&nbsp;
+          <strong style="color:rgba(200,144,32,0.4)">&#9632;</strong> Available / Transitional
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPORT SPECS -->
+    <section class="section section-stone">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label reveal">Trade Specifications</span>
+        <h2 class="section-heading reveal">Export Specifications &amp; Terms</h2>
+        <p class="section-sub reveal">Our trade specifications are designed for maximum flexibility. Contact our export team to discuss custom grading, labelling, and scheduling options.</p>
+        </div>
+        <table class="specs-table reveal">
+          <tbody>
+            <tr>
+              <th>Minimum Order</th>
+              <td>Onions: 1 × 20ft Container (~22–24 MT net). Perishables (Okra, Karela, Chilli, Drumstick): 200 kg minimum for air-freight consolidated; 5 MT for sea-cooled FCL. Trial shipments welcomed.</td>
+            </tr>
+            <tr>
+              <th>Packaging</th>
+              <td>Onions: 20 kg or 25 kg jute / PP net sacks; Okra &amp; Bitter Gourd: 3 kg or 5 kg ventilated cartons; Chilli: 5 kg cartons or 5 kg polybags; Drumstick: 5 kg perforated cartons. Private label on request.</td>
+            </tr>
+            <tr>
+              <th>Grading</th>
+              <td>Onions: 35–45 mm, 45–55 mm, 55–65 mm, 65–75 mm diameter grades. Okra: 5–7 cm, 6–9 cm pod length. Drumstick: 30–40 cm, 40–50 cm length. Custom grading available.</td>
+            </tr>
+            <tr>
+              <th>Temperature &amp; Shelf Life</th>
+              <td>Onions: ambient or 2–4°C (40–60 days shelf life). Okra: 7–10°C (10–14 days). Bitter Gourd: 10–12°C (14–21 days). Chilli: 7–10°C (14 days). Drumstick: 10°C (10–12 days).</td>
+            </tr>
+            <tr>
+              <th>Certifications</th>
+              <td>APEDA Export Licence · Phytosanitary Certificate (NPPO) · FSSAI · Certificate of Origin · MRL Report (NABL Lab). GlobalG.A.P. available on request for select farms.</td>
+            </tr>
+            <tr>
+              <th>Incoterms</th>
+              <td>FOB Mundra / JNPT / Chennai (air freight: BOM / AMD). CFR / CIF all major ports. DDP UAE and Singapore on confirmed annual programmes.</td>
+            </tr>
+            <tr>
+              <th>Transit Times</th>
+              <td>Sea: UAE 5–7 days · UK / EU 18–22 days · Malaysia / Singapore 12–15 days. Air: UAE 3–4 hrs · UK 8–9 hrs · Singapore 6–7 hrs.</td>
+            </tr>
+            <tr>
+              <th>Payment Terms</th>
+              <td>LC at sight · TT in advance for new accounts · Net 30 against invoice for approved annual-programme buyers.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PROCESS STEPS -->
+    <section class="section section-forest">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label label--light reveal">Our Process</span>
+        <h2 class="section-heading section-heading--light reveal">Field to Container —<br>The Zaffra Vegetable Chain</h2>
+        <p class="section-sub section-sub--light reveal">Precision at every step — from field-level agronomy support to real-time logistics tracking — ensures the quality your customers expect arrives reliably and on time.</p>
+        </div>
+        <div class="process-steps">
+          <div class="process-step reveal reveal-delay-1">
+            <span class="step-num">01</span>
+            <h4>Field Inspection</h4>
+            <p>Our in-house agronomists conduct pre-harvest field inspections 5–7 days before picking. Maturity parameters — bulb size, pod length, skin condition, Brix, and firmness — are assessed and crops are cleared for harvest only when they meet our export grade standard.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-2">
+            <span class="step-num">02</span>
+            <h4>Grading &amp; Sorting</h4>
+            <p>Produce is brought to our pack-house and passed through mechanical graders (onions) or hand-graded by trained sorters (okra, chilli, drumstick). Double-check sorting removes any below-grade or damaged units before packing.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-3">
+            <span class="step-num">03</span>
+            <h4>Pack &amp; Label</h4>
+            <p>Graded produce is packed into buyer-specified formats with correct net weight, product label, country of origin, and lot traceability codes. APEDA-approved packaging materials are used for all export-certified consignments. MRL samples are drawn from each lot at this stage.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-4">
+            <span class="step-num">04</span>
+            <h4>Cold Store &amp; Despatch</h4>
+            <p>Perishable vegetables enter our 400 MT cold-store facility at prescribed temperatures immediately after packing. Pre-shipment inspection is conducted by APEDA-approved inspectors, and phytosanitary certificates are issued before departure. Containers are sealed and temperature-logged for the voyage.</p>
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-item reveal reveal-delay-1">
+            <span class="stat-num">200+</span>
+            <span class="stat-label">Contracted vegetable-growing families in Gujarat</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <span class="stat-num">400 MT</span>
+            <span class="stat-label">Cold-store capacity at our Ahmedabad pack-house</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <span class="stat-num">24h</span>
+            <span class="stat-label">Field-to-container turnaround for perishables</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-4">
+            <span class="stat-num">40+</span>
+            <span class="stat-label">Markets supplied across Asia, Europe, Middle East &amp; Africa</span>
+          </div>
+        </div>
+
+        <div class="cert-row reveal">
+          <span class="cert-badge">APEDA Registered</span>
+          <span class="cert-badge">FSSAI Licensed</span>
+          <span class="cert-badge">NPPO Phytosanitary</span>
+          <span class="cert-badge">NABL Lab MRL Tests</span>
+          <span class="cert-badge">EU MRL Compliant</span>
+          <span class="cert-badge">Certificate of Origin</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED PRODUCTS -->
+    <section class="section section-cream">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label reveal">Explore More</span>
+        <h2 class="section-heading reveal">Related Product Categories</h2>
+        </div>
+        <div class="related-grid">
+          <a href="fresh-fruits.html" class="related-card reveal reveal-delay-1">
+            <img src="images/fresh_fruits.png" alt="Fresh fruits export" loading="lazy" decoding="async">
+            <div class="related-card-overlay">
+              <span>Category 01</span>
+              <h3>Fresh Fruits</h3>
+            </div>
+          </a>
+          <a href="seafood.html" class="related-card reveal reveal-delay-2">
+            <img src="images/seafood.png" alt="Seafood export" loading="lazy" decoding="async">
+            <div class="related-card-overlay">
+              <span>Category 03</span>
+              <h3>Seafood</h3>
+            </div>
+          </a>
+          <a href="spices.html" class="related-card reveal reveal-delay-3">
+            <img src="images/seafood.png" alt="Indian spices export" loading="lazy" decoding="async">
+            <div class="related-card-overlay">
+              <span>Category 05</span>
+              <h3>Spices</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <div class="highlight-band">
+      <span class="label" style="color:rgba(15,35,24,0.6)">Get In Touch</span>
+      <h2>Source Gujarat's Finest Vegetables Today</h2>
+      <p>Tell us your target market, SKUs, and volume requirements — our export team will respond within one business day.</p>
+      <a href="contact.html" class="btn-dark">Send an Enquiry &#8594;</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand-col">
+        <a href="index.html" class="brand brand--light">
+          <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="brand-word">ZAFFRA<small>AGRO EXPORT LLP</small></span>
+        </a>
+        <p class="footer-tagline">Nature &bull; Purity &bull; Trust</p>
+        <p class="footer-desc">Exporting premium fresh produce, seafood, and agricultural commodities from Gujarat, India to global markets since 2005.</p>
+      </div>
+      <div class="footer-nav-col"><h4>Products</h4><ul>
+        <li><a href="fresh-fruits.html">Fresh Fruits</a></li>
+        <li><a href="fresh-vegetables.html">Fresh Vegetables</a></li>
+        <li><a href="seafood.html">Seafood</a></li>
+        <li><a href="agricultural.html">Agricultural Products</a></li>
+        <li><a href="spices.html">Spices</a></li>
+      </ul></div>
+      <div class="footer-nav-col"><h4>Company</h4><ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="quality.html">Quality &amp; Certifications</a></li>
+        <li><a href="packaging.html">Packaging &amp; Logistics</a></li>
+        <li><a href="countries.html">Export Markets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-contact-col"><h4>Contact</h4>
+        <address>
+          <p>Zaffra House, Near APMC Yard,<br>Ahmedabad, Gujarat 380001</p>
+          <p><a href="mailto:export@zaffraagro.com">export@zaffraagro.com</a></p>
+          <p><a href="tel:+917940125588">+91 79 4012 5588</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Zaffra Agro Export LLP. All rights reserved.</p>
+      <p>APEDA Reg. No. APEDA/REG/000000 &nbsp;&bull;&nbsp; GST: 24AAAAA0000A1Z5</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+

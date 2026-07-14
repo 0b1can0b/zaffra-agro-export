@@ -1,0 +1,946 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Fruits Export — Mangoes, Grapes, Pomegranates | Zaffra Agro Export LLP</title>
+  <meta name="description" content="Zaffra Agro Export LLP supplies premium fresh fruits from Gujarat — Alphonso and Kesar mangoes, Thompson Seedless grapes, Bhagwa pomegranates. APEDA certified. Global export.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── Product Hero ── */
+
+
+    /* ── Section base ── */
+    .section { padding: clamp(4rem, 8vw, 8rem) 5vw; }
+    .section-inner { max-width: 1240px; margin: 0 auto; }
+    .section-cream { background: #FDFAF4; }
+    .section-stone { background: #EDE6D8; }
+    .section-forest { background: #0F2318; }
+
+    /* ── Labels / eyebrows ── */
+    .label {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #C89020;
+      margin-bottom: 1rem;
+    }
+    .label--light { color: rgba(200,144,32,0.9); }
+
+    /* ── Section headings ── */
+    .section-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4.5vw, 3.5rem);
+      font-weight: 700;
+      color: #0F2318;
+      line-height: 1.15;
+      margin: 0 0 1.25rem;
+      letter-spacing: -0.02em;
+    }
+    .section-heading--light { color: #FDFAF4; }
+    .section-sub {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      color: #7A7268;
+      max-width: 640px;
+      line-height: 1.75;
+      margin: 0 0 3rem;
+    }
+    .section-sub--light { color: rgba(253,250,244,0.7); }
+
+    /* ── Intro split ── */
+    .intro-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    @media (max-width: 800px) { .intro-split { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .intro-text p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #7A7268;
+      margin: 0 0 1.25rem;
+    }
+    .intro-text p:first-of-type {
+      font-size: 1.18rem;
+      color: #141210;
+      font-weight: 500;
+    }
+    .intro-img-wrap { position: relative; }
+    .intro-img-wrap img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border-radius: 2px;
+      display: block;
+    }
+    .intro-img-badge {
+      position: absolute;
+      bottom: -1.5rem;
+      left: -1.5rem;
+      background: #C89020;
+      color: #0F2318;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 1.25rem 1.5rem;
+      letter-spacing: 0.04em;
+      max-width: 180px;
+      line-height: 1.4;
+    }
+
+    /* ── Variety Grid ── */
+    .variety-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 1000px) { .variety-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 580px) { .variety-grid { grid-template-columns: 1fr; } }
+
+    .variety-card {
+      background: #fff;
+      border: 1px solid #D8CFBD;
+      overflow: hidden;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .variety-card:hover {
+      box-shadow: 0 12px 40px rgba(15,35,24,0.12);
+      transform: translateY(-4px);
+    }
+    .variety-img { margin: 0; overflow: hidden; }
+    .variety-img img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .variety-card:hover .variety-img img { transform: scale(1.06); }
+    .variety-info { padding: 1.5rem; }
+    .variety-info h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #0F2318;
+      margin: 0 0 0.6rem;
+    }
+    .variety-info p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      color: #7A7268;
+      line-height: 1.7;
+      margin: 0 0 1rem;
+    }
+    .variety-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .tag {
+      display: inline-block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.65rem;
+      border: 1px solid #D8CFBD;
+      color: #7A7268;
+      border-radius: 2px;
+    }
+    .tag--gold { border-color: #C89020; color: #C89020; }
+    .tag--forest { background: #0F2318; color: #FDFAF4; border-color: #0F2318; }
+
+    /* ── Full-bleed image band ── */
+    .img-band {
+      position: relative;
+      height: clamp(320px, 55vw, 620px);
+      overflow: hidden;
+    }
+    .img-band img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .img-band-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(15,35,24,0.9) 0%, rgba(15,35,24,0.3) 60%, transparent 100%);
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
+    .img-band-text { max-width: 520px; }
+    .img-band-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      color: #FDFAF4;
+      margin: 0 0 1rem;
+      line-height: 1.2;
+    }
+    .img-band-text p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      color: rgba(253,250,244,0.78);
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    /* ── Seasonal Calendar ── */
+    .cal-wrap { overflow-x: auto; margin-top: 2.5rem; }
+    .cal-table { width: 100%; min-width: 700px; border-collapse: collapse; }
+    .cal-table th, .cal-table td {
+      padding: 0.75rem 0.6rem;
+      text-align: center;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      border-bottom: 1px solid #D8CFBD;
+    }
+    .cal-table th {
+      font-weight: 600;
+      color: #0F2318;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: #D8CFBD;
+    }
+    .cal-table td:first-child {
+      text-align: left;
+      font-weight: 600;
+      color: #141210;
+      font-size: 0.88rem;
+      min-width: 160px;
+    }
+    .cal-peak {
+      background: #C89020;
+      border-radius: 12px;
+      display: inline-block;
+      width: 100%;
+      height: 10px;
+    }
+    .cal-avail {
+      background: rgba(200,144,32,0.3);
+      border-radius: 12px;
+      display: inline-block;
+      width: 100%;
+      height: 10px;
+    }
+    .cal-empty { color: #D8CFBD; }
+
+    /* ── Specs Table ── */
+    .specs-table { width: 100%; border-collapse: collapse; margin-top: 2.5rem; }
+    .specs-table tr { border-bottom: 1px solid #D8CFBD; }
+    .specs-table tr:last-child { border-bottom: none; }
+    .specs-table th {
+      width: 220px;
+      text-align: left;
+      padding: 1rem 1.5rem 1rem 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #7A7268;
+      vertical-align: top;
+    }
+    .specs-table td {
+      padding: 1rem 0;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      color: #141210;
+      line-height: 1.65;
+    }
+
+    /* ── Process Steps ── */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 3rem;
+    }
+    @media (max-width: 800px) { .process-steps { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .process-steps { grid-template-columns: 1fr; } }
+    .process-step {
+      padding: 2.5rem 2rem;
+      border-right: 1px solid rgba(216,207,189,0.3);
+    }
+    .process-step:last-child { border-right: none; }
+    .step-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: rgba(200,144,32,0.2);
+      line-height: 1;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .process-step h4 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #C89020;
+      margin: 0 0 0.6rem;
+    }
+    .process-step p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      color: rgba(253,250,244,0.65);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ── Stats row ── */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-top: 1px solid rgba(216,207,189,0.2);
+      border-left: 1px solid rgba(216,207,189,0.2);
+      margin-top: 4rem;
+    }
+    @media (max-width: 700px) { .stats-row { grid-template-columns: repeat(2, 1fr); } }
+    .stat-item {
+      padding: 2rem 1.5rem;
+      border-right: 1px solid rgba(216,207,189,0.2);
+      border-bottom: 1px solid rgba(216,207,189,0.2);
+    }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: #C89020;
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    .stat-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      color: rgba(253,250,244,0.6);
+      line-height: 1.5;
+    }
+
+    /* ── Cert badges ── */
+    .cert-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
+    .cert-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(253,250,244,0.06);
+      border: 1px solid rgba(216,207,189,0.2);
+      padding: 0.7rem 1.2rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: rgba(253,250,244,0.8);
+      letter-spacing: 0.06em;
+    }
+    .cert-badge::before { content: '✓'; color: #C89020; font-size: 1rem; }
+
+    /* ── Related Products ── */
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) { .related-grid { grid-template-columns: 1fr; } }
+    .related-card {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      text-decoration: none;
+    }
+    .related-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+    .related-card:hover img { transform: scale(1.07); }
+    .related-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15,35,24,0.88) 0%, rgba(15,35,24,0.2) 60%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem;
+    }
+    .related-card-overlay span {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #C89020;
+      margin-bottom: 0.3rem;
+    }
+    .related-card-overlay h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #FDFAF4;
+      margin: 0;
+    }
+
+    /* ── CTA Band ── */
+    .highlight-band {
+      background: #C89020;
+      padding: clamp(3rem, 6vw, 5rem) 5vw;
+      text-align: center;
+    }
+    .highlight-band h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      color: #0F2318;
+      margin: 0 0 0.75rem;
+    }
+    .highlight-band p {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      color: rgba(15,35,24,0.75);
+      margin: 0 0 2rem;
+    }
+    .btn-dark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #0F2318;
+      color: #FDFAF4;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 1rem 2.25rem;
+      text-decoration: none;
+      transition: background 0.25s, transform 0.2s;
+    }
+    .btn-dark:hover { background: #193D20; transform: translateY(-2px); }
+
+    /* ── Reveal animation ── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+  </style>
+</head>
+<body class="page-interior">
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="brand-word">ZAFFRA<small>AGRO EXPORT LLP</small></span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="has-dropdown"><a href="products.html" class="current">Products</a>
+            <div class="dropdown">
+              <a href="fresh-fruits.html">Fresh Fruits</a>
+              <a href="fresh-vegetables.html">Fresh Vegetables</a>
+              <a href="seafood.html">Seafood</a>
+              <a href="agricultural.html">Agricultural Products</a>
+              <a href="spices.html">Spices</a>
+            </div>
+          </li>
+          <li><a href="quality.html">Quality</a></li>
+          <li><a href="packaging.html">Packaging</a></li>
+          <li><a href="countries.html">Markets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn-nav-enquire">Enquire</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE PANEL -->
+  <div class="mobile-panel" id="mobile-panel" aria-hidden="true">
+    <button class="mobile-panel-close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg></button>
+    <nav><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="fresh-fruits.html">Fresh Fruits</a></li>
+      <li><a href="fresh-vegetables.html">Fresh Vegetables</a></li>
+      <li><a href="seafood.html">Seafood</a></li>
+      <li><a href="agricultural.html">Agricultural Products</a></li>
+      <li><a href="spices.html">Spices</a></li>
+      <li><a href="quality.html">Quality</a></li>
+      <li><a href="packaging.html">Packaging</a></li>
+      <li><a href="countries.html">Markets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+    <a href="contact.html" class="btn-primary" style="margin-top:auto;display:inline-flex">Send Enquiry</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="product-hero" style="background-image:url('images/fresh_fruits.png')">
+      <div class="hero-inner">
+        <div class="hero-category">Fresh Fruits</div>
+        <h1>Fresh Fruits</h1>
+        <p class="hero-subtitle">Sun-ripened perfection from Gujarat's orchards to the world's finest tables.</p>
+        <div class="hero-badges">
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            APEDA Registered
+          </span>
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            GlobalG.A.P. Farms
+          </span>
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            EU MRL Compliant
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO SECTION -->
+    <section class="section section-cream">
+      <div class="section-inner">
+        <div class="intro-split">
+          <div class="intro-text">
+            <span class="label reveal">Product Category — 01</span>
+            <h2 class="section-heading reveal">Gujarat's Finest Orchards,<br>Delivered to the World</h2>
+            <p class="reveal">India is among the world's largest producers of tropical and subtropical fruits, and Gujarat's orchards represent some of the finest in the nation. From the legendary Alphonso belts of Valsad and Surat to the sun-drenched mango groves of Kutch, Zaffra Agro sources directly from growers whose families have cultivated these varietals for generations.</p>
+            <p class="reveal">Our fresh fruit program spans over 120 contracted farming families across Gujarat and the adjacent Konkan belt, covering more than 3,400 acres under active supply chain management. Every consignment is harvested at precisely measured maturity indices, field-sorted for grade, pre-cooled within four hours of picking, and dispatched via temperature-controlled reefer logistics to the port of Mundra or JNPT.</p>
+            <p class="reveal">Whether you are a supermarket chain in the UK, a food-service distributor in the UAE, or a specialty importer in Singapore, our B2B supply terms are built around your requirements — from custom packaging and private label to phytosanitary compliance and MRL reporting.</p>
+          </div>
+          <div class="intro-img-wrap reveal">
+            <img src="images/sona_masoori.png" alt="Fresh tropical fruits in rich golden light" loading="lazy" decoding="async">
+            <div class="intro-img-badge">3,400+ acres<br>under active supply</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VARIETY GRID -->
+    <section class="section section-stone">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label reveal">Our Varieties</span>
+        <h2 class="section-heading reveal">Six Premium Varieties,<br>Export-Ready Year-Round</h2>
+        <p class="section-sub reveal">Each variety is selected for its export suitability — superior shelf life, consistent grade, and compliance with importing-country pesticide residue limits.</p>
+        </div>
+
+        <div class="variety-grid">
+
+          <div class="variety-card reveal reveal-delay-1">
+            <figure class="variety-img">
+              <img src="images/spices.png" alt="Golden Alphonso mangoes" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Alphonso Mango</h3>
+              <p>The undisputed king of mangoes. Sourced from the GI-tagged Devgad and Ratnagiri belts, Alphonso presents a deep saffron-gold flesh, non-fibrous texture, and an intoxicating floral aroma that is unmistakable on the supermarket floor. Brix levels consistently exceed 19°, with acidity well below 0.35%. Available in 3 kg gift packs through to 5 MT palletised bulk for food-service.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">Brix 19+</span>
+                <span class="tag">GI Tagged</span>
+                <span class="tag">Mar – Jun</span>
+                <span class="tag">3 kg / 5 kg Box</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-2">
+            <figure class="variety-img">
+              <img src="images/fresh_fruits.png" alt="Kesar mangoes from Junagadh Gujarat" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Kesar Mango</h3>
+              <p>Grown in the mineral-rich volcanic soils around Gir in Junagadh district, Kesar is Gujarat's pride and one of India's most exported mango varieties. Its deep orange pulp, low fibre content, and robust sweetness make it ideal for fresh consumption, pulp processing, and premium gift packing. Cold-chain integrity is maintained from orchard through 5°C reefer containers at port.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">Brix 18–21</span>
+                <span class="tag">Gujarat GI</span>
+                <span class="tag">Apr – Jun</span>
+                <span class="tag">7 kg Corrugated Box</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-3">
+            <figure class="variety-img">
+              <img src="images/wheat_fields.png" alt="Thompson Seedless green grapes on vine" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Thompson Seedless Grapes</h3>
+              <p>Sourced from the Anand and Navsari belts of central Gujarat, Thompson Seedless offers elongated berries with translucent green skin, a crisp bite, and balanced sugar-acid ratio. Our grapes comply with EU MRL requirements and are packed in 4.5 kg punnets with SO₂ sachets for extended shelf life during sea-freight. A GlobalG.A.P. audit trail is available on request.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">Brix 16–18</span>
+                <span class="tag">EU MRL Compliant</span>
+                <span class="tag">Jan – Mar</span>
+                <span class="tag">Oct – Nov</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-1">
+            <figure class="variety-img">
+              <img src="images/agricultural_products.png" alt="Bhagwa pomegranate cut open showing ruby arils" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Pomegranate — Bhagwa</h3>
+              <p>Bhagwa is India's premium export pomegranate, distinguished by its thin leathery rind, vibrant crimson arils, and low astringency. Grown in Maharashtra's Nashik belt under GlobalG.A.P. supervision, our program guarantees uniform sizing (300–500 g per fruit), brilliant colour, and a shelf life of 10–12 weeks under controlled atmosphere. A favourite with European supermarkets and Gulf hypermarkets alike.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">Deep Red Arils</span>
+                <span class="tag">GlobalG.A.P.</span>
+                <span class="tag">Oct – Feb</span>
+                <span class="tag">300–500g Grade</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-2">
+            <figure class="variety-img">
+              <img src="images/basmati_rice.png" alt="Fresh Cavendish bananas in a bunch" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Banana — Cavendish</h3>
+              <p>Our Cavendish bananas are sourced from certified plantations in Gujarat's Anand and Bharuch districts, harvested at green stage 2 maturity for sea-freight. Each 18.5 kg carton is packed with ethylene-absorbing sachets, allowing controlled ripening at destination. Consistent 14+ finger count, 20–22 cm length, and freedom from bruising or latex staining are standard across all consignments.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">Year-Round</span>
+                <span class="tag">Stage 2 Harvest</span>
+                <span class="tag">18.5 kg Carton</span>
+                <span class="tag">Cold Chain</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="variety-card reveal reveal-delay-3">
+            <figure class="variety-img">
+              <img src="images/contact_hero.png" alt="Chikoo sapodilla fruits in natural setting" loading="lazy" decoding="async">
+            </figure>
+            <div class="variety-info">
+              <h3>Chikoo — Sapodilla</h3>
+              <p>Gujarat's Gholvad belt produces India's finest Chikoo, celebrated for its malty, caramel sweetness and smooth, grainy texture. Rich in dietary fibre and natural sugars, Chikoo is gaining significant traction in Asian-diaspora markets across the UK, Canada, and Southeast Asia. We export mature-green Chikoo in 5 kg ventilated corrugated cartons, cold-stored at 12–15°C to inhibit premature softening.</p>
+              <div class="variety-tags">
+                <span class="tag tag--gold">Brix 20+</span>
+                <span class="tag">Gujarat Origin</span>
+                <span class="tag">Oct – Feb</span>
+                <span class="tag">5 kg Carton</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL-BLEED IMAGE BAND -->
+    <div class="img-band">
+      <img src="images/farmland_dawn.png" alt="Lush orchard and fertile farmland in Gujarat, India" loading="lazy" decoding="async">
+      <div class="img-band-overlay">
+        <div class="container" style="width: 100%;">
+          <div class="img-band-text">
+          <span class="label label--light reveal">Source — Gujarat, India</span>
+          <h2 class="reveal">From Root to Reefer<br>in Under 12 Hours</h2>
+          <p class="reveal">Our integrated farm-to-port chain ensures that fruits harvested in the morning orchards of Junagadh are pre-cooled, graded, and packed by evening — maintaining the cellular integrity that importers and retailers demand. We operate dedicated pack-houses at three strategic locations across Gujarat, each equipped with forced-air pre-coolers, carton printing lines, and phytosanitary inspection bays.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEASONAL CALENDAR -->
+    <section class="section section-cream">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label reveal">Availability Planning</span>
+        <h2 class="section-heading reveal">Seasonal Harvest Calendar</h2>
+        <p class="section-sub reveal">Use this calendar to plan your import programme. Our team can advise on forward contracts and supply commitments for each season.</p>
+        </div>
+        <div class="cal-wrap reveal">
+          <table class="cal-table">
+            <thead>
+              <tr>
+                <th>Variety</th>
+                <th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th><th>May</th><th>Jun</th>
+                <th>Jul</th><th>Aug</th><th>Sep</th><th>Oct</th><th>Nov</th><th>Dec</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alphonso Mango</td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+              </tr>
+              <tr>
+                <td>Kesar Mango</td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+              </tr>
+              <tr>
+                <td>Grapes — Thompson</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+              </tr>
+              <tr>
+                <td>Pomegranate — Bhagwa</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+              </tr>
+              <tr>
+                <td>Banana — Cavendish</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+              </tr>
+              <tr>
+                <td>Chikoo — Sapodilla</td>
+                <td><span class="cal-avail"></span></td>
+                <td><span class="cal-avail"></span></td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td class="cal-empty">·</td><td class="cal-empty">·</td><td class="cal-empty">·</td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+                <td><span class="cal-peak"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-family:'DM Sans',sans-serif;font-size:0.78rem;color:#7A7268;margin-top:1rem;" class="reveal">
+          <strong style="color:#C89020">&#9632;</strong> Peak season &nbsp;&nbsp;
+          <strong style="color:rgba(200,144,32,0.4)">&#9632;</strong> Available / Transitional
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPORT SPECS -->
+    <section class="section section-stone">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label reveal">Trade Specifications</span>
+        <h2 class="section-heading reveal">Export Specifications &amp; Terms</h2>
+        <p class="section-sub reveal">All specifications are negotiable to accommodate specific buyer requirements. Contact our export desk for tailored term sheets and phytosanitary documentation.</p>
+        </div>
+        <table class="specs-table reveal">
+          <tbody>
+            <tr>
+              <th>Minimum Order</th>
+              <td>1 × 20ft Reefer Container (~10–12 MT net weight, variety dependent). Consolidated LCL available for trial orders above 500 kg.</td>
+            </tr>
+            <tr>
+              <th>Packaging Formats</th>
+              <td>2 kg, 3 kg, 5 kg, 7 kg corrugated cartons; 4.5 kg ventilated punnets (grapes); 18.5 kg master cartons (banana). Custom private-label and retail packing on request.</td>
+            </tr>
+            <tr>
+              <th>Pre-cooling</th>
+              <td>Forced-air pre-cooling to pulp temperature ≤8°C within 4 hours of harvest. Reefer containers maintained at 8–12°C (mangoes), 0–2°C (grapes), 13°C (banana).</td>
+            </tr>
+            <tr>
+              <th>Certifications</th>
+              <td>APEDA Export Licence · GlobalG.A.P. (select farms) · FSSAI · Phytosanitary Certificate (NPPO India) · Certificate of Origin. EU, UK, US, GCC import-compliant.</td>
+            </tr>
+            <tr>
+              <th>MRL Compliance</th>
+              <td>Pre-shipment MRL testing at NABL-accredited laboratories. Full pesticide residue reports provided with each consignment. Compliant with EU Regulation 396/2005 and USFDA tolerance levels.</td>
+            </tr>
+            <tr>
+              <th>Incoterms</th>
+              <td>FOB Mundra / JNPT · CFR / CIF all major ports · DDP available for UAE and Singapore on confirmed annual programmes.</td>
+            </tr>
+            <tr>
+              <th>Transit Times</th>
+              <td>UAE / Gulf: 5–7 days · UK / EU: 18–22 days · Southeast Asia: 10–14 days · East Africa: 12–16 days</td>
+            </tr>
+            <tr>
+              <th>Payment Terms</th>
+              <td>LC at sight (preferred) · 30% advance + balance against BL copy for established buyers · Open account on credit-approved annual programmes.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PROCESS STEPS -->
+    <section class="section section-forest">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label label--light reveal">Our Process</span>
+        <h2 class="section-heading section-heading--light reveal">From Orchard Floor to<br>Your Warehouse</h2>
+        <p class="section-sub section-sub--light reveal">A rigorous four-stage chain of custody guarantees that the quality we harvest in Gujarat arrives intact at your destination port.</p>
+        </div>
+        <div class="process-steps">
+          <div class="process-step reveal reveal-delay-1">
+            <span class="step-num">01</span>
+            <h4>Harvest</h4>
+            <p>Fruits are hand-harvested by trained teams at precise maturity indices — Brix, firmness, and colour — using non-bruising techniques. Harvest schedules are planned 48 hours in advance to align with container bookings and vessel ETDs.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-2">
+            <span class="step-num">02</span>
+            <h4>Quality Sort</h4>
+            <p>Every fruit passes through a multi-stage grading line: weight-sizing, colour grading, surface-defect inspection, and Brix spot-testing. Only export-grade produce is packed; the remainder is redirected to domestic premium markets or processing.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-3">
+            <span class="step-num">03</span>
+            <h4>Pack &amp; Pre-cool</h4>
+            <p>Graded produce is packed into buyer-specified cartons, stickered, and bar-coded, then placed immediately in forced-air pre-coolers. Pulp temperature reaches target within 3–4 hours, halting respiration and extending commercial shelf life by 30–40%.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-4">
+            <span class="step-num">04</span>
+            <h4>Cold Chain</h4>
+            <p>Pre-cooled cartons are loaded into temperature-monitored reefer containers at the pack-house — never broken until the destination cold store. Real-time data loggers track temperature throughout sea transit, with logs shared digitally to buyers on arrival.</p>
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-item reveal reveal-delay-1">
+            <span class="stat-num">120+</span>
+            <span class="stat-label">Contracted farming families across Gujarat</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <span class="stat-num">3,400</span>
+            <span class="stat-label">Acres under active supply management</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <span class="stat-num">48h</span>
+            <span class="stat-label">Maximum farm-to-reefer turnaround time</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-4">
+            <span class="stat-num">30+</span>
+            <span class="stat-label">Countries served across 5 continents</span>
+          </div>
+        </div>
+
+        <div class="cert-row reveal">
+          <span class="cert-badge">APEDA Registered</span>
+          <span class="cert-badge">GlobalG.A.P. (Select Farms)</span>
+          <span class="cert-badge">FSSAI Licensed</span>
+          <span class="cert-badge">EU MRL Compliant</span>
+          <span class="cert-badge">Phytosanitary Certified</span>
+          <span class="cert-badge">NABL Lab Tested</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED PRODUCTS -->
+    <section class="section section-cream">
+      <div class="section-inner">
+        <div class="section-header section-header--center">
+          <span class="label reveal">Explore More</span>
+        <h2 class="section-heading reveal">Related Product Categories</h2>
+        </div>
+        <div class="related-grid">
+          <a href="fresh-vegetables.html" class="related-card reveal reveal-delay-1">
+            <img src="images/fresh_vegetables.png" alt="Fresh vegetables export" loading="lazy" decoding="async">
+            <div class="related-card-overlay">
+              <span>Category 02</span>
+              <h3>Fresh Vegetables</h3>
+            </div>
+          </a>
+          <a href="seafood.html" class="related-card reveal reveal-delay-2">
+            <img src="images/seafood.png" alt="Seafood export" loading="lazy" decoding="async">
+            <div class="related-card-overlay">
+              <span>Category 03</span>
+              <h3>Seafood</h3>
+            </div>
+          </a>
+          <a href="spices.html" class="related-card reveal reveal-delay-3">
+            <img src="images/field_sunrise.png" alt="Indian spices export" loading="lazy" decoding="async">
+            <div class="related-card-overlay">
+              <span>Category 05</span>
+              <h3>Spices</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <div class="highlight-band">
+      <span class="label" style="color:rgba(15,35,24,0.6)">Get In Touch</span>
+      <h2>Ready to Source India's Finest Fruits?</h2>
+      <p>Share your requirements and our export team will respond within one business day with pricing, availability, and sample options.</p>
+      <a href="contact.html" class="btn-dark">Request a Quotation &#8594;</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand-col">
+        <a href="index.html" class="brand brand--light">
+          <svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F2D270" /><stop offset="50%" stop-color="#C89020" /><stop offset="100%" stop-color="#8A5A19" /></linearGradient></defs><path d="M10 15 H90 M50 15 L10 85 H50 M30 50 H70" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="brand-word">ZAFFRA<small>AGRO EXPORT LLP</small></span>
+        </a>
+        <p class="footer-tagline">Nature &bull; Purity &bull; Trust</p>
+        <p class="footer-desc">Exporting premium fresh produce, seafood, and agricultural commodities from Gujarat, India to global markets since 2005.</p>
+      </div>
+      <div class="footer-nav-col"><h4>Products</h4><ul>
+        <li><a href="fresh-fruits.html">Fresh Fruits</a></li>
+        <li><a href="fresh-vegetables.html">Fresh Vegetables</a></li>
+        <li><a href="seafood.html">Seafood</a></li>
+        <li><a href="agricultural.html">Agricultural Products</a></li>
+        <li><a href="spices.html">Spices</a></li>
+      </ul></div>
+      <div class="footer-nav-col"><h4>Company</h4><ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="quality.html">Quality &amp; Certifications</a></li>
+        <li><a href="packaging.html">Packaging &amp; Logistics</a></li>
+        <li><a href="countries.html">Export Markets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-contact-col"><h4>Contact</h4>
+        <address>
+          <p>Zaffra House, Near APMC Yard,<br>Ahmedabad, Gujarat 380001</p>
+          <p><a href="mailto:export@zaffraagro.com">export@zaffraagro.com</a></p>
+          <p><a href="tel:+917940125588">+91 79 4012 5588</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Zaffra Agro Export LLP. All rights reserved.</p>
+      <p>APEDA Reg. No. APEDA/REG/000000 &nbsp;&bull;&nbsp; GST: 24AAAAA0000A1Z5</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
